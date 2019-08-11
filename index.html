@@ -62,7 +62,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/" />
 
-<meta property="og:updated_time" content="2019-08-11T10:42:41+08:00" />
+<meta property="og:updated_time" content="2017-08-20T21:38:52+08:00" />
 <meta itemprop="name" content="小鱼儿的小站">
 <meta itemprop="description" content="Hugo theme jane example site.">
 
@@ -86,7 +86,7 @@
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/" class="logo">小鱼儿的快乐生活</a>
+    <a href="/" class="logo">小鱼儿的小站</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -226,7 +226,7 @@
     <div class="logo-wrapper">
   <a href="/" class="logo">
     
-      小鱼儿的快乐生活
+      小鱼儿的小站
     
   </a>
 </div>
@@ -336,12 +336,12 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">我的博客</a>
+      <a class="post-link" href="/post/css-margin%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/"></a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2019-08-11" class="post-time">
-        2019-08-11
+      <time datetime="0001-01-01" class="post-time">
+        0001-01-01
       </time>
       
       
@@ -353,10 +353,92 @@
   <div class="post-content">
     
     <div class="post-summary">
-      大家好 我的博客已经开通了，欢迎大家来我的小站。
+      前言 CSS 里有一个重要的东西，叫 CSS 盒模型，它几乎能贯穿我们学习 CSS 的整个阶段，如下图所示，就是我们所说的盒子模型：
+[!]()
+(注：图片来源 MDN )
+&ldquo;盒模型&rdquo;中最外层透明的区域就是 margin所在，它会将其他区域从盒子模型内容中推开。
+margin 一共有四个属性值， margin-top 、margin-right 、margin-bottom 和 margin-left 属性，也可以设置简写属性 margin。
+margin 看起来比较简单，但是，它其实有自己的奥妙所在，比如我们在布局中经常遇到 margin 重叠效果等，接下来我们来看看 margin 究竟有什么神奇所在吧。
+margin 重叠 margin 重叠指的是垂直重叠，重叠的意思是，当我们规定一个模块的 margin-bottom 与 紧邻着的下一个模块的 margin-top 它们会发生重叠，它们之间不会出现较大的空白。因为代码会取两个值之间较大的那个，比如 第一个模块设置margin-bottom: 50px ，第二个模块设置 margin-top: 100px 那么第一个模块的 margin-bottom 则不会起作用，起作用的则是 第二个模块的 margin-top 也就是说他们之间的空白间距是 100px ，可能会有疑问，那 50px 跑哪里去了，其实是被包含在 100px 里面了 这就是所谓的 margin 重叠。
+以下情况下，margin 会发生重叠：
+ 相邻的兄弟元素 完全空盒子 父元素与它的第一个或最后一个子元素  相邻的兄弟元素重叠 上述我们所描绘的情况就是相邻兄弟之间的 margin 重叠。
+如下示例，有三个 div 元素。第一个 div 的顶部与底部的 margin 分别是 50px 第二个 div 的顶部与底部 margin 分别是 20px ，第三个 div 的顶部与底部 margin 是 3em。 那么出现的重叠情况是，第一个与第二个的间距是 50px, 因为第二个元素的顶部小于第一个底部的 margin，取两者之间较大的。第二个元素与第三个元素之间的间距则是 3em ，同理 3em 大于第二个元素的 底部 20px。
     </div>
     <div class="read-more">
-      <a href="/post/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="read-more-link">阅读全文</a>
+      <a href="/post/css-margin%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+    
+      <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/html%E6%98%AF%E4%BB%80%E4%B9%88/"></a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="0001-01-01" class="post-time">
+        0001-01-01
+      </time>
+      
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      HTML (英语：HyperText Markup Language) 超文本编辑语言，是整个网站的基石，所以学好 HTML 非常重要，并且我们要学会使用 语义化的标签来书写 HTML 标签，接下来我们来一一介绍 HTML 标签。
+首先来了解下 W3C 和 MDN
+W3C 简介 w3c 是什么？ 万维网联盟 (英语：World Wide Web Consortium，缩写是 W3C )，由李爵士 (蒂姆·伯纳斯-李) 于1994年创立。
+W3C 标准制定 为解决网络中应用中不同平台、技术和开发者带来的不兼容问题，保障网络信息的顺利和完整流通，万维网制定了一系列标准并督促网络应用开发者和内容提供者遵循这些标准。W3C 制定的网络标准并非强制，只是推荐标准。现在浏览器厂商基本都是基于这些标准解析网页。
+MDN 简介 MDN Web Docs (旧称MozillaDeveloper Network、Mozilla Developer Center, 简称MDN) 是汇集众多网络技术开发文档的免费网站。
+该项目于2005年，最初是由Mozilla(网景) 公司员工创建。
+HTML 简介  HTML 的版本
+ HTML 4.01 XHTML HTML5 HTML5.1  规范文档
+ 由 W3C 写文档  DOCTYPE
+ 用来选择文档类型 除了 HTML5 的 DOCTYPE，比较方便，其他请参考 https://www.
+    </div>
+    <div class="read-more">
+      <a href="/post/html%E6%98%AF%E4%BB%80%E4%B9%88/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+    
+      <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/post/css%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F/"></a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="0001-01-01" class="post-time">
+        0001-01-01
+      </time>
+      
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      CSS是什么？ CSS，层叠样式表(英语：Cascading Style Sheets)，是一种用来为结构化文档 (如：HTML文档) 添加样式 (字体、颜色、间距等) 的计算机语言，由 W3C 定义和维护。当前最新的版本是 CSS2.1，为W3C的推荐标准。CSS3(2011年) 已经被现代浏览器支持。
+CSS发展历史  1994年哈肯.维姆.莱提出了CSS的最初建议。伯特.波斯加入一起设计CSS。 1997年初，W3C内组织了专门管CSS的工作组，其负责人是克里斯.里雷。 1998年5月W3C发表了CSS2，CSS2.1修改了CSS2中的一些错误，删除了其中不被支持的内容和增加了一些已有浏览器的扩展内容。 从2001年开始CSS被分为了多个单独的模块，统称为CSS3。这些模块有：  CSS 选择器 level 3 CSS 媒体查询 level 3 CSS Color level 3 ……   周边工具
+ Less CSS 一种简化、功能更多的 CSS 语言 中文官网 英文官网 SASS 一种简化、功能更多的 CSS 语言 中文官网 Post CSS 一种 CSS 处理程序  CSS 学习资源  MDN 查询关键字，遇到不会的 CSS 属性就去查阅MDN CSS Tricks，可以根据属性搜索很多好看的CSS效果； Google: 阮一峰老师 css 张鑫旭大神的 240 多篇 CSS 博客 Codrops 炫酷 CSS 效果 CSS揭秘 CSS 2.
+    </div>
+    <div class="read-more">
+      <a href="/post/css%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
@@ -382,6 +464,26 @@
 
   
   
+
+  
+  
+  <nav class="pagination">
+    <ul>
+      
+      <li  class="active" >
+        <a href="/">1</a>
+      </li>
+      
+      <li >
+        <a href="/page/2/">2</a>
+      </li>
+      
+      <li >
+        <a href="/page/3/">3</a>
+      </li>
+      
+    </ul>
+  </nav>
 
   
   
