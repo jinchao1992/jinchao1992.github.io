@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>靳超的小窝</title>
+    <link>http://example.org/</link>
+    <description>Recent content on 靳超的小窝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Sun, 11 Aug 2019 10:42:41 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我的博客</title>
+      <link>http://example.org/posts/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 11 Aug 2019 10:42:41 +0800</pubDate>
+      
+      <guid>http://example.org/posts/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+      <description>大家好 我的博客已经开通了，欢迎大家来我的小站。</description>
+    </item>
+    
+  </channel>
+</rss>
