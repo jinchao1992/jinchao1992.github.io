@@ -6,7 +6,7 @@
     <description>Recent content on 小鱼儿的小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Aug 2019 14:28:00 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -24,11 +24,11 @@
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/post/css-margin%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>CSS Margin 布局技巧</title>
+      <link>http://localhost:1313/post/css-margin-%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Sun, 11 Aug 2019 14:28:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/css-margin%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
+      <guid>http://localhost:1313/post/css-margin-%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/</guid>
       
         <description>
 
@@ -157,8 +157,7 @@
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;
-.wrap {
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.wrap {
   border: 5px dotted #000;
 }
 .box1, .box3 {
@@ -259,420 +258,11 @@
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/post/html%E6%98%AF%E4%BB%80%E4%B9%88/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>CSS以及常见的布局方式</title>
+      <link>http://localhost:1313/post/css%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Sun, 11 Aug 2019 14:26:53 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/html%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
-      
-        <description>
-
-&lt;p&gt;HTML (英语：HyperText Markup Language)  超文本编辑语言，是整个网站的基石，所以学好 &lt;code&gt;HTML&lt;/code&gt; 非常重要，并且我们要学会使用 &lt;strong&gt;语义化&lt;/strong&gt;的标签来书写 &lt;code&gt;HTML&lt;/code&gt; 标签，接下来我们来一一介绍 &lt;code&gt;HTML&lt;/code&gt; 标签。&lt;/p&gt;
-
-&lt;p&gt;首先来了解下 &lt;code&gt;W3C&lt;/code&gt; 和 &lt;code&gt;MDN&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;w3c-简介&#34;&gt;W3C 简介&lt;/h3&gt;
-
-&lt;h4 id=&#34;w3c-是什么&#34;&gt;w3c 是什么？&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;万维网联盟 (英语：&lt;strong&gt;W&lt;/strong&gt;orld &lt;strong&gt;W&lt;/strong&gt;ide &lt;strong&gt;W&lt;/strong&gt;eb &lt;strong&gt;C&lt;/strong&gt;onsortium，缩写是 &lt;strong&gt;W3C&lt;/strong&gt; )，由李爵士 (蒂姆·伯纳斯-李) 于1994年创立。&lt;/p&gt;
-
-&lt;h4 id=&#34;w3c-标准制定&#34;&gt;W3C 标准制定&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;为解决网络中应用中不同平台、技术和开发者带来的不兼容问题，保障网络信息的顺利和完整流通，万维网制定了一系列标准并督促网络应用开发者和内容提供者遵循这些标准。W3C 制定的网络标准并非强制，只是推荐标准。现在浏览器厂商基本都是基于这些标准解析网页。&lt;/p&gt;
-
-&lt;h3 id=&#34;mdn-简介&#34;&gt;MDN 简介&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;MDN Web Docs&lt;/strong&gt; (旧称MozillaDeveloper Network、Mozilla Developer Center, 简称MDN) 是汇集众多网络技术开发文档的免费网站。&lt;/p&gt;
-
-&lt;p&gt;该项目于2005年，最初是由Mozilla(网景) 公司员工创建。&lt;/p&gt;
-
-&lt;h3 id=&#34;html-简介&#34;&gt;HTML 简介&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;HTML 的版本&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;HTML 4.01&lt;/li&gt;
-&lt;li&gt;XHTML&lt;/li&gt;
-&lt;li&gt;HTML5&lt;/li&gt;
-&lt;li&gt;HTML5.1&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;规范文档&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;由 W3C 写文档&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;DOCTYPE&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;用来选择文档类型&lt;/li&gt;
-&lt;li&gt;除了 HTML5 的 DOCTYPE，比较方便，其他请参考 &lt;a href=&#34;https://www.w3.org/QA/2002/04/valid-dtd-list.html&#34;&gt;https://www.w3.org/QA/2002/04/valid-dtd-list.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;HTML5 的声明规范是 &amp;lt;!DOCTYPE html&amp;gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&#34;html-标签&#34;&gt;HTML 标签&lt;/h4&gt;
-
-&lt;p&gt;注意：所有标签都需闭合如：&lt;head&gt;&lt;/head&gt;、&lt;img /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h5 id=&#34;根元素&#34;&gt;根元素&lt;/h5&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;文档元数据&#34;&gt;文档元数据&lt;/h5&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;base&amp;gt;&lt;/code&gt; 为页面上的所有链接规定默认的地址或者默认的目标，可以是相对的，也可以是绝对的，一份代码中只允许一个 &lt;code&gt;&amp;lt;base&amp;gt;&lt;/code&gt; 标签，请看示例代码：来源：&lt;a href=&#34;http://www.w3school.com.cn/tiy/t.asp?f=html_base_test&#34;&gt;w3school&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;html&amp;gt;
-&amp;lt;head&amp;gt;
-&amp;lt;base href=&amp;quot;http://www.w3school.com.cn/i/&amp;quot; /&amp;gt;
-&amp;lt;base target=&amp;quot;_blank&amp;quot; /&amp;gt;
-&amp;lt;/head&amp;gt;
-
-&amp;lt;body&amp;gt;
-&amp;lt;img src=&amp;quot;eg_smile.gif&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
-&amp;lt;p&amp;gt;请注意，我们已经为图像规定了一个相对地址。由于我们已经在 head 部分规定了一个基准 URL，浏览器将在如下地址寻找图片：&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;&amp;quot;http://www.w3school.com.cn/i/eg_smile.gif&amp;quot;&amp;lt;/p&amp;gt;
-
-&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;
-&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://www.w3school.com.cn&amp;quot;&amp;gt;W3School&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;请注意，链接会在新窗口中打开，即使链接中没有 target=&amp;quot;_blank&amp;quot; 属性。这是因为 base 元素的 target 属性已经被设置为 &amp;quot;_blank&amp;quot; 了。&amp;lt;/p&amp;gt;
-
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;head&lt;/code&gt; 规定文档的配置信息，包括文档标题，文档样式和脚本等&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;link&lt;/code&gt; 常用于文档链接外部样式&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;meta&lt;/code&gt;  可以用于设置移动端视口信息，设置字符集等&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;style&lt;/code&gt; 放置 &lt;code&gt;css&lt;/code&gt; 样式代码&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;title&lt;/code&gt; 定义文档的标题，显示在浏览器器窗口里&lt;/p&gt;
-
-&lt;h5 id=&#34;分区根元素&#34;&gt;分区根元素&lt;/h5&gt;
-
-&lt;p&gt;&lt;code&gt;body&lt;/code&gt; 所有主体标签全部都在 &lt;code&gt;body&lt;/code&gt; 中&lt;/p&gt;
-
-&lt;h5 id=&#34;内容分区&#34;&gt;内容分区&lt;/h5&gt;
-
-&lt;p&gt;&lt;code&gt;address&lt;/code&gt; 提供某个人或者某个组织的联系信息，通常都包含在此标签内&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;article&lt;/code&gt; 文档、页面、应用或网站中的独立结构&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;aside&lt;/code&gt; 表示和页面中其他没有任何关系的部分，可以单独拆分出来而不影响整体；&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;footer&lt;/code&gt; 页脚内容，比如网站友链 关于我们等&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;header&lt;/code&gt; 介绍性内容，包含导航 logo 等&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;h1 - h6&lt;/code&gt; 表示标题&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;main&lt;/code&gt; 主体部分，网站主体部分&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;nav&lt;/code&gt; 网页头部导航条，跳转二级页等&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;section&lt;/code&gt; 文档中的一个区域&lt;/p&gt;
-
-&lt;h5 id=&#34;文本内容&#34;&gt;文本内容&lt;/h5&gt;
-
-&lt;p&gt;&lt;code&gt;dd&lt;/code&gt;  描述列表中的一个术语描述，只会在描述列表中出现，并且必须跟 &lt;code&gt;dt&lt;/code&gt; 元素&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;div&lt;/code&gt;  容器元素没有任何定义，可以用 &lt;code&gt;class&lt;/code&gt; 和 &lt;code&gt;id&lt;/code&gt; 进行区分&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;dl&lt;/code&gt; 描述列表，通常用于 键-值对的表示&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;dt&lt;/code&gt; 描述列表中的键&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;hr&lt;/code&gt;  水平分割线，语义上的，并非是样式上的&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;li&lt;/code&gt; 列表里的条目&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ol&lt;/code&gt; 有序列表&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;p&lt;/code&gt; 文本的一个段落&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;pre&lt;/code&gt; 预定义的格式文本&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ul&lt;/code&gt; 无序列表&lt;/p&gt;
-
-&lt;h5 id=&#34;内联文本语义&#34;&gt;内联文本语义&lt;/h5&gt;
-
-&lt;p&gt;&lt;code&gt;a&lt;/code&gt; 超链接，可以是 网页、文件、电话、邮件地址等&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;b&lt;/code&gt; 粗体元素，用于样式上的&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;br&lt;/code&gt;  强制换行&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;code&lt;/code&gt; 展示一段计算机代码&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;em&lt;/code&gt; 着重标识&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;i&lt;/code&gt; 斜体标识&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;kbd&lt;/code&gt; HTML 输入键盘字符&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;mark&lt;/code&gt; 表示凸显的文字信息，如搜索结果里的关键词等&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;small&lt;/code&gt; 字体变小&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;span&lt;/code&gt;  没有特别意义，通常用来表示行内元素&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;strong&lt;/code&gt; 文本十分重要，语义上的加粗&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;time&lt;/code&gt; 用来表示时间&lt;/p&gt;
-
-&lt;h5 id=&#34;图片和多媒体元素&#34;&gt;图片和多媒体元素&lt;/h5&gt;
-
-&lt;p&gt;&lt;code&gt;area&lt;/code&gt; 热点区域，可以关联一个超链接&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;audio&lt;/code&gt; 用于放置音频&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;video&lt;/code&gt; 用于放置视频&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;img&lt;/code&gt; 可以链接图像&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;map&lt;/code&gt; 与 &lt;code&gt;area&lt;/code&gt; 结合使用，绘制热区&lt;/p&gt;
-
-&lt;h5 id=&#34;脚本&#34;&gt;脚本&lt;/h5&gt;
-
-&lt;p&gt;&lt;code&gt;canvas&lt;/code&gt; 通过脚本来绘制图形，实现动画等，一个画布&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;noscript&lt;/code&gt; 如果页面上的脚本类型不受支持或者当前浏览器关闭了脚本，则在 HTML 中使用 &lt;code&gt;noscript&lt;/code&gt;中的替代内容&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;script&lt;/code&gt; 嵌入或者引用可执行脚本&lt;/p&gt;
-
-&lt;h5 id=&#34;表格内容&#34;&gt;表格内容&lt;/h5&gt;
-
-&lt;p&gt;&lt;code&gt;col&lt;/code&gt; 定义表格中的列，并用于所有公共单元格上的公共语义，结合 &lt;code&gt;colgrpup&lt;/code&gt; 使用&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;colgroup&lt;/code&gt; 表格列组&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;table&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;tbody&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;td&lt;/code&gt; 一列&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;tfoot&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;th&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;thead&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;tr&lt;/code&gt; 一行&lt;/p&gt;
-
-&lt;h5 id=&#34;表单&#34;&gt;表单&lt;/h5&gt;
-
-&lt;p&gt;&lt;code&gt;button&lt;/code&gt; 按钮&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;form&lt;/code&gt; 表单文档区域，可以提交信息&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;input&lt;/code&gt; 表单输入，如 文本框 单选框 多选框等&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;label&lt;/code&gt; 表示用户界面某个元素的说明&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;option&lt;/code&gt;  结合 &lt;code&gt;select&lt;/code&gt; 使用，下拉框&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;textarea&lt;/code&gt; 文本域，多行文本&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;什么是空标签&#34;&gt;什么是空标签&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;在 HTML 元素中，没有内容的就是 空元素，空元素通常都是单标签元素，HTML 包含以下的空元素：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;area&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;base&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;col&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;colgroup&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;command&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;embed&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;keygen&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;meta&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;param&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;source&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;track&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;wbr&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;什么是可替换元素&#34;&gt;什么是可替换元素&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;在 css 中，可替换元素的展示效果不是由 css 来控制的。&lt;/p&gt;
-
-&lt;p&gt;css 可以影响可替换元素的位置，但是不会影响到可替换元素本身的内容。&lt;/p&gt;
-
-&lt;p&gt;典型的可替换元素：&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;embed&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;有些元素在特定情况下被视作可替换元素：&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;audio&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;object&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;...&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;重点介绍标签&#34;&gt;重点介绍标签&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;iframe-标签&#34;&gt;iframe 标签&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;src&lt;/code&gt; 属性，可以嵌入打开的地址，可以是相对的也可以是网址，如：&lt;code&gt;&amp;lt;iframe src=&amp;quot;https://qq.com&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;frameborder&lt;/code&gt; 属性，设置为 &lt;code&gt;0&lt;/code&gt; 可以去除 &lt;code&gt;iframe&lt;/code&gt; 的默认样式, 如：&lt;code&gt;&amp;lt;ifrmae src=&amp;quot;https://qq.com&amp;quot; frameborder=&amp;quot;0&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;name&lt;/code&gt; 属性，如果设置一个 &lt;code&gt;name&lt;/code&gt; 值，则可以结合 &lt;code&gt;a&lt;/code&gt; 标签使用；如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;iframe name=&amp;quot;xxx&amp;quot; src=&amp;quot;#&amp;quot; frameborder=&amp;quot;0&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;
-&amp;lt;a href=&amp;quot;http://qq.com&amp;quot; target=&amp;quot;xxx&amp;quot;&amp;gt;在ifrme中打开qq.com&amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;a-标签&#34;&gt;a 标签&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;target&lt;/code&gt; 属性
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;_top&lt;/code&gt; 在顶层窗口打开页面&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;_blank&lt;/code&gt; 在新窗口打开页面&lt;/li&gt;
-&lt;li&gt;_self 在本窗口打开页面&lt;/li&gt;
-&lt;li&gt;_parent  在父级窗口打开页面&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;download&lt;/code&gt; 属性 提供下载，根据&lt;code&gt;http&lt;/code&gt;响应提供的 &lt;code&gt;content-type&lt;/code&gt; 属性可以直接下载文件，当值为 &lt;code&gt;application/octet-stream&lt;/code&gt; 可以直接下载&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;href&lt;/code&gt; 属性 链接到的地址，值可以为：
-
-&lt;ul&gt;
-&lt;li&gt;网址，网址可以是 &lt;code&gt;http&lt;/code&gt; 协议，或者当前添加一个相对路径，当前是什么协议就走什么协议&lt;/li&gt;
-&lt;li&gt;可以发起请求，通常是 &lt;code&gt;get&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;可以是一个伪协议，如: &lt;code&gt;&amp;lt;a href=&amp;quot;javascript:;&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;可以是一个查询字符串，如：&lt;code&gt;&amp;lt;a href=&amp;quot;?name=aaa&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&lt;/code&gt; 发起 &lt;code&gt;get&lt;/code&gt; 请求&lt;/li&gt;
-&lt;li&gt;可以是一个锚点，如：&lt;code&gt;&amp;lt;a href=&amp;quot;#bbb&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&lt;/code&gt;，单独写&lt;code&gt;#&lt;/code&gt;的话会出现回到顶部效果；&lt;/li&gt;
-&lt;li&gt;可以是一个空字符，如果是空字符串的话，则会刷新页面；&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;详情请查看 &lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a&#34;&gt;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;form-标签&#34;&gt;form 标签&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;form&lt;/code&gt; 标签发起 &lt;code&gt;post&lt;/code&gt;请求，可以使用 &lt;code&gt;method&lt;/code&gt; 规定请求方式，默认是 &lt;code&gt;get&lt;/code&gt; 提交&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;action&lt;/code&gt; 设置请求地址，如：&lt;code&gt;&amp;lt;form action=&amp;quot;./index2.html&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;target&lt;/code&gt; 窗口打开方式，与 超链接打开方式一致&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;form-子级&#34;&gt;form 子级&lt;/h5&gt;
-
-&lt;p&gt;&lt;strong&gt;重点：如果一个form表单中只有一个按钮（&lt;code&gt;button&lt;/code&gt;）,那么会自动升级为提交按钮，form表单必须有提交按钮才可以提交，也就是&lt;code&gt;&amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;提交&amp;quot;&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;更多请查看：&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form&#34;&gt;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;table-标签&#34;&gt;table 标签&lt;/h4&gt;
-
-&lt;p&gt;&lt;code&gt;table&lt;/code&gt; 用于展示数据，注意：当 &lt;code&gt;thead tbody tfoot&lt;/code&gt; 同时存在时，前后书写顺序不会影响展示效果；&lt;/p&gt;
-
-&lt;p&gt;详细属性请查看：&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/table&#34;&gt;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/table&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;2019-07-19-更新&#34;&gt;2019/07/19 更新&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;标签 tabindex 属性&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/tabindex&#34;&gt;MDN&lt;/a&gt; 解释：&lt;code&gt;tabindex&lt;/code&gt; 全局属性 指示其元素是否可以聚焦，以及它是否/在何处参与顺序键盘导航。&lt;/p&gt;
-
-&lt;p&gt;接受一个整数作为值，整数的值不同，结果也会展示不同：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;tabindex=负值&lt;/code&gt; 通常是 &lt;code&gt;tabindex=&amp;quot;-1&amp;quot;&lt;/code&gt; , 表示元素是可聚焦的，但是不能通过键盘导航来访问该元素，也就是&lt;code&gt;Tab&lt;/code&gt; 键；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;tabindex=&amp;quot;0&amp;quot;&lt;/code&gt; , 表示元素是可聚焦的，并且可以通过键盘导航来聚焦到该元素，它的相对顺序是当前处于的 &lt;code&gt;DOM&lt;/code&gt; 解构来决定的。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;tabindex=正值&lt;/code&gt; 表示元素可聚焦，可以通过键盘导航来聚焦到该元素；它的相对顺序按照 &lt;code&gt;tabindex&lt;/code&gt; 的数值&lt;strong&gt;递增而滞后聚焦&lt;/strong&gt;。 如果多个元素拥有相同的 &lt;code&gt;tabindex&lt;/code&gt; , 它们的相对顺序按照它们在当前 &lt;code&gt;DOM&lt;/code&gt; 中的先后顺序决定。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;根据键盘序列导航的顺序，值为 &lt;code&gt;0&lt;/code&gt; 、非法值、或者没有 &lt;code&gt;tabindex&lt;/code&gt;值的元素应该放置在 &lt;code&gt;tabindex&lt;/code&gt; 值为正值的元素后面。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;注意：tabindex 的最大值不应该超过 32767。如果没有指定，默认值为 -1&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;2019-07-24-更新&#34;&gt;2019/07/24 更新&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;使用标题元素的注意事项：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;h1&amp;gt; - &amp;lt;h6&amp;gt;&lt;/code&gt; 呈现了六个不同级别的标题，&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; 级别最高，&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; 级别最低；&lt;/li&gt;
-&lt;li&gt;不能为了减少标题的的字体大小而使用低级别的标题，如果需减少字体大小，需使用 &lt;code&gt;css&lt;/code&gt;  &lt;code&gt;font-size&lt;/code&gt; 属性；&lt;/li&gt;
-&lt;li&gt;避免跳过某级标题，始终要从 &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; 开始，接下来依次使用 &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt; 等；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; 标签只允许在页面上出现一次，所以在使用 &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; 时，可以用 &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt; 开始；&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;总结&#34;&gt;总结&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;HTML 常用的标签就是以上几种了，是不是很多，当然我们在平时的布局网页中，要尽量使用语义化的标签，要多参考大牛们写的网页，或者著名网站的源代码，这样在我们未来切图上才会积累起来更多的布局风格以及标签的用法，加油！&lt;/p&gt;
-
-&lt;h3 id=&#34;参考文档&#34;&gt;参考文档&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element&#34;&gt;HTML元素参考&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element&#34;&gt;可替换元素&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Glossary/%E7%A9%BA%E5%85%83%E7%B4%A0&#34;&gt;HTML空标签&lt;/a&gt;&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/post/css%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/css%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F/</guid>
+      <guid>http://localhost:1313/post/css%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F/</guid>
       
         <description>
 
@@ -1074,6 +664,7 @@ margin-left: -300px;
 margin-left: 200px;
 margin-right: 300px;
 }
+  
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1090,6 +681,7 @@ margin-right: 300px;
 &amp;lt;div class=&amp;quot;middle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
 &amp;lt;div class=&amp;quot;right&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
+  
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;div {
@@ -1112,6 +704,7 @@ background: yellow;
 width: 100px;
 background: red;
 }
+  
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1163,6 +756,7 @@ margin: 0 auto;
       background: red;
   }
 &amp;lt;/style&amp;gt;
+  
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;使用 &lt;code&gt;absolute + transform&lt;/code&gt;  先将父元素设置为相对定位，然后子元素设置为绝对定位，&lt;code&gt;left&lt;/code&gt; 值设置为 50% , 然后通过移动子元素的一半宽度即可&lt;/p&gt;
@@ -1214,6 +808,7 @@ margin: 0 auto;
       margin: 0 auto;
   }
 &amp;lt;/style&amp;gt;
+  
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1240,6 +835,7 @@ margin: 0 auto;
       margin: 10px;
   }
 &amp;lt;/style&amp;gt;
+  
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1266,6 +862,7 @@ margin: 0 auto;
       display: inline-block;
   }
 &amp;lt;/style&amp;gt;
+  
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1349,6 +946,7 @@ margin: 0 auto;
   border: 2px solid #ddd;
 }
 &amp;lt;/style&amp;gt;
+  
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1412,6 +1010,7 @@ margin: 0 auto;
       transform: translateY(-50%);
   }
 &amp;lt;/style&amp;gt;
+  
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;使用 &lt;code&gt;flex + alig-items&lt;/code&gt; 与做水平居中的 &lt;code&gt;flex + justify-content:center;&lt;/code&gt; 对应，是目前布局经常用的，有兼容性问题；&lt;/p&gt;
@@ -1425,6 +1024,7 @@ margin: 0 auto;
  align-items:center;
 }
 &amp;lt;/style&amp;gt;
+  
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1448,6 +1048,7 @@ margin: 0 auto;
     margin: -50px 0 0 -50px;
   }
 &amp;lt;/style&amp;gt;
+
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id=&#34;方法2-绝对定位与-margin-auto-已知宽高&#34;&gt;方法2： 绝对定位与 margin:auto (已知宽高)&lt;/h4&gt;
@@ -1508,7 +1109,7 @@ margin: 0 auto;
 &lt;p&gt;这篇总结也是站在一些前辈(大神)的基础上总结的一些技巧、方法，他们的文章教会了我很多，学到了很多！希望以后可以达到他们所在的成就，加油吧！持续不断的学习（折腾！！！）&lt;br /&gt;
 CSS 的学习是由易到难，越往后学，越觉得CSS的难点所在，所以不管是在平时的工作中还是在自己折腾的项目中都是需要重视CSS的书写，多多的尝试一些新的CSS属性以及更多的CSS布局，多多的总结吧！&lt;/p&gt;
 
-&lt;p&gt;## 参考文章&lt;/p&gt;
+&lt;h2 id=&#34;参考文章&#34;&gt;参考文章&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/ljianshu/Blog/issues/29&#34;&gt;如何居中一个元素(终结版)&lt;/a&gt;&lt;/p&gt;
 
@@ -1520,11 +1121,418 @@ CSS 的学习是由易到难，越往后学，越觉得CSS的难点所在，所�
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/post/%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E5%9F%BA%E7%9F%B3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>HTML 是什么</title>
+      <link>http://localhost:1313/post/html-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Sun, 11 Aug 2019 14:25:39 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E5%9F%BA%E7%9F%B3/</guid>
+      <guid>http://localhost:1313/post/html-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      
+        <description>
+
+&lt;p&gt;HTML (英语：HyperText Markup Language)  超文本编辑语言，是整个网站的基石，所以学好 &lt;code&gt;HTML&lt;/code&gt; 非常重要，并且我们要学会使用 &lt;strong&gt;语义化&lt;/strong&gt;的标签来书写 &lt;code&gt;HTML&lt;/code&gt; 标签，接下来我们来一一介绍 &lt;code&gt;HTML&lt;/code&gt; 标签。&lt;/p&gt;
+
+&lt;p&gt;首先来了解下 &lt;code&gt;W3C&lt;/code&gt; 和 &lt;code&gt;MDN&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;w3c-简介&#34;&gt;W3C 简介&lt;/h3&gt;
+
+&lt;h4 id=&#34;w3c-是什么&#34;&gt;w3c 是什么？&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;万维网联盟 (英语：&lt;strong&gt;W&lt;/strong&gt;orld &lt;strong&gt;W&lt;/strong&gt;ide &lt;strong&gt;W&lt;/strong&gt;eb &lt;strong&gt;C&lt;/strong&gt;onsortium，缩写是 &lt;strong&gt;W3C&lt;/strong&gt; )，由李爵士 (蒂姆·伯纳斯-李) 于1994年创立。&lt;/p&gt;
+
+&lt;h4 id=&#34;w3c-标准制定&#34;&gt;W3C 标准制定&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;为解决网络中应用中不同平台、技术和开发者带来的不兼容问题，保障网络信息的顺利和完整流通，万维网制定了一系列标准并督促网络应用开发者和内容提供者遵循这些标准。W3C 制定的网络标准并非强制，只是推荐标准。现在浏览器厂商基本都是基于这些标准解析网页。&lt;/p&gt;
+
+&lt;h3 id=&#34;mdn-简介&#34;&gt;MDN 简介&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;MDN Web Docs&lt;/strong&gt; (旧称MozillaDeveloper Network、Mozilla Developer Center, 简称MDN) 是汇集众多网络技术开发文档的免费网站。&lt;/p&gt;
+
+&lt;p&gt;该项目于2005年，最初是由Mozilla(网景) 公司员工创建。&lt;/p&gt;
+
+&lt;h3 id=&#34;html-简介&#34;&gt;HTML 简介&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li&gt;HTML 的版本
+
+&lt;ol&gt;
+&lt;li&gt;HTML 4.01&lt;/li&gt;
+&lt;li&gt;XHTML&lt;/li&gt;
+&lt;li&gt;HTML5&lt;/li&gt;
+&lt;li&gt;HTML5.1&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;规范文档
+
+&lt;ol&gt;
+&lt;li&gt;由 W3C 写文档&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;DOCTYPE
+
+&lt;ol&gt;
+&lt;li&gt;用来选择文档类型&lt;/li&gt;
+&lt;li&gt;除了 HTML5 的 DOCTYPE，比较方便，其他请参考 &lt;a href=&#34;https://www.w3.org/QA/2002/04/valid-dtd-list.html&#34;&gt;https://www.w3.org/QA/2002/04/valid-dtd-list.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;HTML5 的声明规范是 &amp;lt;!DOCTYPE html&amp;gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;html-标签&#34;&gt;HTML 标签&lt;/h4&gt;
+
+&lt;p&gt;注意：所有标签都需闭合如：&lt;head&gt;&lt;/head&gt;、&lt;img /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&#34;根元素&#34;&gt;根元素&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;文档元数据&#34;&gt;文档元数据&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;base&amp;gt;&lt;/code&gt; 为页面上的所有链接规定默认的地址或者默认的目标，可以是相对的，也可以是绝对的，一份代码中只允许一个 &lt;code&gt;&amp;lt;base&amp;gt;&lt;/code&gt; 标签，请看示例代码：来源：&lt;a href=&#34;http://www.w3school.com.cn/tiy/t.asp?f=html_base_test&#34;&gt;w3school&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;base href=&amp;quot;http://www.w3school.com.cn/i/&amp;quot; /&amp;gt;
+&amp;lt;base target=&amp;quot;_blank&amp;quot; /&amp;gt;
+&amp;lt;/head&amp;gt;
+
+&amp;lt;body&amp;gt;
+&amp;lt;img src=&amp;quot;eg_smile.gif&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;p&amp;gt;请注意，我们已经为图像规定了一个相对地址。由于我们已经在 head 部分规定了一个基准 URL，浏览器将在如下地址寻找图片：&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;quot;http://www.w3school.com.cn/i/eg_smile.gif&amp;quot;&amp;lt;/p&amp;gt;
+
+&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://www.w3school.com.cn&amp;quot;&amp;gt;W3School&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;请注意，链接会在新窗口中打开，即使链接中没有 target=&amp;quot;_blank&amp;quot; 属性。这是因为 base 元素的 target 属性已经被设置为 &amp;quot;_blank&amp;quot; 了。&amp;lt;/p&amp;gt;
+
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;head&lt;/code&gt; 规定文档的配置信息，包括文档标题，文档样式和脚本等&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;link&lt;/code&gt; 常用于文档链接外部样式&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;meta&lt;/code&gt;  可以用于设置移动端视口信息，设置字符集等&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;style&lt;/code&gt; 放置 &lt;code&gt;css&lt;/code&gt; 样式代码&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;title&lt;/code&gt; 定义文档的标题，显示在浏览器器窗口里&lt;/p&gt;
+
+&lt;h5 id=&#34;分区根元素&#34;&gt;分区根元素&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;body&lt;/code&gt; 所有主体标签全部都在 &lt;code&gt;body&lt;/code&gt; 中&lt;/p&gt;
+
+&lt;h5 id=&#34;内容分区&#34;&gt;内容分区&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;address&lt;/code&gt; 提供某个人或者某个组织的联系信息，通常都包含在此标签内&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;article&lt;/code&gt; 文档、页面、应用或网站中的独立结构&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;aside&lt;/code&gt; 表示和页面中其他没有任何关系的部分，可以单独拆分出来而不影响整体；&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;footer&lt;/code&gt; 页脚内容，比如网站友链 关于我们等&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;header&lt;/code&gt; 介绍性内容，包含导航 logo 等&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;h1 - h6&lt;/code&gt; 表示标题&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;main&lt;/code&gt; 主体部分，网站主体部分&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;nav&lt;/code&gt; 网页头部导航条，跳转二级页等&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;section&lt;/code&gt; 文档中的一个区域&lt;/p&gt;
+
+&lt;h5 id=&#34;文本内容&#34;&gt;文本内容&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;dd&lt;/code&gt;  描述列表中的一个术语描述，只会在描述列表中出现，并且必须跟 &lt;code&gt;dt&lt;/code&gt; 元素&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;div&lt;/code&gt;  容器元素没有任何定义，可以用 &lt;code&gt;class&lt;/code&gt; 和 &lt;code&gt;id&lt;/code&gt; 进行区分&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;dl&lt;/code&gt; 描述列表，通常用于 键-值对的表示&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;dt&lt;/code&gt; 描述列表中的键&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;hr&lt;/code&gt;  水平分割线，语义上的，并非是样式上的&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;li&lt;/code&gt; 列表里的条目&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ol&lt;/code&gt; 有序列表&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;p&lt;/code&gt; 文本的一个段落&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pre&lt;/code&gt; 预定义的格式文本&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ul&lt;/code&gt; 无序列表&lt;/p&gt;
+
+&lt;h5 id=&#34;内联文本语义&#34;&gt;内联文本语义&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;a&lt;/code&gt; 超链接，可以是 网页、文件、电话、邮件地址等&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;b&lt;/code&gt; 粗体元素，用于样式上的&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;br&lt;/code&gt;  强制换行&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;code&lt;/code&gt; 展示一段计算机代码&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;em&lt;/code&gt; 着重标识&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;i&lt;/code&gt; 斜体标识&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;kbd&lt;/code&gt; HTML 输入键盘字符&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;mark&lt;/code&gt; 表示凸显的文字信息，如搜索结果里的关键词等&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;small&lt;/code&gt; 字体变小&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;span&lt;/code&gt;  没有特别意义，通常用来表示行内元素&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;strong&lt;/code&gt; 文本十分重要，语义上的加粗&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;time&lt;/code&gt; 用来表示时间&lt;/p&gt;
+
+&lt;h5 id=&#34;图片和多媒体元素&#34;&gt;图片和多媒体元素&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;area&lt;/code&gt; 热点区域，可以关联一个超链接&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;audio&lt;/code&gt; 用于放置音频&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;video&lt;/code&gt; 用于放置视频&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;img&lt;/code&gt; 可以链接图像&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;map&lt;/code&gt; 与 &lt;code&gt;area&lt;/code&gt; 结合使用，绘制热区&lt;/p&gt;
+
+&lt;h5 id=&#34;脚本&#34;&gt;脚本&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;canvas&lt;/code&gt; 通过脚本来绘制图形，实现动画等，一个画布&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;noscript&lt;/code&gt; 如果页面上的脚本类型不受支持或者当前浏览器关闭了脚本，则在 HTML 中使用 &lt;code&gt;noscript&lt;/code&gt;中的替代内容&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;script&lt;/code&gt; 嵌入或者引用可执行脚本&lt;/p&gt;
+
+&lt;h5 id=&#34;表格内容&#34;&gt;表格内容&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;col&lt;/code&gt; 定义表格中的列，并用于所有公共单元格上的公共语义，结合 &lt;code&gt;colgrpup&lt;/code&gt; 使用&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;colgroup&lt;/code&gt; 表格列组&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;table&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;tbody&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;td&lt;/code&gt; 一列&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;tfoot&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;th&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;thead&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;tr&lt;/code&gt; 一行&lt;/p&gt;
+
+&lt;h5 id=&#34;表单&#34;&gt;表单&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;button&lt;/code&gt; 按钮&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;form&lt;/code&gt; 表单文档区域，可以提交信息&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;input&lt;/code&gt; 表单输入，如 文本框 单选框 多选框等&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;label&lt;/code&gt; 表示用户界面某个元素的说明&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;option&lt;/code&gt;  结合 &lt;code&gt;select&lt;/code&gt; 使用，下拉框&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;textarea&lt;/code&gt; 文本域，多行文本&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;什么是空标签&#34;&gt;什么是空标签&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;在 HTML 元素中，没有内容的就是 空元素，空元素通常都是单标签元素，HTML 包含以下的空元素：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;area&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;base&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;col&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;colgroup&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;command&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;embed&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;keygen&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;meta&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;param&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;source&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;track&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;wbr&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;什么是可替换元素&#34;&gt;什么是可替换元素&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;在 css 中，可替换元素的展示效果不是由 css 来控制的。&lt;/p&gt;
+
+&lt;p&gt;css 可以影响可替换元素的位置，但是不会影响到可替换元素本身的内容。&lt;/p&gt;
+
+&lt;p&gt;典型的可替换元素：&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;embed&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;有些元素在特定情况下被视作可替换元素：&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;audio&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;object&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;...&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;重点介绍标签&#34;&gt;重点介绍标签&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;iframe-标签&#34;&gt;iframe 标签&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;src&lt;/code&gt; 属性，可以嵌入打开的地址，可以是相对的也可以是网址，如：&lt;code&gt;&amp;lt;iframe src=&amp;quot;https://qq.com&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;frameborder&lt;/code&gt; 属性，设置为 &lt;code&gt;0&lt;/code&gt; 可以去除 &lt;code&gt;iframe&lt;/code&gt; 的默认样式, 如：&lt;code&gt;&amp;lt;ifrmae src=&amp;quot;https://qq.com&amp;quot; frameborder=&amp;quot;0&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;name&lt;/code&gt; 属性，如果设置一个 &lt;code&gt;name&lt;/code&gt; 值，则可以结合 &lt;code&gt;a&lt;/code&gt; 标签使用；如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;iframe name=&amp;quot;xxx&amp;quot; src=&amp;quot;#&amp;quot; frameborder=&amp;quot;0&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;
+&amp;lt;a href=&amp;quot;http://qq.com&amp;quot; target=&amp;quot;xxx&amp;quot;&amp;gt;在ifrme中打开qq.com&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;a-标签&#34;&gt;a 标签&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;target&lt;/code&gt; 属性
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_top&lt;/code&gt; 在顶层窗口打开页面&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_blank&lt;/code&gt; 在新窗口打开页面&lt;/li&gt;
+&lt;li&gt;_self 在本窗口打开页面&lt;/li&gt;
+&lt;li&gt;_parent  在父级窗口打开页面&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;download&lt;/code&gt; 属性 提供下载，根据&lt;code&gt;http&lt;/code&gt;响应提供的 &lt;code&gt;content-type&lt;/code&gt; 属性可以直接下载文件，当值为 &lt;code&gt;application/octet-stream&lt;/code&gt; 可以直接下载&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;href&lt;/code&gt; 属性 链接到的地址，值可以为：
+
+&lt;ul&gt;
+&lt;li&gt;网址，网址可以是 &lt;code&gt;http&lt;/code&gt; 协议，或者当前添加一个相对路径，当前是什么协议就走什么协议&lt;/li&gt;
+&lt;li&gt;可以发起请求，通常是 &lt;code&gt;get&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;可以是一个伪协议，如: &lt;code&gt;&amp;lt;a href=&amp;quot;javascript:;&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;可以是一个查询字符串，如：&lt;code&gt;&amp;lt;a href=&amp;quot;?name=aaa&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&lt;/code&gt; 发起 &lt;code&gt;get&lt;/code&gt; 请求&lt;/li&gt;
+&lt;li&gt;可以是一个锚点，如：&lt;code&gt;&amp;lt;a href=&amp;quot;#bbb&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&lt;/code&gt;，单独写&lt;code&gt;#&lt;/code&gt;的话会出现回到顶部效果；&lt;/li&gt;
+&lt;li&gt;可以是一个空字符，如果是空字符串的话，则会刷新页面；&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;详情请查看 &lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a&#34;&gt;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;form-标签&#34;&gt;form 标签&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;form&lt;/code&gt; 标签发起 &lt;code&gt;post&lt;/code&gt;请求，可以使用 &lt;code&gt;method&lt;/code&gt; 规定请求方式，默认是 &lt;code&gt;get&lt;/code&gt; 提交&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;action&lt;/code&gt; 设置请求地址，如：&lt;code&gt;&amp;lt;form action=&amp;quot;./index2.html&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;target&lt;/code&gt; 窗口打开方式，与 超链接打开方式一致&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;form-子级&#34;&gt;form 子级&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;重点：如果一个form表单中只有一个按钮（&lt;code&gt;button&lt;/code&gt;）,那么会自动升级为提交按钮，form表单必须有提交按钮才可以提交，也就是&lt;code&gt;&amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;提交&amp;quot;&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;更多请查看：&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form&#34;&gt;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;table-标签&#34;&gt;table 标签&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;table&lt;/code&gt; 用于展示数据，注意：当 &lt;code&gt;thead tbody tfoot&lt;/code&gt; 同时存在时，前后书写顺序不会影响展示效果；&lt;/p&gt;
+
+&lt;p&gt;详细属性请查看：&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/table&#34;&gt;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/table&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;2019-07-19-更新&#34;&gt;2019/07/19 更新&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;标签 tabindex 属性&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/tabindex&#34;&gt;MDN&lt;/a&gt; 解释：&lt;code&gt;tabindex&lt;/code&gt; 全局属性 指示其元素是否可以聚焦，以及它是否/在何处参与顺序键盘导航。&lt;/p&gt;
+
+&lt;p&gt;接受一个整数作为值，整数的值不同，结果也会展示不同：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tabindex=负值&lt;/code&gt; 通常是 &lt;code&gt;tabindex=&amp;quot;-1&amp;quot;&lt;/code&gt; , 表示元素是可聚焦的，但是不能通过键盘导航来访问该元素，也就是&lt;code&gt;Tab&lt;/code&gt; 键；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tabindex=&amp;quot;0&amp;quot;&lt;/code&gt; , 表示元素是可聚焦的，并且可以通过键盘导航来聚焦到该元素，它的相对顺序是当前处于的 &lt;code&gt;DOM&lt;/code&gt; 解构来决定的。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tabindex=正值&lt;/code&gt; 表示元素可聚焦，可以通过键盘导航来聚焦到该元素；它的相对顺序按照 &lt;code&gt;tabindex&lt;/code&gt; 的数值&lt;strong&gt;递增而滞后聚焦&lt;/strong&gt;。 如果多个元素拥有相同的 &lt;code&gt;tabindex&lt;/code&gt; , 它们的相对顺序按照它们在当前 &lt;code&gt;DOM&lt;/code&gt; 中的先后顺序决定。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;根据键盘序列导航的顺序，值为 &lt;code&gt;0&lt;/code&gt; 、非法值、或者没有 &lt;code&gt;tabindex&lt;/code&gt;值的元素应该放置在 &lt;code&gt;tabindex&lt;/code&gt; 值为正值的元素后面。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;注意：tabindex 的最大值不应该超过 32767。如果没有指定，默认值为 -1&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;2019-07-24-更新&#34;&gt;2019/07/24 更新&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;使用标题元素的注意事项：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;h1&amp;gt; - &amp;lt;h6&amp;gt;&lt;/code&gt; 呈现了六个不同级别的标题，&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; 级别最高，&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; 级别最低；&lt;/li&gt;
+&lt;li&gt;不能为了减少标题的的字体大小而使用低级别的标题，如果需减少字体大小，需使用 &lt;code&gt;css&lt;/code&gt;  &lt;code&gt;font-size&lt;/code&gt; 属性；&lt;/li&gt;
+&lt;li&gt;避免跳过某级标题，始终要从 &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; 开始，接下来依次使用 &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt; 等；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; 标签只允许在页面上出现一次，所以在使用 &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; 时，可以用 &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt; 开始；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;总结&#34;&gt;总结&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;HTML 常用的标签就是以上几种了，是不是很多，当然我们在平时的布局网页中，要尽量使用语义化的标签，要多参考大牛们写的网页，或者著名网站的源代码，这样在我们未来切图上才会积累起来更多的布局风格以及标签的用法，加油！&lt;/p&gt;
+
+&lt;h3 id=&#34;参考文档&#34;&gt;参考文档&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element&#34;&gt;HTML元素参考&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element&#34;&gt;可替换元素&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[HTML空标签](&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>互联网的基石 HTTP入门</title>
+      <link>http://localhost:1313/post/%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E5%9F%BA%E7%9F%B3-http%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Sun, 11 Aug 2019 14:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E5%9F%BA%E7%9F%B3-http%E5%85%A5%E9%97%A8/</guid>
       
         <description>
 
@@ -1574,12 +1582,18 @@ CSS 的学习是由易到难，越往后学，越觉得CSS的难点所在，所�
 &lt;li&gt;打开 Network(f12, 鼠标右键审查元素) 如下图:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://user-gold-cdn.xitu.io/2019/7/13/16be98ee9ef14ea7?w=1433&amp;amp;h=322&amp;amp;f=png&amp;amp;s=67183&#34; alt=&#34;&#34; /&gt;
-2. 地址栏输入网址
-3. 在 Network 点击 Request Headers 并点击 &lt;strong&gt;view sorce&lt;/strong&gt;， 如图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://user-gold-cdn.xitu.io/2019/7/13/16be98ee9ef14ea7?w=1433&amp;amp;h=322&amp;amp;f=png&amp;amp;s=67183&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://user-gold-cdn.xitu.io/2019/7/13/16be98f86b5abd60?w=1438&amp;amp;h=537&amp;amp;f=png&amp;amp;s=200310&#34; alt=&#34;&#34; /&gt;
-4. 可以看到我们所请求的内容了，如下图：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;地址栏输入网址&lt;/li&gt;
+&lt;li&gt;在 Network 点击 Request Headers 并点击 &lt;strong&gt;view sorce&lt;/strong&gt;， 如图：&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://user-gold-cdn.xitu.io/2019/7/13/16be98f86b5abd60?w=1438&amp;amp;h=537&amp;amp;f=png&amp;amp;s=200310&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;可以看到我们所请求的内容了，如下图：&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://user-gold-cdn.xitu.io/2019/7/13/16be98fc22bfa40b?w=1406&amp;amp;h=551&amp;amp;f=png&amp;amp;s=199369&#34; alt=&#34;&#34; /&gt;
 &lt;img src=&#34;https://user-gold-cdn.xitu.io/2019/7/13/16be99018305137a?w=1035&amp;amp;h=543&amp;amp;f=png&amp;amp;s=171247&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -1598,22 +1612,18 @@ CSS 的学习是由易到难，越往后学，越觉得CSS的难点所在，所�
 
 &lt;ul&gt;
 &lt;li&gt;1xx 不经常用，了解即可&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;2xx 成功&lt;/p&gt;
+&lt;li&gt;2xx 成功
 
 &lt;ul&gt;
 &lt;li&gt;200 请求成功&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;3xx 重定向&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;4xx 客户端错误&lt;/p&gt;
+&lt;li&gt;3xx 重定向&lt;/li&gt;
+&lt;li&gt;4xx 客户端错误
 
 &lt;ul&gt;
 &lt;li&gt;404 找不到资源&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;5xx 服务器错误&lt;/p&gt;
+&lt;li&gt;5xx 服务器错误
 
 &lt;ul&gt;
 &lt;li&gt;500 通用错误信息&lt;/li&gt;
@@ -1647,9 +1657,268 @@ CSS 的学习是由易到难，越往后学，越觉得CSS的难点所在，所�
     </item>
     
     <item>
-      <title></title>
+      <title>常用的git命令</title>
+      <link>http://localhost:1313/post/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 11 Aug 2019 14:22:56 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</guid>
+      
+        <description>
+
+&lt;p&gt;在工作中，经常用到 &lt;code&gt;git&lt;/code&gt; , 不管托管在 &lt;code&gt;gitHub&lt;/code&gt; 还是 &lt;code&gt;gitLab&lt;/code&gt; 或者 &lt;code&gt;码云&lt;/code&gt;，平时都是用可视化工具进行提交、推送，并没有用太多的命令进行操作。作为一个程序员，当然要学会用命令做东西啦，简单的记录下 &lt;code&gt;git&lt;/code&gt; 日常命令，如果需要了解更多，请点击文章最下方链接进行访问。&lt;/p&gt;
+
+&lt;h3 id=&#34;配置-github&#34;&gt;配置 GItHub&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;首先进入&lt;code&gt;gitHub&lt;/code&gt; &lt;code&gt;ssh&lt;/code&gt;设置页 &lt;a href=&#34;https://github.com/settings/keys&#34;&gt;https://github.com/settings/keys&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;如果页面里面已经有了 可以点击 「delete」按钮把这些 &lt;code&gt;key&lt;/code&gt; 先删除掉&lt;/li&gt;
+&lt;li&gt;点击 &lt;code&gt;New SSH key&lt;/code&gt; ，进行创建，需要输入&lt;code&gt;Title&lt;/code&gt; 和 &lt;code&gt;Key&lt;/code&gt; , 我们目前没有 &lt;code&gt;key&lt;/code&gt; , 往下看；&lt;/li&gt;
+&lt;li&gt;打开命令行工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;复制&lt;/strong&gt;并运行 &lt;code&gt;rm -rf ~/.ssh/*&lt;/code&gt; 把现有的 &lt;code&gt;ssh key&lt;/code&gt; 都删除掉，&lt;strong&gt;注意不要打错一个字母哦&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;按回车三次，直到结束命令&lt;/li&gt;
+&lt;li&gt;运行 &lt;code&gt;cat ~/.ssh/id_rsa.pub&lt;/code&gt; ，得到一串代码，完整的复制这串代码；&lt;/li&gt;
+&lt;li&gt;粘贴在我们创建的 &lt;code&gt;gitHub Key&lt;/code&gt; 中，然后点击 &lt;code&gt;Add SSH key&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;回到命令行工具，运行 &lt;code&gt;ssh -T git@github.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;如果您看到 &lt;code&gt;Hi jinchao1992! You&#39;ve successfully authenticated, but GitHub does not provide shell access.&lt;/code&gt; 证明我们生成 &lt;code&gt;SSH Key&lt;/code&gt; 成功，如果提示别的，重复上述步骤再来一遍；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;注意&#34;&gt;注意&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;一台电脑只需要一个 &lt;code&gt;SSH Key&lt;/code&gt;, 如果你换电脑了就需要重新生成 &lt;code&gt;key&lt;/code&gt;，生成一个新的，再加到 &lt;code&gt;gitHub&lt;/code&gt; 即可，不需要把之前的删除，可以跟之前的共存，这样我们两台电脑都可以用了；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;配置-git&#34;&gt;配置 git&lt;/h3&gt;
+
+&lt;p&gt;一共需要五行命令&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git config --global user.name 你的英文名&lt;/code&gt;  &lt;strong&gt;设置用户名&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git config --global user.email 你的邮箱&lt;/code&gt; &lt;strong&gt;设置邮箱&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git config --global push.default matching&lt;/code&gt;  &lt;strong&gt;&lt;code&gt;push&lt;/code&gt; 所有本地分支到远程仓库对应匹配的分支&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git config --global core.quotepath false&lt;/code&gt; 使用 &lt;strong&gt;&lt;code&gt;gitHub&lt;/code&gt; 默认转义&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git config --global core.editor &amp;quot;vim&amp;quot;&lt;/code&gt; &lt;strong&gt;设置vim 为git默认编辑器&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;使用-git&#34;&gt;使用 git&lt;/h3&gt;
+
+&lt;p&gt;使用 &lt;code&gt;git&lt;/code&gt; 有三种方式，具体如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;只在本地使用&lt;/li&gt;
+&lt;li&gt;将本地仓库上传到 &lt;code&gt;GitHub&lt;/code&gt;或者 &lt;code&gt;码云&lt;/code&gt; 等远程仓库；&lt;/li&gt;
+&lt;li&gt;直接从远程仓库下载 常用 &lt;code&gt;GitHub&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;只在本地使用&#34;&gt;只在本地使用&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;1-1-初始化仓库&#34;&gt;1.1 初始化仓库&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;我们首先建立一个测试目录 ：&lt;code&gt;mkdir git-demo-01&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;进入目录 &lt;code&gt;cd git-demo-01&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git init&lt;/code&gt; 初始化 &lt;code&gt;git&lt;/code&gt; 会在我们当前的目录里 增加一个 &lt;code&gt;.git&lt;/code&gt; 隐藏目录&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;ls -la&lt;/code&gt; 可以具体看到这个目录名字，&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;在 &lt;code&gt;git-demo-01&lt;/code&gt; 目录里面添加任意文件，我们先添加两个文件&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;touch index.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mkdir js&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;touch js/main.js&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;运行 &lt;code&gt;git status -sb&lt;/code&gt; 可以看到文件前面有两个 ?? 号&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;## Initial commit on master
+?? js/
+?? index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;可以使用 &lt;code&gt;git add&lt;/code&gt; 命令将文件添加到 &lt;strong&gt;暂存区&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;我们可以一个一个文件地 &lt;code&gt;add&lt;/code&gt; ，当然在工作中，我们当然不可能是这样了，也可以一次性 &lt;code&gt;add&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git add .&lt;/code&gt; 意思是当前目录(.表示当前目录) 里面变动都记在暂存区；&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;再次运行  &lt;code&gt;git status -sb&lt;/code&gt; ，可以看到 ?? 变成了 A&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;## Initial commit on master
+A js/
+A index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A 的意思就是添加，告诉 &lt;code&gt;git&lt;/code&gt; ，这些文件我要加在仓库里面；&lt;/p&gt;
+
+&lt;p&gt;9 .  使用 &lt;code&gt;git commit -m &amp;quot;提交信息&amp;quot;&lt;/code&gt; 可以将我们 &lt;code&gt;add&lt;/code&gt; 过的内容正式提交 到&lt;strong&gt;本地仓库（.git 就是本地仓库）&lt;/strong&gt; ，并可以添加一些注释信息，方便我们日后查看；&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;可以一个个 &lt;code&gt;commit&lt;/code&gt; , 也可以一次性 &lt;code&gt;commit&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git commit index.html -m &amp;quot;添加html&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit . -m &amp;quot;添加好多个文件&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+&lt;li&gt;再次运行 &lt;code&gt;git status -sb&lt;/code&gt; 发现并没有其他改动了，所有文件都提交到本地仓库了&lt;/li&gt;
+&lt;li&gt;我们还可以使用 &lt;code&gt;git log&lt;/code&gt; 看到历史变动&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;1-2-文件改动&#34;&gt;1.2 文件改动&lt;/h4&gt;
+
+&lt;p&gt;如果想继续修改文件，该如何进行呢？&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;open js/main.js&lt;/code&gt; 会使用默认的编辑器打开文件&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;我们在 &lt;code&gt;main.js&lt;/code&gt; 中写入 &lt;code&gt;alert(&amp;quot;小鱼儿的快乐生活&amp;quot;)&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;运行  &lt;code&gt;git status -sb&lt;/code&gt; 发现提示中有一个 M&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;## master
+M js/main.js
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这个 M 的意思就是 &lt;code&gt;Modified&lt;/code&gt; ，表示这个文件被修改了&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;我们接着执行&lt;code&gt;git add 与 git commit -m&lt;/code&gt; 命令&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;再次运行 &lt;code&gt;git status -sb&lt;/code&gt; 会发现没有变更了，所有变动都已经提交到本地仓库里面了。&lt;code&gt;git status -sb&lt;/code&gt; &lt;code&gt;-sb&lt;/code&gt; 的意思就是显示总结和分支。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;1-3-总结&#34;&gt;1.3 总结&lt;/h4&gt;
+
+&lt;p&gt;总结下我们用到的git命令&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;git init&lt;/code&gt;初始化本地仓库 &lt;code&gt;git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git status -sb&lt;/code&gt; 显示当前所有文件的状态&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git add &amp;quot;文件路径&amp;quot;&lt;/code&gt; 用来将变动的添加到暂存区&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit -m &amp;quot;信息&amp;quot;&lt;/code&gt; 用来提交本地 &lt;code&gt;.git&lt;/code&gt; 库&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git log&lt;/code&gt; 查看变更历史&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;将本地仓库上传到-github&#34;&gt;将本地仓库上传到 GitHub&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;如何将我们本地的仓库上传到 &lt;code&gt;github&lt;/code&gt; 上呢？&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;在 &lt;code&gt;GitHub&lt;/code&gt; 上新建一个空仓库，名称随意，一般可以跟本地目录名称一致；
+&lt;img src=&#34;https://user-gold-cdn.xitu.io/2019/7/7/16bcba8162c51b2d?w=998&amp;amp;h=609&amp;amp;f=png&amp;amp;s=105951&#34; alt=&#34;&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;按照上述截图，创建一个空的仓库&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;点击创建按钮之后，&lt;code&gt;GitHub&lt;/code&gt; 可以告诉你后续的操作，如图所示：&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;运行以下命令&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;git remote add origin git@github.com:XXXXXXXXX/git-demo-01.git&lt;/code&gt; 运行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push -u origin master&lt;/code&gt; , 运行&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;直接在-github-创建一个仓库-然后下载到本地&#34;&gt;直接在 GitHub 创建一个仓库，然后下载到本地&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li&gt;在 &lt;code&gt;GitHub&lt;/code&gt; 上新建一个仓库 &lt;code&gt;git-demo-02&lt;/code&gt; , 这次可以不用创建空仓库了，而是自带 &lt;code&gt;README&lt;/code&gt; 和 &lt;code&gt;Lisence&lt;/code&gt; 的仓库，如下图：
+&lt;img src=&#34;https://user-gold-cdn.xitu.io/2019/7/7/16bcbac73b600f73?w=881&amp;amp;h=636&amp;amp;f=png&amp;amp;s=100898&#34; alt=&#34;&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;远程仓库创建好了之后，我们可以使用 &lt;code&gt;git clone&lt;/code&gt; 命令进行下载&lt;/li&gt;
+&lt;li&gt;如下图所示，获取地址，必须是 &lt;code&gt;ssh&lt;/code&gt;地址哦：
+&lt;img src=&#34;https://user-gold-cdn.xitu.io/2019/7/7/16bcbad6caca908c?w=1032&amp;amp;h=622&amp;amp;f=png&amp;amp;s=107228&#34; alt=&#34;&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;打开命令行工具，找需要存放目录的文件夹，运行命令 &lt;code&gt;git clone &amp;quot;地址&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;进入 &lt;code&gt;clone&lt;/code&gt; 好的目录，运行 &lt;code&gt;ls -la&lt;/code&gt; 就可以看到 &lt;code&gt;.git&lt;/code&gt; 本地仓库了，然后我们就可以使用 &lt;code&gt;git&lt;/code&gt; 命令&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;如何上传更新&#34;&gt;如何上传更新&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;如果我们已经与远程仓库进行了链接，可以一步步运行以下命令就可以上传更新：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git add 文件路径&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit -m &amp;quot;info&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git pull&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;cd git-demo-01&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;touch index2.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git add index2.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit -m &amp;quot;新建html&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git pull&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;git-ignore&#34;&gt;git ignore&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;在项目目录创建 &lt;code&gt;.gitignore&lt;/code&gt; 文件就可以指定 「哪些文件不上传到远程仓库」, 比如 &lt;code&gt;.gitignore&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;/node_modules/
+/.vscode/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这样就可以避免 &lt;code&gt;node_modules&lt;/code&gt;  和 &lt;code&gt;.vscode&lt;/code&gt; 目录上传到 &lt;code&gt;github&lt;/code&gt;上了， 如果有别的文件夹也不想的话，可以直接在 &lt;code&gt;.gitignore&lt;/code&gt; 添加；&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;上述就是我们平常用到的一些基本 &lt;code&gt;git&lt;/code&gt; 命令，非常简单，当然如果需要应付工作中比较复杂的场景，比如代码冲突等，这些是不够的，所以可以看以下的参考文章进行学习；&lt;/p&gt;
+
+&lt;h2 id=&#34;2019-8-8-更新&#34;&gt;2019.8.8 更新&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git config --global --list&lt;/code&gt; ，查看当前 &lt;code&gt;git&lt;/code&gt; 全局配置；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit -v&lt;/code&gt; ，查看当前更改的内容，并在提交时，可以写入详细内容；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git reset --hard &#39;版本号&#39;&lt;/code&gt;  ，回退版本，版本号可以在 &lt;code&gt;git log&lt;/code&gt; 命令中查到；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git reflog&lt;/code&gt; ，查看版本历史，有回退过的 有之前提交的版本历史等；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git branch 分支名称&lt;/code&gt; ，新建分支 ；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout 分支名称&lt;/code&gt;， 切换分支；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git branch -d 分支名称 分支名称&lt;/code&gt; ，删除分支，删除多个分支，需要以空格分割；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git merge 分支名称&lt;/code&gt;， 合并分支，合并多个分支需要用空格分割；&lt;strong&gt;注意：合并分支是合并两个分支上不同的东西，并不是把 a 分支 合并到 b 分支&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;资源&#34;&gt;资源&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html&#34;&gt;常用 Git 命令清单&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2012/08/how_to_read_diff.html&#34;&gt;读懂 diff - 阮一峰&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html&#34;&gt;搭建一个免费的，无限流量的Blog&amp;mdash;-github Pages和Jekyll入门&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.runoob.com/git/git-install-setup.html&#34;&gt;Git 菜鸟教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013743256916071d599b3aed534aaab22a0db6c4e07fd0000&#34;&gt;廖雪峰的 Git 教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>什么是脚本</title>
       <link>http://localhost:1313/post/%E4%BB%80%E4%B9%88%E6%98%AF%E8%84%9A%E6%9C%AC/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 11 Aug 2019 14:22:13 +0800</pubDate>
       
       <guid>http://localhost:1313/post/%E4%BB%80%E4%B9%88%E6%98%AF%E8%84%9A%E6%9C%AC/</guid>
       
@@ -1713,8 +1982,9 @@ exit
 &lt;p&gt;我们平时在输入命令时（如：ls 、 cp、cd），&lt;code&gt;Bash&lt;/code&gt; 都会去 &lt;code&gt;PATH&lt;/code&gt; 列表里面寻找对应的文件，如果找到了就执行；&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;使用 &lt;code&gt;type 命令&lt;/code&gt; 可以看到寻找过程&lt;/li&gt;
-&lt;li&gt;使用 &lt;code&gt;which 命令&lt;/code&gt; 可以看到寻找的结果&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用 &lt;code&gt;type 命令&lt;/code&gt; 可以看到寻找过程&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;使用 &lt;code&gt;which 命令&lt;/code&gt; 可以看到寻找的结果&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&#34;把刚刚创建的demo命令添加到-path&#34;&gt;把刚刚创建的demo命令添加到 PATH&lt;/h4&gt;
@@ -1728,7 +1998,7 @@ exit
 &lt;li&gt;之前我们运行的 &lt;code&gt;sh ~/Desktop/demo.sh&lt;/code&gt; 现在只需要运行 &lt;code&gt;demo.sh&lt;/code&gt; 就可以了。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;### 参数&lt;/p&gt;
+&lt;h3 id=&#34;参数&#34;&gt;参数&lt;/h3&gt;
 
 &lt;hr /&gt;
 
@@ -1778,88 +2048,11 @@ fi
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/post/%E5%88%9D%E5%A7%8B%E5%91%BD%E4%BB%A4%E8%A1%8C/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>命令行的基本操作</title>
+      <link>http://localhost:1313/post/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Sun, 11 Aug 2019 14:21:23 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E5%88%9D%E5%A7%8B%E5%91%BD%E4%BB%A4%E8%A1%8C/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;命令行速记&#34;&gt;命令行速记&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;创建目录  &lt;code&gt;mkdir  &amp;quot;目录名字&amp;quot;&lt;/code&gt;， 目录名字可以不加引号，也可加，假如目录是有特殊标记的，比如带空格的名字，需要添加引号；&lt;/li&gt;
-&lt;li&gt;进入目录 &lt;code&gt;cd  &amp;quot;目录名字&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;pwd&lt;/code&gt; 显示当前所在目录的绝对路径&lt;/li&gt;
-&lt;li&gt;创建目标路径，&lt;code&gt;mkdir -p 目录路径&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;如想在想在 &lt;code&gt;demo01&lt;/code&gt; 下创建一个 &lt;code&gt;demo-02&lt;/code&gt; 的目录，两种方法 一种是通过 &lt;code&gt;mkdir&lt;/code&gt; 先创建 &lt;code&gt;demo01&lt;/code&gt; 再在 &lt;code&gt;demo01&lt;/code&gt; 里创建 &lt;code&gt;demo02&lt;/code&gt; ，另一种 &lt;code&gt;mkdir -p /demo01/demo02&lt;/code&gt; 就可以；&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;whoami&lt;/code&gt; 查询当前用户&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;查看当前文件路径 &lt;code&gt;ls 路径&lt;/code&gt;， 路径就是单独要跳转到那个目录下，如果不加就是当前的&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;查看路径(包含隐藏路径) &lt;code&gt;ls -a 路径&lt;/code&gt;，包含 &lt;code&gt;.&lt;/code&gt; 与 &lt;code&gt;..&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;查看路径，包含详细信息 &lt;code&gt;ls -l&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;ls -al&lt;/code&gt; 查看路径详细信息，包括隐藏目录和隐藏文件；&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;创建文件 &lt;code&gt;echo &#39;文件内容&#39; &amp;gt; 文件路径&lt;/code&gt; ；&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;强制创建文件 &lt;code&gt;echo &#39;文件内容&#39; &amp;gt;!文件路径&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;追加文件内容 &lt;code&gt;echo &amp;quot;文件内容&amp;quot; &amp;gt;&amp;gt; 文件路径&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;创建文件 &lt;code&gt;touch 文件名&lt;/code&gt;, 与 &lt;code&gt;echo&lt;/code&gt; 的区别在于，&lt;code&gt;echo&lt;/code&gt; 可以优先书写内容，&lt;code&gt;touch&lt;/code&gt; 如果创建同名文件的话，会替换，且会更新文件的创建时间&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;cat&lt;/code&gt; 完整的显示整个文件&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;复制文件 &lt;strong&gt;是复制，不是剪切&lt;/strong&gt; &lt;code&gt;cp 源路径 目标路径&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;复制目录 &lt;code&gt;cp -r 源路径 目标路径&lt;/code&gt;， 复制目录会递归的复制；&lt;/li&gt;
-&lt;li&gt;移动节点 &lt;code&gt;mv 源路径 目标路径&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;删除文件 &lt;code&gt;rm 文件路径&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;强制删除文件 &lt;code&gt;rm -f 文件路径&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;删除目录 &lt;code&gt;rm -rf 目录路径&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;下载文件 &lt;code&gt;curl -L &amp;quot;链接地址&amp;quot; &amp;gt; &#39;文件本地名称&#39;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;磁盘占用 &lt;code&gt;df -kh&lt;/code&gt; 查看磁盘被占用了多少&lt;/li&gt;
-&lt;li&gt;当前目录大小 &lt;code&gt;du -sh .&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;查看各个文件的大小 &lt;code&gt;du -h&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;以上的命令，只是我们平时常用到的命令，如果我们想要学习更多的命令还需要我们自行查阅，&lt;a href=&#34;https://www.runoob.com/linux/linux-comm-cat.html&#34;&gt;Linux常用命令&lt;/a&gt;;&lt;/p&gt;
-
-&lt;p&gt;如果我们不知道一个命令的具体意思，也可到此网站上查看，命令的具体介绍，&lt;a href=&#34;https://explainshell.com/&#34;&gt;https://explainshell.com&lt;/a&gt;，只需要在搜索框里输入查询的命令，即可把命令具体意思展示出来，当然是英文的啦(！！！表示是英语学渣一个，还是得借助翻译才可)&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/post/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
+      <guid>http://localhost:1313/post/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
       
         <description>
 
@@ -2012,260 +2205,78 @@ fi
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/post/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4%E5%88%9D%E5%AD%A6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>初始命令行</title>
+      <link>http://localhost:1313/post/%E5%88%9D%E5%A7%8B%E5%91%BD%E4%BB%A4%E8%A1%8C/</link>
+      <pubDate>Sun, 11 Aug 2019 14:20:13 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4%E5%88%9D%E5%AD%A6/</guid>
+      <guid>http://localhost:1313/post/%E5%88%9D%E5%A7%8B%E5%91%BD%E4%BB%A4%E8%A1%8C/</guid>
       
         <description>
 
-&lt;p&gt;在工作中，经常用到 &lt;code&gt;git&lt;/code&gt; , 不管托管在 &lt;code&gt;gitHub&lt;/code&gt; 还是 &lt;code&gt;gitLab&lt;/code&gt; 或者 &lt;code&gt;码云&lt;/code&gt;，平时都是用可视化工具进行提交、推送，并没有用太多的命令进行操作。作为一个程序员，当然要学会用命令做东西啦，简单的记录下 &lt;code&gt;git&lt;/code&gt; 日常命令，如果需要了解更多，请点击文章最下方链接进行访问。&lt;/p&gt;
-
-&lt;h3 id=&#34;配置-github&#34;&gt;配置 GItHub&lt;/h3&gt;
+&lt;h3 id=&#34;命令行速记&#34;&gt;命令行速记&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;首先进入&lt;code&gt;gitHub&lt;/code&gt; &lt;code&gt;ssh&lt;/code&gt;设置页 &lt;a href=&#34;https://github.com/settings/keys&#34;&gt;https://github.com/settings/keys&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;如果页面里面已经有了 可以点击 「delete」按钮把这些 &lt;code&gt;key&lt;/code&gt; 先删除掉&lt;/li&gt;
-&lt;li&gt;点击 &lt;code&gt;New SSH key&lt;/code&gt; ，进行创建，需要输入&lt;code&gt;Title&lt;/code&gt; 和 &lt;code&gt;Key&lt;/code&gt; , 我们目前没有 &lt;code&gt;key&lt;/code&gt; , 往下看；&lt;/li&gt;
-&lt;li&gt;打开命令行工具&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;复制&lt;/strong&gt;并运行 &lt;code&gt;rm -rf ~/.ssh/*&lt;/code&gt; 把现有的 &lt;code&gt;ssh key&lt;/code&gt; 都删除掉，&lt;strong&gt;注意不要打错一个字母哦&lt;/strong&gt;;&lt;/li&gt;
-&lt;li&gt;按回车三次，直到结束命令&lt;/li&gt;
-&lt;li&gt;运行 &lt;code&gt;cat ~/.ssh/id_rsa.pub&lt;/code&gt; ，得到一串代码，完整的复制这串代码；&lt;/li&gt;
-&lt;li&gt;粘贴在我们创建的 &lt;code&gt;gitHub Key&lt;/code&gt; 中，然后点击 &lt;code&gt;Add SSH key&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;回到命令行工具，运行 &lt;code&gt;ssh -T git@github.com&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;如果您看到 &lt;code&gt;Hi jinchao1992! You&#39;ve successfully authenticated, but GitHub does not provide shell access.&lt;/code&gt; 证明我们生成 &lt;code&gt;SSH Key&lt;/code&gt; 成功，如果提示别的，重复上述步骤再来一遍；&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;注意&#34;&gt;注意&lt;/h4&gt;
+&lt;li&gt;创建目录  &lt;code&gt;mkdir  &amp;quot;目录名字&amp;quot;&lt;/code&gt;， 目录名字可以不加引号，也可加，假如目录是有特殊标记的，比如带空格的名字，需要添加引号；&lt;/li&gt;
+&lt;li&gt;进入目录 &lt;code&gt;cd  &amp;quot;目录名字&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pwd&lt;/code&gt; 显示当前所在目录的绝对路径&lt;/li&gt;
+&lt;li&gt;创建目标路径，&lt;code&gt;mkdir -p 目录路径&lt;/code&gt;
 
 &lt;ul&gt;
-&lt;li&gt;一台电脑只需要一个 &lt;code&gt;SSH Key&lt;/code&gt;, 如果你换电脑了就需要重新生成 &lt;code&gt;key&lt;/code&gt;，生成一个新的，再加到 &lt;code&gt;gitHub&lt;/code&gt; 即可，不需要把之前的删除，可以跟之前的共存，这样我们两台电脑都可以用了；&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;配置-git&#34;&gt;配置 git&lt;/h3&gt;
-
-&lt;p&gt;一共需要五行命令&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;git config --global user.name 你的英文名&lt;/code&gt;  &lt;strong&gt;设置用户名&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git config --global user.email 你的邮箱&lt;/code&gt; &lt;strong&gt;设置邮箱&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git config --global push.default matching&lt;/code&gt;  &lt;strong&gt;&lt;code&gt;push&lt;/code&gt; 所有本地分支到远程仓库对应匹配的分支&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git config --global core.quotepath false&lt;/code&gt; 使用 &lt;strong&gt;&lt;code&gt;gitHub&lt;/code&gt; 默认转义&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git config --global core.editor &amp;quot;vim&amp;quot;&lt;/code&gt; &lt;strong&gt;设置vim 为git默认编辑器&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;使用-git&#34;&gt;使用 git&lt;/h3&gt;
-
-&lt;p&gt;使用 &lt;code&gt;git&lt;/code&gt; 有三种方式，具体如下：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;只在本地使用&lt;/li&gt;
-&lt;li&gt;将本地仓库上传到 &lt;code&gt;GitHub&lt;/code&gt;或者 &lt;code&gt;码云&lt;/code&gt; 等远程仓库；&lt;/li&gt;
-&lt;li&gt;直接从远程仓库下载 常用 &lt;code&gt;GitHub&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&#34;只在本地使用&#34;&gt;只在本地使用&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;1-1-初始化仓库&#34;&gt;1.1 初始化仓库&lt;/h4&gt;
-
-&lt;ol&gt;
-&lt;li&gt;我们首先建立一个测试目录 ：&lt;code&gt;mkdir git-demo-01&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;进入目录 &lt;code&gt;cd git-demo-01&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git init&lt;/code&gt; 初始化 &lt;code&gt;git&lt;/code&gt; 会在我们当前的目录里 增加一个 &lt;code&gt;.git&lt;/code&gt; 隐藏目录&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ls -la&lt;/code&gt; 可以具体看到这个目录名字，&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;在 &lt;code&gt;git-demo-01&lt;/code&gt; 目录里面添加任意文件，我们先添加两个文件&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;touch index.html&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mkdir js&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;touch js/main.js&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;如想在想在 &lt;code&gt;demo01&lt;/code&gt; 下创建一个 &lt;code&gt;demo-02&lt;/code&gt; 的目录，两种方法 一种是通过 &lt;code&gt;mkdir&lt;/code&gt; 先创建 &lt;code&gt;demo01&lt;/code&gt; 再在 &lt;code&gt;demo01&lt;/code&gt; 里创建 &lt;code&gt;demo02&lt;/code&gt; ，另一种 &lt;code&gt;mkdir -p /demo01/demo02&lt;/code&gt; 就可以；&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;运行 &lt;code&gt;git status -sb&lt;/code&gt; 可以看到文件前面有两个 ?? 号&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;## Initial commit on master
-?? js/
-?? index.html
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;可以使用 &lt;code&gt;git add&lt;/code&gt; 命令将文件添加到 &lt;strong&gt;暂存区&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;我们可以一个一个文件地 &lt;code&gt;add&lt;/code&gt; ，当然在工作中，我们当然不可能是这样了，也可以一次性 &lt;code&gt;add&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git add .&lt;/code&gt; 意思是当前目录(.表示当前目录) 里面变动都记在暂存区；&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;再次运行  &lt;code&gt;git status -sb&lt;/code&gt; ，可以看到 ?? 变成了 A&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;## Initial commit on master
-A js/
-A index.html
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;A 的意思就是添加，告诉 &lt;code&gt;git&lt;/code&gt; ，这些文件我要加在仓库里面；&lt;/p&gt;
-
-&lt;p&gt;9 .  使用 &lt;code&gt;git commit -m &amp;quot;提交信息&amp;quot;&lt;/code&gt; 可以将我们 &lt;code&gt;add&lt;/code&gt; 过的内容正式提交 到&lt;strong&gt;本地仓库（.git 就是本地仓库）&lt;/strong&gt; ，并可以添加一些注释信息，方便我们日后查看；&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;可以一个个 &lt;code&gt;commit&lt;/code&gt; , 也可以一次性 &lt;code&gt;commit&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;git commit index.html -m &amp;quot;添加html&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git commit . -m &amp;quot;添加好多个文件&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;再次运行 &lt;code&gt;git status -sb&lt;/code&gt; 发现并没有其他改动了，所有文件都提交到本地仓库了&lt;/li&gt;
-&lt;li&gt;我们还可以使用 &lt;code&gt;git log&lt;/code&gt; 看到历史变动&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;whoami&lt;/code&gt; 查询当前用户&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h4 id=&#34;1-2-文件改动&#34;&gt;1.2 文件改动&lt;/h4&gt;
-
-&lt;p&gt;如果想继续修改文件，该如何进行呢？&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;open js/main.js&lt;/code&gt; 会使用默认的编辑器打开文件&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;我们在 &lt;code&gt;main.js&lt;/code&gt; 中写入 &lt;code&gt;alert(&amp;quot;小鱼儿的快乐生活&amp;quot;)&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;运行  &lt;code&gt;git status -sb&lt;/code&gt; 发现提示中有一个 M&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;## master
-M js/main.js
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;这个 M 的意思就是 &lt;code&gt;Modified&lt;/code&gt; ，表示这个文件被修改了&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;我们接着执行&lt;code&gt;git add 与 git commit -m&lt;/code&gt; 命令&lt;/li&gt;
-&lt;li&gt;再次运行 &lt;code&gt;git status -sb&lt;/code&gt; 会发现没有变更了，所有变动都已经提交到本地仓库里面了。&lt;code&gt;git status -sb&lt;/code&gt; &lt;code&gt;-sb&lt;/code&gt; 的意思就是显示总结和分支。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;1-3-总结&#34;&gt;1.3 总结&lt;/h4&gt;
-
-&lt;p&gt;总结下我们用到的git命令&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;git init&lt;/code&gt;初始化本地仓库 &lt;code&gt;git&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git status -sb&lt;/code&gt; 显示当前所有文件的状态&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git add &amp;quot;文件路径&amp;quot;&lt;/code&gt; 用来将变动的添加到暂存区&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git commit -m &amp;quot;信息&amp;quot;&lt;/code&gt; 用来提交本地 &lt;code&gt;.git&lt;/code&gt; 库&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git log&lt;/code&gt; 查看变更历史&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&#34;将本地仓库上传到-github&#34;&gt;将本地仓库上传到 GitHub&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;如何将我们本地的仓库上传到 &lt;code&gt;github&lt;/code&gt; 上呢？&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;在 &lt;code&gt;GitHub&lt;/code&gt; 上新建一个空仓库，名称随意，一般可以跟本地目录名称一致；
-&lt;img src=&#34;https://user-gold-cdn.xitu.io/2019/7/7/16bcba8162c51b2d?w=998&amp;amp;h=609&amp;amp;f=png&amp;amp;s=105951&#34; alt=&#34;&#34; /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;按照上述截图，创建一个空的仓库&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;点击创建按钮之后，&lt;code&gt;GitHub&lt;/code&gt; 可以告诉你后续的操作，如图所示：&lt;/li&gt;
-&lt;li&gt;运行以下命令
-
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;git remote add origin git@github.com:XXXXXXXXX/git-demo-01.git&lt;/code&gt; 运行&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git push -u origin master&lt;/code&gt; , 运行&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&#34;直接在-github-创建一个仓库-然后下载到本地&#34;&gt;直接在 GitHub 创建一个仓库，然后下载到本地&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li&gt;在 &lt;code&gt;GitHub&lt;/code&gt; 上新建一个仓库 &lt;code&gt;git-demo-02&lt;/code&gt; , 这次可以不用创建空仓库了，而是自带 &lt;code&gt;README&lt;/code&gt; 和 &lt;code&gt;Lisence&lt;/code&gt; 的仓库，如下图：
-&lt;img src=&#34;https://user-gold-cdn.xitu.io/2019/7/7/16bcbac73b600f73?w=881&amp;amp;h=636&amp;amp;f=png&amp;amp;s=100898&#34; alt=&#34;&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;远程仓库创建好了之后，我们可以使用 &lt;code&gt;git clone&lt;/code&gt; 命令进行下载&lt;/li&gt;
-&lt;li&gt;如下图所示，获取地址，必须是 &lt;code&gt;ssh&lt;/code&gt;地址哦：
-&lt;img src=&#34;https://user-gold-cdn.xitu.io/2019/7/7/16bcbad6caca908c?w=1032&amp;amp;h=622&amp;amp;f=png&amp;amp;s=107228&#34; alt=&#34;&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;打开命令行工具，找需要存放目录的文件夹，运行命令 &lt;code&gt;git clone &amp;quot;地址&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;进入 &lt;code&gt;clone&lt;/code&gt; 好的目录，运行 &lt;code&gt;ls -la&lt;/code&gt; 就可以看到 &lt;code&gt;.git&lt;/code&gt; 本地仓库了，然后我们就可以使用 &lt;code&gt;git&lt;/code&gt; 命令&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&#34;如何上传更新&#34;&gt;如何上传更新&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;如果我们已经与远程仓库进行了链接，可以一步步运行以下命令就可以上传更新：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;git add 文件路径&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git commit -m &amp;quot;info&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git pull&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;如：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;cd git-demo-01&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;touch index2.html&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git add index2.html&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git commit -m &amp;quot;新建html&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git pull&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&#34;git-ignore&#34;&gt;git ignore&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;在项目目录创建 &lt;code&gt;.gitignore&lt;/code&gt; 文件就可以指定 「哪些文件不上传到远程仓库」, 比如 &lt;code&gt;.gitignore&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;/node_modules/
-/.vscode/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这样就可以避免 &lt;code&gt;node_modules&lt;/code&gt;  和 &lt;code&gt;.vscode&lt;/code&gt; 目录上传到 &lt;code&gt;github&lt;/code&gt;上了， 如果有别的文件夹也不想的话，可以直接在 &lt;code&gt;.gitignore&lt;/code&gt; 添加；&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;上述就是我们平常用到的一些基本 &lt;code&gt;git&lt;/code&gt; 命令，非常简单，当然如果需要应付工作中比较复杂的场景，比如代码冲突等，这些是不够的，所以可以看以下的参考文章进行学习；&lt;/p&gt;
-
-&lt;h2 id=&#34;2019-8-8-更新&#34;&gt;2019.8.8 更新&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;git config --global --list&lt;/code&gt; ，查看当前 &lt;code&gt;git&lt;/code&gt; 全局配置；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git commit -v&lt;/code&gt; ，查看当前更改的内容，并在提交时，可以写入详细内容；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git reset --hard &#39;版本号&#39;&lt;/code&gt;  ，回退版本，版本号可以在 &lt;code&gt;git log&lt;/code&gt; 命令中查到；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git reflog&lt;/code&gt; ，查看版本历史，有回退过的 有之前提交的版本历史等；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git branch 分支名称&lt;/code&gt; ，新建分支 ；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git checkout 分支名称&lt;/code&gt;， 切换分支；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git branch -d 分支名称 分支名称&lt;/code&gt; ，删除分支，删除多个分支，需要以空格分割；&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git merge 分支名称&lt;/code&gt;， 合并分支，合并多个分支需要用空格分割；&lt;strong&gt;注意：合并分支是合并两个分支上不同的东西，并不是把 a 分支 合并到 b 分支&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;资源&#34;&gt;资源&lt;/h3&gt;
 
 &lt;hr /&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html&#34;&gt;常用 Git 命令清单&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2012/08/how_to_read_diff.html&#34;&gt;读懂 diff - 阮一峰&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html&#34;&gt;搭建一个免费的，无限流量的Blog&amp;mdash;-github Pages和Jekyll入门&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.runoob.com/git/git-install-setup.html&#34;&gt;Git 菜鸟教程&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013743256916071d599b3aed534aaab22a0db6c4e07fd0000&#34;&gt;廖雪峰的 Git 教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;查看当前文件路径 &lt;code&gt;ls 路径&lt;/code&gt;， 路径就是单独要跳转到那个目录下，如果不加就是当前的&lt;/li&gt;
+&lt;li&gt;查看路径(包含隐藏路径) &lt;code&gt;ls -a 路径&lt;/code&gt;，包含 &lt;code&gt;.&lt;/code&gt; 与 &lt;code&gt;..&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查看路径，包含详细信息 &lt;code&gt;ls -l&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ls -al&lt;/code&gt; 查看路径详细信息，包括隐藏目录和隐藏文件；&lt;/li&gt;
+&lt;li&gt;创建文件 &lt;code&gt;echo &#39;文件内容&#39; &amp;gt; 文件路径&lt;/code&gt; ；&lt;/li&gt;
+&lt;li&gt;强制创建文件 &lt;code&gt;echo &#39;文件内容&#39; &amp;gt;!文件路径&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;追加文件内容 &lt;code&gt;echo &amp;quot;文件内容&amp;quot; &amp;gt;&amp;gt; 文件路径&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;创建文件 &lt;code&gt;touch 文件名&lt;/code&gt;, 与 &lt;code&gt;echo&lt;/code&gt; 的区别在于，&lt;code&gt;echo&lt;/code&gt; 可以优先书写内容，&lt;code&gt;touch&lt;/code&gt; 如果创建同名文件的话，会替换，且会更新文件的创建时间&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cat&lt;/code&gt; 完整的显示整个文件&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;复制文件 &lt;strong&gt;是复制，不是剪切&lt;/strong&gt; &lt;code&gt;cp 源路径 目标路径&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;复制目录 &lt;code&gt;cp -r 源路径 目标路径&lt;/code&gt;， 复制目录会递归的复制；&lt;/li&gt;
+&lt;li&gt;移动节点 &lt;code&gt;mv 源路径 目标路径&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;删除文件 &lt;code&gt;rm 文件路径&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;强制删除文件 &lt;code&gt;rm -f 文件路径&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;删除目录 &lt;code&gt;rm -rf 目录路径&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;下载文件 &lt;code&gt;curl -L &amp;quot;链接地址&amp;quot; &amp;gt; &#39;文件本地名称&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;磁盘占用 &lt;code&gt;df -kh&lt;/code&gt; 查看磁盘被占用了多少&lt;/li&gt;
+&lt;li&gt;当前目录大小 &lt;code&gt;du -sh .&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查看各个文件的大小 &lt;code&gt;du -h&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以上的命令，只是我们平时常用到的命令，如果我们想要学习更多的命令还需要我们自行查阅，&lt;a href=&#34;https://www.runoob.com/linux/linux-comm-cat.html&#34;&gt;Linux常用命令&lt;/a&gt;;&lt;/p&gt;
+
+&lt;p&gt;如果我们不知道一个命令的具体意思，也可到此网站上查看，命令的具体介绍，&lt;a href=&#34;https://explainshell.com/&#34;&gt;https://explainshell.com&lt;/a&gt;，只需要在搜索框里输入查询的命令，即可把命令具体意思展示出来，当然是英文的啦(！！！表示是英语学渣一个，还是得借助翻译才可)&lt;/p&gt;
 </description>
       
     </item>
     
     <item>
-      <title></title>
+      <title>计算机是怎么工作的</title>
       <link>http://localhost:1313/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%98%AF%E6%80%8E%E4%B9%88%E5%B7%A5%E4%BD%9C%E7%9A%84/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 11 Aug 2019 14:18:09 +0800</pubDate>
       
       <guid>http://localhost:1313/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%98%AF%E6%80%8E%E4%B9%88%E5%B7%A5%E4%BD%9C%E7%9A%84/</guid>
       
@@ -2296,16 +2307,13 @@ M js/main.js
 &lt;h3 id=&#34;计算机就是一个二进制的世界-0和1&#34;&gt;计算机就是一个二进制的世界(0和1)&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;1代表充电成功，0代表不充电&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;十进制转换二进制，以10的&lt;code&gt;几次方&lt;/code&gt;为底，转换为&lt;code&gt;2的几次方为底&lt;/code&gt;;比如：&lt;/p&gt;
+&lt;li&gt;1代表充电成功，0代表不充电&lt;/li&gt;
+&lt;li&gt;十进制转换二进制，以10的&lt;code&gt;几次方&lt;/code&gt;为底，转换为&lt;code&gt;2的几次方为底&lt;/code&gt;;比如：
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;37&lt;/code&gt; 十进制的做法是 3&lt;code&gt;*&lt;/code&gt;10^1 + 7&lt;code&gt;*&lt;/code&gt;10^0 = 37;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;转换二进制则为：1&lt;code&gt;*&lt;/code&gt;2^5 + 0&lt;code&gt;*&lt;/code&gt;2^4 + 0&lt;code&gt;*&lt;/code&gt;2^3 + 1&lt;code&gt;*&lt;/code&gt;2^2 + 0&lt;code&gt;*&lt;/code&gt;2^1 + 1&lt;code&gt;*&lt;/code&gt;2^0 所以为：&lt;code&gt;100101&lt;/code&gt;;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;切记二进制里只有0和1没有别的存在；&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;37&lt;/code&gt; 十进制的做法是 3&lt;code&gt;*&lt;/code&gt;10^1 + 7&lt;code&gt;*&lt;/code&gt;10^0 = 37;&lt;/li&gt;
+&lt;li&gt;转换二进制则为：1&lt;code&gt;*&lt;/code&gt;2^5 + 0&lt;code&gt;*&lt;/code&gt;2^4 + 0&lt;code&gt;*&lt;/code&gt;2^3 + 1&lt;code&gt;*&lt;/code&gt;2^2 + 0&lt;code&gt;*&lt;/code&gt;2^1 + 1&lt;code&gt;*&lt;/code&gt;2^0 所以为：&lt;code&gt;100101&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;切记二进制里只有0和1没有别的存在；&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2313,26 +2321,39 @@ M js/main.js
 
 &lt;ul&gt;
 &lt;li&gt;内存如何存储 0 和 1，1 代表充电 0 代表不充电；&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;如何存储数字，十进制变化为二进制，进行存储；&lt;/p&gt;
+&lt;li&gt;如何存储数字，十进制变化为二进制，进行存储；
 
 &lt;ul&gt;
 &lt;li&gt;负数会以&lt;code&gt;补码&lt;/code&gt;的方式进行存储；&lt;/li&gt;
 &lt;li&gt;小数会以&lt;code&gt;浮点数&lt;/code&gt;的形式进行存储；&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;如何存储字符, 将每个字符编号，通过&lt;strong&gt;&lt;code&gt;ASCll&lt;/code&gt;&lt;/strong&gt; 美国信息交换标准代码，如下图：&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;如何存储字符, 将每个字符编号，通过&lt;strong&gt;&lt;code&gt;ASCll&lt;/code&gt;&lt;/strong&gt; 美国信息交换标准代码，如下图：
+&lt;img src=&#34;https://jrg-team.github.io/jrg-tasks/lessons/%E7%BC%96%E7%A8%8B%E5%88%9D%E7%BA%A7/ascii.jpg&#34; alt=&#34;image&#34; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;​        &lt;img src=&#34;https://jrg-team.github.io/jrg-tasks/lessons/%E7%BC%96%E7%A8%8B%E5%88%9D%E7%BA%A7/ascii.jpg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;​       如果想存储 a，那么就存储97(十进制)对应的二进制，a -&amp;gt; 0110 0001(2) -&amp;gt; 61(16)；&lt;/p&gt;
+&lt;p&gt;​如果想存储 a，那么就存储97(十进制)对应的二进制，a -&amp;gt; 0110 0001(2) -&amp;gt; 61(16)；&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;如何存储中文，通过&lt;code&gt;GB 2312&lt;/code&gt; 中国国家标准简体中文字符集，后微软推出 &lt;code&gt;GBK&lt;/code&gt;字符集;&lt;/li&gt;
 &lt;li&gt;如何存储所以字符，衍生出  &lt;code&gt;Unicode&lt;/code&gt;字符集，可以存储中日韩文字、藏文、盲文、锲行文字、颜文字等；&lt;/li&gt;
 &lt;li&gt;如何将 Unicode 存储到计算机里，高性价比 UTF-8，UTF-8 是一种编码方式，不是字符集；&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>我的博客</title>
+      <link>http://localhost:1313/post/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 11 Aug 2019 10:42:41 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+      
+        <description>
+
+&lt;h1 id=&#34;大家好&#34;&gt;大家好&lt;/h1&gt;
+
+&lt;p&gt;我的博客已经开通了，欢迎大家来我的小站。&lt;/p&gt;
 </description>
       
     </item>
