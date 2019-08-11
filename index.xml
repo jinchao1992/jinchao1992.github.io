@@ -1,23 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>靳超的小窝</title>
-    <link>http://example.org/</link>
-    <description>Recent content on 靳超的小窝</description>
+    <title>小鱼儿的小站</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on 小鱼儿的小站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-Hans</language>
+    <language>zh-cn</language>
     <lastBuildDate>Sun, 11 Aug 2019 10:42:41 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>关于</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      
+        <description>&lt;p&gt;靳超，前端开发工程师；技术栈：Vue React JS HTML CSS 微信小程序&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>我的博客</title>
-      <link>http://example.org/posts/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
+      <link>http://localhost:1313/post/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Sun, 11 Aug 2019 10:42:41 +0800</pubDate>
       
-      <guid>http://example.org/posts/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
-      <description>大家好 我的博客已经开通了，欢迎大家来我的小站。</description>
+      <guid>http://localhost:1313/post/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+      
+        <description>
+
+&lt;h1 id=&#34;大家好&#34;&gt;大家好&lt;/h1&gt;
+
+&lt;p&gt;我的博客已经开通了，欢迎大家来我的小站。&lt;/p&gt;
+</description>
+      
     </item>
     
   </channel>
