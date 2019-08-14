@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 小鱼儿的小站</title>
-    <link>http://localhost:1313/post/</link>
+    <link>https://jinchao1992.github.io/post/</link>
     <description>Recent content in Posts on 小鱼儿的小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 11 Aug 2019 14:28:00 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jinchao1992.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CSS Margin 布局技巧</title>
-      <link>http://localhost:1313/post/css-margin-%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/</link>
+      <link>https://jinchao1992.github.io/post/css-margin-%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/</link>
       <pubDate>Sun, 11 Aug 2019 14:28:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/css-margin-%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/</guid>
+      <guid>https://jinchao1992.github.io/post/css-margin-%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/</guid>
       <description>前言 CSS 里有一个重要的东西，叫 CSS 盒模型，它几乎能贯穿我们学习 CSS 的整个阶段，如下图所示，就是我们所说的盒子模型： [!]() (注：图片来源 MDN ) &amp;ldquo</description>
     </item>
     
     <item>
       <title>CSS以及常见的布局方式</title>
-      <link>http://localhost:1313/post/css%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F/</link>
+      <link>https://jinchao1992.github.io/post/css%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F/</link>
       <pubDate>Sun, 11 Aug 2019 14:26:53 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/css%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F/</guid>
+      <guid>https://jinchao1992.github.io/post/css%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E7%9A%84%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F/</guid>
       <description>CSS是什么？ CSS，层叠样式表(英语：Cascading Style Sheets)，是一种用来为结构化文档 (如：HTML文档) 添加样式 (字体、颜色、</description>
     </item>
     
     <item>
       <title>HTML 是什么</title>
-      <link>http://localhost:1313/post/html-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <link>https://jinchao1992.github.io/post/html-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
       <pubDate>Sun, 11 Aug 2019 14:25:39 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/html-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <guid>https://jinchao1992.github.io/post/html-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
       <description>HTML (英语：HyperText Markup Language) 超文本编辑语言，是整个网站的基石，所以学好 HTML 非常重要，并且我们要学会使用 语义化的标签来书写 HTML 标签，接下来我们</description>
     </item>
     
     <item>
       <title>互联网的基石 HTTP入门</title>
-      <link>http://localhost:1313/post/%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E5%9F%BA%E7%9F%B3-http%E5%85%A5%E9%97%A8/</link>
+      <link>https://jinchao1992.github.io/post/%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E5%9F%BA%E7%9F%B3-http%E5%85%A5%E9%97%A8/</link>
       <pubDate>Sun, 11 Aug 2019 14:24:02 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E5%9F%BA%E7%9F%B3-http%E5%85%A5%E9%97%A8/</guid>
+      <guid>https://jinchao1992.github.io/post/%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E5%9F%BA%E7%9F%B3-http%E5%85%A5%E9%97%A8/</guid>
       <description>互联网的基石 www 的历史 WWW 全称 World Wide Web 翻译成中文则是 全世界范围网络。 如下图所示，简单的介绍下 www 的来历： URL 解释 https://www.baidu.com/s?wd=hello#5 https 协议 www.baidu.com 网址 .com .cn .net... 顶级域名(一级) baidu.com</description>
     </item>
     
     <item>
       <title>常用的git命令</title>
-      <link>http://localhost:1313/post/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</link>
+      <link>https://jinchao1992.github.io/post/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Sun, 11 Aug 2019 14:22:56 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://jinchao1992.github.io/post/%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</guid>
       <description>在工作中，经常用到 git , 不管托管在 gitHub 还是 gitLab 或者 码云，平时都是用可视化工具进行提交、推送，并没有用太多的命令进行操作。作为一个程序员，当然要学会</description>
     </item>
     
     <item>
       <title>什么是脚本</title>
-      <link>http://localhost:1313/post/%E4%BB%80%E4%B9%88%E6%98%AF%E8%84%9A%E6%9C%AC/</link>
+      <link>https://jinchao1992.github.io/post/%E4%BB%80%E4%B9%88%E6%98%AF%E8%84%9A%E6%9C%AC/</link>
       <pubDate>Sun, 11 Aug 2019 14:22:13 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E4%BB%80%E4%B9%88%E6%98%AF%E8%84%9A%E6%9C%AC/</guid>
+      <guid>https://jinchao1992.github.io/post/%E4%BB%80%E4%B9%88%E6%98%AF%E8%84%9A%E6%9C%AC/</guid>
       <description>什么是脚本？ 从一开始学代码时，就有同学跟我说，「我今晚要写个脚本，然后实现一个什么东西。。。」，当时的我一脸懵逼，今天通过一个小小的例子来简</description>
     </item>
     
     <item>
       <title>命令行的基本操作</title>
-      <link>http://localhost:1313/post/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
+      <link>https://jinchao1992.github.io/post/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Sun, 11 Aug 2019 14:21:23 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https://jinchao1992.github.io/post/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
       <description>命令行基本操作 在进行命令行操作之前，先认识几个单词： 英文 中文 命令简写 file 文件 file make 制作 mk remove 删除 rm move 移动 mv copy 复制 cp list 列表 ls link 链接 ln find 查找 find echo 回声 echo</description>
     </item>
     
     <item>
       <title>初始命令行</title>
-      <link>http://localhost:1313/post/%E5%88%9D%E5%A7%8B%E5%91%BD%E4%BB%A4%E8%A1%8C/</link>
+      <link>https://jinchao1992.github.io/post/%E5%88%9D%E5%A7%8B%E5%91%BD%E4%BB%A4%E8%A1%8C/</link>
       <pubDate>Sun, 11 Aug 2019 14:20:13 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E5%88%9D%E5%A7%8B%E5%91%BD%E4%BB%A4%E8%A1%8C/</guid>
+      <guid>https://jinchao1992.github.io/post/%E5%88%9D%E5%A7%8B%E5%91%BD%E4%BB%A4%E8%A1%8C/</guid>
       <description>命令行速记 创建目录 mkdir &amp;quot;目录名字&amp;quot;， 目录名字可以不加引号，也可加，假如目录是有特殊标记的，比如带空格的名字，需要添加引号；</description>
     </item>
     
     <item>
       <title>计算机是怎么工作的</title>
-      <link>http://localhost:1313/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%98%AF%E6%80%8E%E4%B9%88%E5%B7%A5%E4%BD%9C%E7%9A%84/</link>
+      <link>https://jinchao1992.github.io/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%98%AF%E6%80%8E%E4%B9%88%E5%B7%A5%E4%BD%9C%E7%9A%84/</link>
       <pubDate>Sun, 11 Aug 2019 14:18:09 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%98%AF%E6%80%8E%E4%B9%88%E5%B7%A5%E4%BD%9C%E7%9A%84/</guid>
+      <guid>https://jinchao1992.github.io/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%98%AF%E6%80%8E%E4%B9%88%E5%B7%A5%E4%BD%9C%E7%9A%84/</guid>
       <description>为什么要学习计算机基础 因为你首先是程序员，其次才是前端 硬件与软件：计算机的运行原理 (《编码》) 最大的软件： 操作系统 自己写的软件：数据结构 &amp;amp; 算</description>
     </item>
     
     <item>
       <title>我的博客</title>
-      <link>http://localhost:1313/post/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://jinchao1992.github.io/post/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Sun, 11 Aug 2019 10:42:41 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://jinchao1992.github.io/post/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
       <description>大家好 我的博客已经开通了，欢迎大家来我的小站。</description>
     </item>
     
