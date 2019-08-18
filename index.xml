@@ -6,7 +6,7 @@
     <description>Recent content on 小鱼儿的小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 11 Aug 2019 14:28:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 18 Aug 2019 16:41:46 +0800</lastBuildDate>
     
         <atom:link href="https://jinchao1992.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,148 @@
       <guid>https://jinchao1992.github.io/about/</guid>
       
         <description>&lt;p&gt;靳超，前端开发工程师；技术栈：Vue React JS HTML CSS 微信小程序&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>HTML 入门笔记1</title>
+      <link>https://jinchao1992.github.io/post/html-%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Sun, 18 Aug 2019 16:41:46 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/post/html-%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      
+        <description>
+
+&lt;p&gt;HTML（英语：HyperText Markup Language）超文本编辑语言。由&lt;strong&gt;万维网联盟（W3C）&lt;/strong&gt;负责维护，于1990年诞生，作者是：Time Berners-Lee（蒂姆·伯纳斯-李）, 也可称为”李爵士“。是整个网页的基础，是学好前端必备的一大知识模块，学好 &lt;code&gt;HTML&lt;/code&gt; 非常重要，并且我们要学会使用*&lt;strong&gt;语义化&lt;/strong&gt;的标签来书写 &lt;code&gt;HTML&lt;/code&gt; 标签。&lt;/p&gt;
+
+&lt;h2 id=&#34;html-简介&#34;&gt;HTML 简介&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;HTML 的版本&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;HTML 4.01&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;XHTML&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;HTML5&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;HTML5.1&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;规范&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;由 W3C 负责文档编写&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;声明规范&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;DOCTYPE html&amp;gt;&lt;/code&gt; html5 声明规范，目前采用最广的声明规范&lt;/li&gt;
+&lt;li&gt;其他参照 &lt;a href=&#34;https://www.w3.org/QA/2002/04/valid-dtd-list.html&#34;&gt;https://www.w3.org/QA/2002/04/valid-dtd-list.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;HTML&lt;/code&gt; 起手代码&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--文档类型--&amp;gt;
+&amp;lt;html lang=&amp;quot;zh-CN&amp;quot;&amp;gt; &amp;lt;!--设置html解析语言--&amp;gt;
+&amp;lt;head&amp;gt;
+  &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;!--设置字符编码--&amp;gt;
+  &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width,inital-scale=1.0&amp;quot;&amp;gt; &amp;lt;!--移动端适配代码--&amp;gt;
+  &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot;&amp;gt; &amp;lt;!--IE 浏览器使用最新版本--&amp;gt;
+  &amp;lt;title&amp;gt;我的第一个网页&amp;lt;/title&amp;gt; &amp;lt;!--网页名称--&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;html-标签&#34;&gt;HTML 标签&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;header&amp;gt;&amp;lt;/header&amp;gt;、&amp;lt;nav&amp;gt;&amp;lt;/nav&amp;gt;&lt;/code&gt; 双标签；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; 单标签， 单标签可以不加&lt;code&gt;/&lt;/code&gt; 结束，也可以加，最新标准可以不加；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;注意：标签不区分，但是，习惯上还是小写；标签属性名称可以是单引号也可是双引号，如：&lt;code&gt;&amp;lt;div title=&#39;我是div&#39;&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;，如没有特殊字符的话可以不用加引号。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;常用章节标签-注意-这些标签都是双标签&#34;&gt;常用章节标签(注意：这些标签都是双标签)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;h1~h6&lt;/code&gt; 标题标签，表示一级标题到六级标题；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; 章节标签，表示一个包含在HTML文档中独立部分，如我们写文章的每一章节都用 &lt;code&gt;section&lt;/code&gt; 表示，并把一些标题元素，段落元素包含进去;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt; 表示文档、页面、应用或网站中的独立结构，比如我们写的一篇文章可以用 &lt;code&gt;&amp;lt;article&amp;gt;&amp;lt;/article&amp;gt;&lt;/code&gt; 来包裹，特点是可复用，独立存在；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; 段落标签，表示一段文字；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; 头部标签，表示一个独立的头部内容标签，头部内容主要放 &lt;code&gt;logo&lt;/code&gt; 导航等；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;footer&amp;gt;&lt;/code&gt; 尾部标签，表示一篇文章的结尾，或者根元素的结尾，内容主要有：版权信息、网站备案信息等；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt;  主体内容标签，所有主体内容的父标签；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;aside&amp;gt;&lt;/code&gt; 旁支内容标签，可以单独拆离网页的元素，与其他元素并没有任何关联，不会影响其他内容展示，如：网页侧边栏广告等;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;代码示例：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;header&amp;gt;头部内容&amp;lt;/header&amp;gt;
+&amp;lt;main&amp;gt;
+  &amp;lt;h2&amp;gt;文章标题&amp;lt;/h2&amp;gt;
+  &amp;lt;h3&amp;gt;副标题&amp;lt;/h3&amp;gt;
+  &amp;lt;article&amp;gt;
+    &amp;lt;section&amp;gt;
+      &amp;lt;h2&amp;gt;1. 第一章节&amp;lt;/h2&amp;gt;
+      &amp;lt;h3&amp;gt;1.1 初始HTML&amp;lt;/h3&amp;gt;
+      &amp;lt;p&amp;gt;HTML很重要，非常重要&amp;lt;/p&amp;gt;
+    &amp;lt;/section&amp;gt;
+    &amp;lt;section&amp;gt;
+      &amp;lt;h2&amp;gt;2. 第二章节&amp;lt;/h2&amp;gt;
+      &amp;lt;h3&amp;gt;2.1 初始HTML&amp;lt;/h3&amp;gt;
+      &amp;lt;p&amp;gt;HTML很重要，非常重要&amp;lt;/p&amp;gt;
+    &amp;lt;/section&amp;gt;
+  &amp;lt;/article&amp;gt;
+&amp;lt;/main&amp;gt;
+&amp;lt;aside&amp;gt;文章来源：xxx&amp;lt;/aside&amp;gt;
+&amp;lt;footer&amp;gt;
+&amp;amp;copy;版权声明：归xxx所有
+&amp;lt;/footer&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;html-内容标签&#34;&gt;HTML 内容标签&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;ol&amp;gt; + &amp;lt;li&amp;gt;&lt;/code&gt; 有序列表；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;ul&amp;gt; + &amp;lt;li&amp;gt;&lt;/code&gt; 无序列表；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;dl&amp;gt; + &amp;lt;dt&amp;gt; + &amp;lt;dd&amp;gt;&lt;/code&gt; 描述列表；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; 可以解析空白字符（换行、空格、tab）；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; 分割符，单标签； 语义上的分割，只要在语义上是分割用此元素表示，如果仅仅是样式上的需要使用 CSS 来表示；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt; 换行符，单标签；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; 超链接，通过此链接链接整个互联网；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; 着重元素，标记出用户需要着重阅读的内容；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; 表示重要的 十分重要的，是语义上的加重；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt; 展示计算机代码，可以更 &lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; 搭配使用；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;quote&amp;gt;&lt;/code&gt; 表示一个引用元素，默认是内联元素；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt; 块级引用元素；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;html-全局属性&#34;&gt;HTML 全局属性&lt;/h4&gt;
+
+&lt;p&gt;所谓全局属性，就是所有的标签都有的属性。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;  给一个标签添加一个 &lt;code&gt;class&lt;/code&gt; 属性，方便书写 &lt;code&gt;css&lt;/code&gt; , 划分一类元素；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;id&lt;/code&gt; 属性表示此元素是唯一的，可以在 &lt;code&gt;JS&lt;/code&gt; 中直接获取，不建议布局时给元素添加 &lt;code&gt;id&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;contenteditable&lt;/code&gt; 规定元素是否可被用户编辑。如果给元素加上此属性后，那么不管是不是 &lt;code&gt;input&lt;/code&gt; 元素，则标签都会类似于文本一样可以用来编辑内容；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hiddle&lt;/code&gt; 让元素不可见；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;style&lt;/code&gt; 书写行间样式，行间写的样式比内联和外联的权重都大；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;title&lt;/code&gt; 给元素添加标题，用法：如果一个元素的内容过长可以增加省略号，可以把 &lt;code&gt;title&lt;/code&gt; 放上所有的内容，只有鼠标滑过元素才会显示；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tabindex&lt;/code&gt; 可以设置用键盘&lt;code&gt;tab&lt;/code&gt;键，用来选中元素;
+
+&lt;ul&gt;
+&lt;li&gt;tabindex=负值&lt;code&gt;通常是&lt;/code&gt;tabindex=&amp;ldquo;-1&amp;rdquo;&lt;code&gt;, 表示元素是可聚焦的，但是不能通过键盘导航来访问该元素，也就是&lt;/code&gt;Tab` 键；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tabindex=&amp;quot;0&amp;quot;&lt;/code&gt; , 表示元素是可聚焦的，并且可以通过键盘导航来聚焦到该元素，它的相对顺序是当前处于的 &lt;code&gt;DOM&lt;/code&gt; 解构来决定的。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tabindex=正值&lt;/code&gt; 表示元素可聚焦，可以通过键盘导航来聚焦到该元素；它的相对顺序按照 &lt;code&gt;tabindex&lt;/code&gt; 的数值&lt;strong&gt;递增而滞后聚焦&lt;/strong&gt;。 如果多个元素拥有相同的 &lt;code&gt;tabindex&lt;/code&gt; , 它们的相对顺序按照它们在当前 &lt;code&gt;DOM&lt;/code&gt; 中的先后顺序决定。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
       
     </item>
