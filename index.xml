@@ -6,7 +6,7 @@
     <description>Recent content on 小鱼儿的小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 18 Aug 2019 16:41:46 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 22 Aug 2019 23:01:15 +0800</lastBuildDate>
     
         <atom:link href="https://jinchao1992.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,380 @@
       <guid>https://jinchao1992.github.io/about/</guid>
       
         <description>&lt;p&gt;靳超，前端开发工程师；技术栈：Vue React JS HTML CSS 微信小程序&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>HTML 常用标签</title>
+      <link>https://jinchao1992.github.io/post/html-%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Thu, 22 Aug 2019 23:01:15 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/post/html-%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      
+        <description>
+
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;最新的 &lt;code&gt;HTML5&lt;/code&gt; 里标签大概有 110 个，但是如果让我们学完 110 个的话，对于大多数人来说可能还是比较困难的。工作中常用的也就那么几个，接下来我们介绍下几个常用的 HTML 标签。&lt;/p&gt;
+
+&lt;h2 id=&#34;常用标签&#34;&gt;常用标签&lt;/h2&gt;
+
+&lt;h3 id=&#34;a-标签&#34;&gt;a 标签&lt;/h3&gt;
+
+&lt;p&gt;超链接元素，也可称为锚元素，可以通过此标签链接整个互联网，包括电子邮件、拨打电话、联通其他网页、文件以及同一页面内其他的位置，几乎互联网上的资源，都可以通过超链接访问。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;跳向其他 &lt;code&gt;URL&lt;/code&gt; 点击之后浏览器会跳转到指定的网址，如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;a href=&amp;quot;https://www.baidu.com&amp;quot;&amp;gt;百度&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;点击如上的 「百度」字样即可跳转到我们经常访问的百度网页上，&lt;code&gt;href&lt;/code&gt; 填写的是我们需要跳转的网页地址。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;a&lt;/code&gt; 标签不是一个单标签，里面可以放置任何内容，包括图片，文字等，如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;   &amp;lt;a href=&amp;quot;https://www.baidu.com&amp;quot;&amp;gt;
+   	&amp;lt;img src=&amp;quot;假如这是百度的logo.jpg&amp;quot;&amp;gt;
+   &amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; 标签属性（常用）&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;href&lt;/code&gt; 链接指向的网址，值可以是一个 &lt;code&gt;URL&lt;/code&gt; 或者锚点，如下代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;box&amp;quot; style=&amp;quot;border:1px solid #ddd; height: 8000px;&amp;quot;&amp;gt;
+&amp;lt;a href=&amp;quot;#demo&amp;quot;&amp;gt;点击锚点&amp;lt;/a&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;span id=&amp;quot;demo&amp;quot;&amp;gt;我是demo锚点&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;#&lt;/code&gt; 加上锚点名称，点击时会自动滚动到锚点所在位置。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;注意：&lt;code&gt;href&lt;/code&gt; 可以是本地的相对路径或者绝对路径&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;href&lt;/code&gt; 链接指向邮件地址，使用 &lt;code&gt;mailto&lt;/code&gt; 协议。用户点击后，浏览器会默认打开本机的邮件程序，可以向指定的地址发送邮件，如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;a href=&amp;quot;mailto:jinchaophp@126.com&amp;quot;&amp;gt;给我发发发！！！&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;href&lt;/code&gt; 链接指向电话号码，使用 &lt;code&gt;tel&lt;/code&gt; 协议，用户点击后，可以唤起电话，进行电话拨号，当然只是在移动端比较适合。如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;a href=&amp;quot;tel:13312345678&amp;quot;&amp;gt;拨打电话给我&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;href&lt;/code&gt; 链接指向伪协议，主要作用，点击 &lt;code&gt;a&lt;/code&gt; 链接后没有后续动作的操作，如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;a href=&amp;quot;javascript:;&amp;quot;&amp;gt;点击玩玩&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;target&lt;/code&gt; 属性指定如何展开打开的链接。它可以指定的窗口打开，也可以在 &lt;code&gt;iframe&lt;/code&gt; 打开&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;a href=&amp;quot;https://www.baidu.com&amp;quot; target=&amp;quot;xxx&amp;quot;&amp;gt;百度&amp;lt;/a&amp;gt;
+&amp;lt;a href=&amp;quot;https://www.qq.com&amp;quot; target=&amp;quot;xxx&amp;quot;&amp;gt;qq&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;上述代码中，两个链接都在名叫 &lt;code&gt;xxx&lt;/code&gt; 的窗口打开。首先点击 &lt;code&gt;百度&lt;/code&gt; 浏览器发现没有一个叫 &lt;code&gt;xxx&lt;/code&gt; 的窗口，就会新建一个窗口，起名字为 &lt;code&gt;xxx&lt;/code&gt; 。然后又点击 &lt;code&gt;qq&lt;/code&gt; 由于已经有 &lt;code&gt;xxx&lt;/code&gt; 窗口，就会取代之前打开的 &lt;code&gt;百度&lt;/code&gt;，变为了 &lt;code&gt;qq&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;target&lt;/code&gt; 属性有四个取值：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_self&lt;/code&gt; 当前窗口打开，默认写法；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_blank&lt;/code&gt; 新窗口打开；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_parent&lt;/code&gt; 上层窗口打开，主要用于 &lt;code&gt;iframe&lt;/code&gt; 。如果当前窗口没有上层窗口，这个值就等于 &lt;code&gt;_self&lt;/code&gt;；&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;_top&lt;/code&gt; 顶层窗口打开。如果当前窗口就是顶层窗口，那么写法跟 &lt;code&gt;_self&lt;/code&gt; 一样；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;download&lt;/code&gt; 属性表明当前链接用于下载，而不是跳转到其他网页，如下:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;a href=&amp;quot;demo.txt&amp;quot; download&amp;gt;下载&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;注意：&lt;code&gt;download&lt;/code&gt; 属性只在链接与网址同源时，才会生效，链接必须与网址是同一个网站&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;download&lt;/code&gt; 设置了属性值，下载时文件名称就是规定的 &lt;code&gt;download&lt;/code&gt;属性值:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt; &amp;lt;a href=&amp;quot;demo.txt&amp;quot; download=&amp;quot;demo.txt&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;img-标签&#34;&gt;&lt;code&gt;img&lt;/code&gt; 标签&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;img&lt;/code&gt; 是图像标签，图片是互联网的重要组成部分，它可以让网页变的丰富多彩。一起来看看吧。&lt;/p&gt;
+
+&lt;h4 id=&#34;img&#34;&gt;&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+
+&lt;p&gt;标签是单独使用的，没有闭合标签。也可以叫做单标签、空标签、可替换标签。如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;img src=&amp;quot;logo.jpg&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;src&lt;/code&gt; 指定的是图片路径，可以是相对路径、绝对路径以及一个网址。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; 标签默认是一个行内元素，但是与行内元素又不太一样，因为它可以设置宽高，如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;p&amp;gt;Hello&amp;lt;img src=&amp;quot;logo.jpg&amp;quot;&amp;gt;World&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;图片的默认大小是以图像原始大小为基准，就是说图像有多大在 &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; 标签里就显示多大。如果图片很大，又与文字处在同一行，那么图片将把当前行的行高撑开，并且图片的底边与文字的底边在同一条水平线上。但是不太符合审美，于是我通常采用如下写法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;p style=&amp;quot;border: 1px solid red;&amp;quot;&amp;gt;
+    &amp;lt;img src=&amp;quot;https://b-gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg&amp;quot; alt=&amp;quot;logo&amp;quot; style=&amp;quot;vertical-align: middle;&amp;quot;&amp;gt; 
+    掘金一个很不错的网站
+&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; 可以放在一个 &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; 标签的内部，可以把图片当作一个可以点击的链接，通常做法就是把 &lt;code&gt;logo&lt;/code&gt; 图片放在一个 &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; 链接中，如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;p style=&amp;quot;border: 1px solid red;&amp;quot;&amp;gt;
+   &amp;lt;a href=&amp;quot;https://juejin.im/timeline&amp;quot;&amp;gt;
+     &amp;lt;img src=&amp;quot;https://b-gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg&amp;quot; alt=&amp;quot;logo&amp;quot; style=&amp;quot;vertical-align: middle;&amp;quot;&amp;gt;
+   &amp;lt;/a&amp;gt;
+    掘金一个很不错的网站
+&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;属性&#34;&gt;属性&lt;/h4&gt;
+
+&lt;h5 id=&#34;1-alt-属性&#34;&gt;1. alt 属性&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;alt&lt;/code&gt; 属性用来设定图片的文字说明。图片不显示时（路径错误、名称错误、加载失败等），会在图片位置上显示该文本。如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;img src=&amp;quot;logo.jpg&amp;quot; alt=&amp;quot;logo图片&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;2-width-和-height-属性&#34;&gt;2. width 和 height 属性&lt;/h5&gt;
+
+&lt;p&gt;图片默认大小是插入图像的大小，&lt;code&gt;width&lt;/code&gt; 属性和 &lt;code&gt;height&lt;/code&gt; 属性可以给图片设置宽高，单位是像素，也可设置百分比，如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;img src=&amp;quot;logo.jpg&amp;quot; alt=&amp;quot;logo图片&amp;quot; width=&amp;quot;100&amp;quot; height=&amp;quot;200&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注意：如果我们设置了图片的宽高，浏览器会在网页上预留出空间大小，不管图片有没有加载成功。宽高也可以通过 &lt;code&gt;css&lt;/code&gt; 设置，这也是工作中常用的写法。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;img&lt;/code&gt; 标签特性，如果只是设置了宽高的其中一个，那么另一个会去自动缩放。所以我们在设置的时候只需设置一个属性即可。&lt;/p&gt;
+
+&lt;h4 id=&#34;响应式&#34;&gt;响应式&lt;/h4&gt;
+
+&lt;p&gt;一句话，只需给图片加上 &lt;code&gt;max-width: 100%&lt;/code&gt; 的样式。&lt;/p&gt;
+
+&lt;h4 id=&#34;事件&#34;&gt;事件&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;onload&lt;/code&gt; 图片加载完成之后调用，如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;oImg.onload = function() {
+console.log(&#39;加载完成！&#39;)
+}
+/*oImg 是当前图片*/
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;onerror&lt;/code&gt; 图片加载失败之后调用，如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;oImg.onerror = function() {
+console.log(&#39;加载失败&#39;);
+}
+/*加载失败后，可以给图片一个默认的图片，这样对于用户来说就显得比较友好了*/
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;支持的图片格式&#34;&gt;支持的图片格式&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;JPEG&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GIF&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PNG&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SVG&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BMP&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;base64&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;table-标签&#34;&gt;&lt;code&gt;table&lt;/code&gt; 标签&lt;/h3&gt;
+
+&lt;p&gt;表格布局是已经淘汰了的布局。但是表格对于平时的工作来说还是重要的，尤其是做后台管理系统来说，一个好的表格显的尤为重要。市面上有很多优秀的 &lt;code&gt;UI&lt;/code&gt; 框架的表格做的非常不错，如，&lt;code&gt;element-ui&lt;/code&gt; 、&lt;code&gt;Ant Design&lt;/code&gt;、&lt;code&gt;iview&lt;/code&gt; 等，它们的表格是非常值得学习的。&lt;/p&gt;
+
+&lt;p&gt;表格是由&lt;strong&gt;表头&lt;/strong&gt;、&lt;strong&gt;表体&lt;/strong&gt;、&lt;strong&gt;表尾&lt;/strong&gt;构成的，三大块又是由&lt;code&gt;行&lt;/code&gt; 和 &lt;code&gt;列&lt;/code&gt; 构成，如下代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;table border=&amp;quot;1&amp;quot;&amp;gt;
+    &amp;lt;thead&amp;gt;
+        &amp;lt;tr&amp;gt;
+            &amp;lt;th&amp;gt;表头&amp;lt;/th&amp;gt;
+        &amp;lt;/tr&amp;gt;
+    &amp;lt;/thead&amp;gt;
+    &amp;lt;tbody&amp;gt;
+        &amp;lt;tr&amp;gt;
+            &amp;lt;td&amp;gt;内容&amp;lt;/td&amp;gt;
+        &amp;lt;/tr&amp;gt;
+    &amp;lt;/tbody&amp;gt;
+    &amp;lt;tfoot&amp;gt;
+        &amp;lt;tr&amp;gt;
+            &amp;lt;td&amp;gt;表尾&amp;lt;/td&amp;gt;
+        &amp;lt;/tr&amp;gt;
+    &amp;lt;/tfoot&amp;gt;
+&amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;三者的前后顺序不会影响网页解析表格的前后顺序。&lt;/p&gt;
+
+&lt;h4 id=&#34;1-table-caption&#34;&gt;1. &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; , &lt;code&gt;&amp;lt;caption&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;如上代码所示，&lt;code&gt;table&lt;/code&gt; 是一个块级容器标签，所有表格内容都要放在这个标签里。&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;&amp;lt;caption&amp;gt;&lt;/code&gt; 总是 &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; 里的第一个子元素，表示表格的标题，是可选的。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;table&amp;gt;
+&amp;lt;caption style=&amp;quot;width: 200px;&amp;quot;&amp;gt;表格标题&amp;lt;/caption&amp;gt;
+&amp;lt;tbody&amp;gt;
+&amp;lt;tr&amp;gt;
+  &amp;lt;td style=&amp;quot;border: 1px solid #ddd;&amp;quot;&amp;gt;1&amp;lt;/td&amp;gt;
+  &amp;lt;td style=&amp;quot;border: 1px solid #ddd;&amp;quot;&amp;gt;2&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;2-thead-tbody-tfoot&#34;&gt;2. &lt;code&gt;&amp;lt;thead&amp;gt;&lt;/code&gt; 、&lt;code&gt;&amp;lt;tbody&amp;gt;&lt;/code&gt; 、&lt;code&gt;&amp;lt;tfoot&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+
+&lt;p&gt;三者是表格的三大模块，&lt;code&gt;&amp;lt;thead&amp;gt;&lt;/code&gt; 与 &lt;code&gt;&amp;lt;tfoot&amp;gt;&lt;/code&gt; 是可选的，其实 &lt;code&gt;&amp;lt;tbody&amp;gt;&lt;/code&gt; 也可选，但是呢如果我们省略了 &lt;code&gt;&amp;lt;tbody&amp;gt;&lt;/code&gt; 浏览器是会自动解析一个 &lt;code&gt;&amp;lt;tbody&amp;gt;&lt;/code&gt; 所以在书写表格时，&lt;code&gt;&amp;lt;tbody&amp;gt;&lt;/code&gt; 必须写。&lt;code&gt;&amp;lt;tbody&amp;gt;&lt;/code&gt; 可以是多个，比如表格嵌套表格等。&lt;/p&gt;
+
+&lt;h4 id=&#34;3-colgroup-col&#34;&gt;3. &lt;code&gt;&amp;lt;colgroup&amp;gt;&lt;/code&gt; 、&lt;code&gt;&amp;lt;col&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;colgroup&amp;gt;&lt;/code&gt; 是 &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; 的子元素排在第一位，除标题外，用来包含一组列的定义，&lt;code&gt;&amp;lt;col&amp;gt;&lt;/code&gt; 是它的子元素，用来定义表格的一列，如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;table&amp;gt;
+  &amp;lt;colgroup&amp;gt;
+    &amp;lt;col&amp;gt;
+    &amp;lt;col&amp;gt;
+    &amp;lt;col&amp;gt;
+  &amp;lt;/colgroup&amp;gt;
+&amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上述代码表示表格有三列内容，&lt;code&gt;&amp;lt;col&amp;gt;&lt;/code&gt; 是一个单标签，也是一个空标签，不会产生子元素。它的主要作用是，除了声明表格的结构，还可以给表格附加单独的样式，如加宽度等，如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;table border=&amp;quot;1&amp;quot;&amp;gt;
+  &amp;lt;colgroup&amp;gt;
+    &amp;lt;col width=&amp;quot;100&amp;quot;&amp;gt;
+    &amp;lt;col width=&amp;quot;200&amp;quot;&amp;gt;
+    &amp;lt;col widht=&amp;quot;300&amp;quot;&amp;gt;
+  &amp;lt;/colgroup&amp;gt;
+  &amp;lt;tbody&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;1&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;2&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;3&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+  &amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;针对于 &lt;code&gt;&amp;lt;col&amp;gt;&lt;/code&gt; 设置的样式会对整个表格有效。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;col&amp;gt;&lt;/code&gt; 有一个 &lt;code&gt;span&lt;/code&gt; 属性，属性值为正整数，默认为 &lt;code&gt;1&lt;/code&gt; 。如果大于1，表示该列的宽度包含连续的多列，如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;table border=&amp;quot;1&amp;quot; width=&amp;quot;100%&amp;quot;&amp;gt;
+  &amp;lt;colgroup&amp;gt;
+    &amp;lt;col width=&amp;quot;100&amp;quot;&amp;gt;
+    &amp;lt;col width=&amp;quot;200&amp;quot;&amp;gt;
+    &amp;lt;col widht=&amp;quot;300&amp;quot; span=&amp;quot;2&amp;quot;&amp;gt;
+  &amp;lt;/colgroup&amp;gt;
+  &amp;lt;tbody&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;1&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;2&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;3&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;4&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+  &amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在实际数据中第三列和第四列公用一个宽度。&lt;/p&gt;
+
+&lt;h4 id=&#34;4-tr-th-td&#34;&gt;4. &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;th&amp;gt;&lt;/code&gt; 、&lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; 标签表示表格的一行，放在 &lt;code&gt;&amp;lt;thead&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;tbody&amp;gt;&lt;/code&gt; 、&lt;code&gt;&amp;lt;tfoot&amp;gt;&lt;/code&gt; 之中。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;th&amp;gt;&lt;/code&gt; 和 &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; 用来定义单元格，&lt;code&gt;&amp;lt;th&amp;gt;&lt;/code&gt; 是标题单元格，默认是加粗的，&lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; 是数据单元格，如下代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;table border=&amp;quot;1&amp;quot;&amp;gt;
+  &amp;lt;colgroup&amp;gt;
+    &amp;lt;col width=&amp;quot;100&amp;quot;&amp;gt;
+    &amp;lt;col width=&amp;quot;120&amp;quot;&amp;gt;
+    &amp;lt;col width=&amp;quot;120&amp;quot;&amp;gt;
+    &amp;lt;col width=&amp;quot;120&amp;quot;&amp;gt;
+  &amp;lt;/colgroup&amp;gt;
+  &amp;lt;thead&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;th&amp;gt;姓名&amp;lt;/th&amp;gt;
+      &amp;lt;th&amp;gt;语文&amp;lt;/th&amp;gt;
+      &amp;lt;th&amp;gt;数学&amp;lt;/th&amp;gt;
+      &amp;lt;th&amp;gt;英语&amp;lt;/th&amp;gt;
+    &amp;lt;/tr&amp;gt;
+  &amp;lt;/thead&amp;gt;
+  &amp;lt;tbody&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;th&amp;gt;方一凡&amp;lt;/th&amp;gt;
+      &amp;lt;td&amp;gt;60&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;80&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;100&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;th&amp;gt;林磊儿&amp;lt;/th&amp;gt;
+      &amp;lt;td&amp;gt;100&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;100&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;100&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;th&amp;gt;乔英子&amp;lt;/th&amp;gt;
+      &amp;lt;td&amp;gt;99&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;98&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;100&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+  &amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;5-colspan-属性-rowspan-属性&#34;&gt;5. &lt;code&gt;&amp;lt;colspan&amp;gt;&lt;/code&gt;属性、&lt;code&gt;&amp;lt;rowspan&amp;gt;&lt;/code&gt;属性&lt;/h4&gt;
+
+&lt;p&gt;单元格存在跨行和跨列的情况，可以通过 &lt;code&gt;&amp;lt;colspan&amp;gt;&lt;/code&gt; 与 &lt;code&gt;&amp;lt;rowspan&amp;gt;&lt;/code&gt; 属性设置，前者表示跨列，后者表示跨行，他们的值只能是正整数，默认为1，如下代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;table border=&amp;quot;1&amp;quot; width=&amp;quot;500&amp;quot;&amp;gt;
+  &amp;lt;tbody&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td colspan=&amp;quot;2&amp;quot; rowspan=&amp;quot;2&amp;quot;&amp;gt;A&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;C&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;C&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+      &amp;lt;td&amp;gt;A&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;B&amp;lt;/td&amp;gt;
+      &amp;lt;td&amp;gt;C&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+  &amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注意：去除边框合并使用 &lt;code&gt;css&lt;/code&gt; 样式 &lt;code&gt;border-collapse: collapse;&lt;/code&gt; 加在 &lt;code&gt;table&lt;/code&gt; 标签上。&lt;/p&gt;
+
+&lt;h2 id=&#34;后记&#34;&gt;后记&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;HTML&lt;/code&gt; 重点标签还有 &lt;code&gt;form&lt;/code&gt; 表单标签，它可以让前端跟后端相连接从而可以获取到真实的数据，这块内容比较多，需要单独拿出来，所以看后续的笔记喽。&lt;code&gt;HTML&lt;/code&gt; 需要多多记忆，多多练习，一定记得用正确的标签做正确的布局。以此共勉，加油！！&lt;/p&gt;
+
+&lt;h2 id=&#34;参考链接&#34;&gt;参考链接&lt;/h2&gt;
+
+&lt;p&gt;[阮一峰 网道教程 HTML 篇](&lt;/p&gt;
 </description>
       
     </item>

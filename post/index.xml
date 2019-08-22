@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小鱼儿的小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 18 Aug 2019 16:41:46 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 22 Aug 2019 23:01:15 +0800</lastBuildDate>
     
 	<atom:link href="https://jinchao1992.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML 常用标签</title>
+      <link>https://jinchao1992.github.io/post/html-%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Thu, 22 Aug 2019 23:01:15 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/post/html-%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>前言 最新的 HTML5 里标签大概有 110 个，但是如果让我们学完 110 个的话，对于大多数人来说可能还是比较困难的。工作中常用的也就那么几个，接下来我们介绍下几个</description>
+    </item>
     
     <item>
       <title>HTML 入门笔记1</title>
