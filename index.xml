@@ -392,7 +392,7 @@ console.log(&#39;加载失败&#39;);
 
 &lt;h2 id=&#34;参考链接&#34;&gt;参考链接&lt;/h2&gt;
 
-&lt;p&gt;[阮一峰 网道教程 HTML 篇](&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wangdoc.com/html/&#34;&gt;阮一峰 网道教程 HTML 篇&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>
