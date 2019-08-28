@@ -98,7 +98,7 @@ box-sizing: border-box;
 
 &lt;h3 id=&#34;css-margin合并问题&#34;&gt;CSS margin合并问题&lt;/h3&gt;
 
-&lt;p&gt;关于 &lt;code&gt;margin&lt;/code&gt; 合并问题可以参照我写的这篇文章 &lt;a href=&#34;[https://jinchao1992.github.io/post/css-margin-%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/](https://jinchao1992.github.io/post/css-margin-布局技巧/)&#34;&gt;css-margin布局技巧&lt;/a&gt; 这里就不列举了！&lt;/p&gt;
+&lt;p&gt;关于 &lt;code&gt;margin&lt;/code&gt; 合并问题可以参照我写的这篇文章 &lt;a href=&#34;https://jinchao1992.github.io/post/css-margin-布局技巧&#34;&gt;css-margin布局技巧&lt;/a&gt; 这里就不列举了！&lt;/p&gt;
 
 &lt;h3 id=&#34;页面文档流&#34;&gt;页面文档流&lt;/h3&gt;
 
