@@ -46,7 +46,7 @@
 
 &lt;p&gt;盒模型是由外边距(margin)、边框（border）、内边距（padding）、内容（content）组成的，如下图：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../images/item1.png&#34; alt=&#34;item1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jinchao1992.github.io/images/item1.png&#34; alt=&#34;item1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;上图就是一个基本的 &lt;code&gt;CSS&lt;/code&gt; 盒模型的构成。&lt;/p&gt;
 
@@ -69,7 +69,7 @@ box-sizing: content-box;
 
 &lt;p&gt;图解上述代码：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../images/item2.png&#34; alt=&#34;item2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jinchao1992.github.io/images/item2.png&#34; alt=&#34;item2&#34; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;border-box 宽度组成，如下代码：&lt;/p&gt;
@@ -88,7 +88,7 @@ box-sizing: border-box;
 
 &lt;p&gt;图解上述代码&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../images/item3.png&#34; alt=&#34;item3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jinchao1992.github.io/images/item3.png&#34; alt=&#34;item3&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;高度跟宽度原理同理，只需要把左右换为上下即可。两个盒子模型的切换可以通过 &lt;code&gt;css&lt;/code&gt; 属性 &lt;code&gt;box-sizing&lt;/code&gt; 来修改。&lt;/p&gt;
 
@@ -104,7 +104,7 @@ box-sizing: border-box;
 
 &lt;p&gt;文档流（英文名：Normal Flow）简单来说就是文档流动方向。内联元素从左向右流动，走到行尾进行折行继续走，块级元素从上到下排列，一行只有一个块级元素。如下图：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../images/item4.png&#34; alt=&#34;item4&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jinchao1992.github.io/images/item4.png&#34; alt=&#34;item4&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;可以看到内联元素遇到行尾之后会自动折行，块级元素不管设置宽度多少是一定会独占一行的。&lt;/p&gt;
 
@@ -118,7 +118,7 @@ box-sizing: border-box;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;inline-block&lt;/code&gt; 内联块元素，从左到右流动，但是又具备块级元素的特性。如果在一行的行尾放不下时，元素会整体下移。如下图：&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;../images/item5.png&#34; alt=&#34;item5&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jinchao1992.github.io/images/item5.png&#34; alt=&#34;item5&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;如上图所示，我们把 &lt;code&gt;span&lt;/code&gt; 变为了内联块，在行尾时第6个 &lt;code&gt;span&lt;/code&gt; 是换行显示的。&lt;/p&gt;
 
