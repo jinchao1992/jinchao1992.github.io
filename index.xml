@@ -153,7 +153,255 @@ box-sizing: border-box;
 
 &lt;h3 id=&#34;脱离文档流&#34;&gt;脱离文档流&lt;/h3&gt;
 
-&lt;p&gt;未完待续&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;浮动元素可以脱离文档里；&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.box {
+float: left; /* 或者float:right */
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;绝对定位元素与固定定位元素可以脱离文档流；&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.box {
+position: absolute; /*或者position: fixed;*/
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;脱离文档流后会造成高度塌陷，为什么呢？因为块级元素的高度是由里文档流元素决定的。&lt;/p&gt;
+
+&lt;h3 id=&#34;布局分类&#34;&gt;布局分类&lt;/h3&gt;
+
+&lt;p&gt;布局是什么？布局的定义是，把页面分为一个个模块，并按照一定的格式组合排列，这就是布局。&lt;/p&gt;
+
+&lt;p&gt;布局大致可以分为三类：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;固定宽度布局，一般宽度为 960/1000/1024/1200px等；&lt;/li&gt;
+&lt;li&gt;不固定宽度布局，依靠文档流来实现；&lt;/li&gt;
+&lt;li&gt;响应式布局，具体就是两套页面PC上固定宽度，手机上不固定宽度，称之为混合布局。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;css-布局套路&#34;&gt;CSS 布局套路&lt;/h3&gt;
+
+&lt;p&gt;用下图可以简单表示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://jinchao1992.github.io/images/item6.png&#34; alt=&#34;image6&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如果我们只做手机移动页面或者只兼容高级浏览器的话，可以直接使用 &lt;code&gt;flex&lt;/code&gt; 布局。&lt;/p&gt;
+
+&lt;h4 id=&#34;float-布局&#34;&gt;float 布局&lt;/h4&gt;
+
+&lt;p&gt;在现代浏览器中，&lt;code&gt;float&lt;/code&gt;  布局显得不是那么重要了，因为可以通过 &lt;code&gt;flex&lt;/code&gt; 或者 &lt;code&gt;grid&lt;/code&gt; 写很少的代码就可以达到很复杂的布局，但是呢？因为存在浏览器兼容的问题，如必须兼容到 &lt;code&gt;IE8&lt;/code&gt; 等，还是得用 &lt;code&gt;float&lt;/code&gt; 布局。&lt;/p&gt;
+
+&lt;h5 id=&#34;float-布局步骤&#34;&gt;float 布局步骤&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;在子元素上加上 &lt;code&gt;float:left;&lt;/code&gt; 或 &lt;code&gt;float:right;&lt;/code&gt; 并添加 &lt;code&gt;width&lt;/code&gt;；&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;重点： 在父元素上添加 &lt;code&gt;.clearfix&lt;/code&gt; 类 用来清除浮动，因为不清除浮动会造成很大 &lt;code&gt;bug&lt;/code&gt;;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;style&amp;gt;
+.clearfix:after {
+content: &#39;&#39;;
+display: block;
+clear: both;
+}
+.parent {
+border: 1px solid red;
+}
+.child {
+float: left;
+}
+.child:nth-child(1) {
+width: 100px;
+border: 3px solid blue;
+}
+.child:nth-child(2) {
+border: 3px solid green;
+float: right;
+} 
+&amp;lt;/style&amp;gt;
+&amp;lt;div class=&amp;quot;parent clearfix&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;child&amp;quot;&amp;gt;left&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;child&amp;quot;&amp;gt;rigth&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;注意：通常最后一个 &lt;code&gt;float&lt;/code&gt; 元素不添加宽度，让其自动响应；&lt;code&gt;display: inline-block;&lt;/code&gt;元素需加上 &lt;code&gt;vertical-align:top&lt;/code&gt;;&lt;/p&gt;
+
+&lt;h5 id=&#34;float-布局示例&#34;&gt;float 布局示例&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;两栏布局  &lt;a href=&#34;https://jsbin.com/xuruceh/3/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;三栏布局 &lt;a href=&#34;https://jsbin.com/xuruceh/19/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;平均布局 &lt;a href=&#34;https://jsbin.com/xuruceh/24/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;flex-布局&#34;&gt;flex 布局&lt;/h4&gt;
+
+&lt;p&gt;移动互联网时代浮动布局是用的越来越少，紧接着出现的是 &lt;code&gt;flex&lt;/code&gt; 布局与 &lt;code&gt;grid&lt;/code&gt; 布局，由于 &lt;code&gt;grid&lt;/code&gt; 布局本身的兼容性不是太好，所有目前用的最多的还是 &lt;code&gt;flex&lt;/code&gt; 布局。一起来看 &lt;code&gt;flex&lt;/code&gt; 布局是什么吧！&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;flex&lt;/code&gt;  作用在两个模块身上，分别是 &lt;code&gt;container&lt;/code&gt;(容器)  与 &lt;code&gt;items&lt;/code&gt;(子元素) 如下图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/08/30/Y6NQaD9Ij8Bsv7q.png&#34; alt=&#34;1.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;flex-container-样式&#34;&gt;flex container 样式&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;display:flex&lt;/code&gt; 元素变为弹性盒；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;flex-direction: row | row-reverse | column | column-reverse&lt;/code&gt; 改变子元素流动方向（控制的方向叫主轴）
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;row&lt;/code&gt; 默认样式，子元素横向排列  &lt;a href=&#34;https://jsbin.com/xisopis/1/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;row-reverse&lt;/code&gt; 子元素从右往左排 &lt;a href=&#34;https://jsbin.com/xisopis/4/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;column&lt;/code&gt; 子元素竖着排列 &lt;a href=&#34;https://jsbin.com/xisopis/5/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;column-reverse&lt;/code&gt; 子元素从下往上排列 &lt;a href=&#34;https://jsbin.com/xisopis/19/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;flex-wrap: nowrap | wrap | wrap-reverse&lt;/code&gt; 控制子元素流动是否折行
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;nowrap&lt;/code&gt; 默认样式，不折行，如果子元素过多则会一直去平分父元素宽度 &lt;a href=&#34;https://jsbin.com/xisopis/18/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;wrap&lt;/code&gt; 换行 &lt;a href=&#34;https://jsbin.com/xisopis/17/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;wrap-reverse&lt;/code&gt; 从下往上折行 &lt;a href=&#34;https://jsbin.com/xisopis/15/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;justify-content: flex-start | flex-end | center | sapce-between | space-around | space-evenly&lt;/code&gt; 设置主轴对齐方式
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;flex-start&lt;/code&gt; 默认样式，开始位置对齐&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;flex-end&lt;/code&gt; 结束位置对齐 &lt;a href=&#34;https://jsbin.com/xisopis/21/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;center&lt;/code&gt; 居中对齐（非常有用）&lt;a href=&#34;https://jsbin.com/xisopis/22/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;space-between&lt;/code&gt; 富裕空间放入两个元素之间 &lt;a href=&#34;https://jsbin.com/xisopis/23/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;space-arount&lt;/code&gt; 富裕空间平均放入在每个元素之间 &lt;a href=&#34;https://jsbin.com/xisopis/26/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;space-evenly&lt;/code&gt; 在一个元素与最后一个元素的留白是一样的，其余元素平分 &lt;a href=&#34;https://jsbin.com/xisopis/28/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;align-items: flex-start | flex-end | center | stretch&lt;/code&gt; 规定侧轴的对齐方式
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;flex-start&lt;/code&gt; 默认样式，开始位置对齐&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;flex-end&lt;/code&gt; 结束位置对齐 &lt;a href=&#34;https://jsbin.com/xisopis/30/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;center&lt;/code&gt; 侧轴居中对齐 &lt;a href=&#34;https://jsbin.com/xisopis/31/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stretch&lt;/code&gt; 默认，侧轴两边对齐，如果子元素内容不一致时则会默认对齐最长的元素 &lt;a href=&#34;https://jsbin.com/xisopis/34/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;align-content: flex-start | flex-end | center | space-between | space-around | stretch&lt;/code&gt;  多行内容对齐方式
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;flex-start&lt;/code&gt; 整体靠上 &lt;a href=&#34;https://jsbin.com/xisopis/36/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;flex-end&lt;/code&gt; 整体靠下  &lt;a href=&#34;https://jsbin.com/xisopis/38/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;center&lt;/code&gt; 整体居中 &lt;a href=&#34;https://jsbin.com/xisopis/40/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;space-between&lt;/code&gt;  富裕空间在每一行中间 &lt;a href=&#34;https://jsbin.com/xisopis/42/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;space-around&lt;/code&gt; 富裕空间在每一行的两侧，平均分配 &lt;a href=&#34;https://jsbin.com/xisopis/43/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;flex-item-样式&#34;&gt;flex item 样式&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;order&lt;/code&gt; 排序，子元素的 &lt;code&gt;order&lt;/code&gt;默认是 0 设置值之后为从小到大排列，设置的越大就会排列到最后面，可以为负值，如果值相同的话按照 DOM 书写前后顺序排列 &lt;a href=&#34;https://jsbin.com/xisopis/48/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;flex-grow&lt;/code&gt; 用来分配多余的空间给某个元素默认是 0  &lt;a href=&#34;https://jsbin.com/xisopis/50/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;flex-shrink&lt;/code&gt; 用来处理空间不够时规定哪个元素缩小尺寸，默认是 1 ，注意：子元素必须是在同一行时才会起作用  &lt;a href=&#34;https://jsbin.com/xisopis/52/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;align-slef: flex-start | flex-end...&lt;/code&gt; 规定单个元素的对齐位置，如果在父级元素身上设置了侧轴对齐方式，&lt;code&gt;align-self&lt;/code&gt; 可以单独的规定某一个元素的侧轴对齐&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;grid-布局&#34;&gt;grid 布局&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;grid&lt;/code&gt; 布局是未来布局趋势，因为它本身的兼容问题，所以这里只是入门一下。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;grid&lt;/code&gt; 布局也分 &lt;code&gt;container&lt;/code&gt; 和 &lt;code&gt;items&lt;/code&gt; 。&lt;/p&gt;
+
+&lt;h5 id=&#34;grid-container-样式&#34;&gt;grid container 样式&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;grid-template-columns&lt;/code&gt; 规定列数和列数的宽度；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grid-template-rows&lt;/code&gt; 规定行数和行数的宽度；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如下图示例：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://jinchao1992.github.io/images/item7.png&#34; alt=&#34;item7&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;重点：如上图所示，可以通过 &lt;code&gt;grid&lt;/code&gt; 布局把空间分为三行五列，横向的线条数是4条，纵向的线条数是6条，这两个线条数必须记住，对于下面的代码介绍有用。我们还可以给每一根线条数起名字，名称随意；&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;线条取名示例代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.container {
+  grid-template-columns: [first] 40px [line2] 50px [line3] auto
+  [col4-start] 50px [five] 40px [end];
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line]
+  auto [last-line];
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;示例图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://jinchao1992.github.io/images/item8.png&#34; alt=&#34;item8&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;还可以给子元素设置为份数，代码示例：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.container {
+grid-template-columns: 1fr 2fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+/*代表两行三列, 其中第二个独占两份*/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;示例1 &lt;a href=&#34;https://jsbin.com/qewusoninu/10/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;示例2 (平均布局) &lt;a href=&#34;https://jsbin.com/bonowavuxu/1/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;设置 &lt;code&gt;items&lt;/code&gt; 模块之间的距离可以使用 &lt;code&gt;grid-gap:10px;&lt;/code&gt;  代表列与列之间，行一行之间都是 &lt;code&gt;10px&lt;/code&gt; ，也可以单独设置列：&lt;code&gt;grid-column-gap: 10px;&lt;/code&gt; 或者单独行 &lt;code&gt;grid-row-gap: 10px;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;grid-items-样式&#34;&gt;grid items 样式&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;grid-column-start&lt;/code&gt; 设置横向开始位置；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grid-column-end&lt;/code&gt; 设置横向结束位置；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grid-row-start&lt;/code&gt; 设置纵向开始位置；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grid-row-end&lt;/code&gt; 设置纵向结束位置；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;代码示例： &lt;a href=&#34;https://jsbin.com/qewusoninu/6/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;style&amp;gt;
+	* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 50px 100px auto 40px 50px;
+    grid-template-rows: 100px 100px 100px;
+    border: 2px solid red;
+  }
+  .container &amp;gt; div {
+    border: 1px solid blue;
+  }
+  .a {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /*表示a横向是从第一条线开始到第三条结束*/
+    grid-row-start: 1;
+    grid-row-end: 4;
+    /*表示a纵向是从第一条线开始到第四条结束*/
+  }
+&amp;lt;/style&amp;gt;
+&amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;a&amp;quot;&amp;gt;a&amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;b&amp;quot;&amp;gt;b&amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;c&amp;quot;&amp;gt;c&amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;d&amp;quot;&amp;gt;d&amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;e&amp;quot;&amp;gt;e&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;经典布局示例1：&lt;a href=&#34;https://jsbin.com/qewusoninu/8/edit?html,css,output&#34;&gt;demo&lt;/a&gt;； 经典布局示例2： &lt;a href=&#34;https://jsbin.com/fafotutoga/1/edit?html,css,output&#34;&gt;demo&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>

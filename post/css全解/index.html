@@ -69,7 +69,7 @@
 
 <meta itemprop="datePublished" content="2019-08-27T23:40:47&#43;08:00" />
 <meta itemprop="dateModified" content="2019-08-27T23:40:47&#43;08:00" />
-<meta itemprop="wordCount" content="1540">
+<meta itemprop="wordCount" content="3345">
 
 
 
@@ -379,6 +379,25 @@
 <li><a href="#文档溢出-overflow">文档溢出（overflow）</a></li>
 </ul></li>
 <li><a href="#脱离文档流">脱离文档流</a></li>
+<li><a href="#布局分类">布局分类</a></li>
+<li><a href="#css-布局套路">CSS 布局套路</a>
+<ul>
+<li><a href="#float-布局">float 布局</a>
+<ul>
+<li><a href="#float-布局步骤">float 布局步骤</a></li>
+<li><a href="#float-布局示例">float 布局示例</a></li>
+</ul></li>
+<li><a href="#flex-布局">flex 布局</a>
+<ul>
+<li><a href="#flex-container-样式">flex container 样式</a></li>
+<li><a href="#flex-item-样式">flex item 样式</a></li>
+</ul></li>
+<li><a href="#grid-布局">grid 布局</a>
+<ul>
+<li><a href="#grid-container-样式">grid container 样式</a></li>
+<li><a href="#grid-items-样式">grid items 样式</a></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -511,7 +530,255 @@ box-sizing: border-box;
 
 <h3 id="脱离文档流">脱离文档流</h3>
 
-<p>未完待续&hellip;</p>
+<ul>
+<li><p>浮动元素可以脱离文档里；</p>
+
+<pre><code class="language-css">.box {
+float: left; /* 或者float:right */
+}
+</code></pre></li>
+
+<li><p>绝对定位元素与固定定位元素可以脱离文档流；</p>
+
+<pre><code class="language-css">.box {
+position: absolute; /*或者position: fixed;*/
+}
+</code></pre></li>
+</ul>
+
+<p>脱离文档流后会造成高度塌陷，为什么呢？因为块级元素的高度是由里文档流元素决定的。</p>
+
+<h3 id="布局分类">布局分类</h3>
+
+<p>布局是什么？布局的定义是，把页面分为一个个模块，并按照一定的格式组合排列，这就是布局。</p>
+
+<p>布局大致可以分为三类：</p>
+
+<ul>
+<li>固定宽度布局，一般宽度为 960/1000/1024/1200px等；</li>
+<li>不固定宽度布局，依靠文档流来实现；</li>
+<li>响应式布局，具体就是两套页面PC上固定宽度，手机上不固定宽度，称之为混合布局。</li>
+</ul>
+
+<h3 id="css-布局套路">CSS 布局套路</h3>
+
+<p>用下图可以简单表示：</p>
+
+<p><img src="/images/item6.png" alt="image6" /></p>
+
+<p>如果我们只做手机移动页面或者只兼容高级浏览器的话，可以直接使用 <code>flex</code> 布局。</p>
+
+<h4 id="float-布局">float 布局</h4>
+
+<p>在现代浏览器中，<code>float</code>  布局显得不是那么重要了，因为可以通过 <code>flex</code> 或者 <code>grid</code> 写很少的代码就可以达到很复杂的布局，但是呢？因为存在浏览器兼容的问题，如必须兼容到 <code>IE8</code> 等，还是得用 <code>float</code> 布局。</p>
+
+<h5 id="float-布局步骤">float 布局步骤</h5>
+
+<ul>
+<li>在子元素上加上 <code>float:left;</code> 或 <code>float:right;</code> 并添加 <code>width</code>；</li>
+
+<li><p>重点： 在父元素上添加 <code>.clearfix</code> 类 用来清除浮动，因为不清除浮动会造成很大 <code>bug</code>;</p>
+
+<pre><code class="language-html">&lt;style&gt;
+.clearfix:after {
+content: '';
+display: block;
+clear: both;
+}
+.parent {
+border: 1px solid red;
+}
+.child {
+float: left;
+}
+.child:nth-child(1) {
+width: 100px;
+border: 3px solid blue;
+}
+.child:nth-child(2) {
+border: 3px solid green;
+float: right;
+} 
+&lt;/style&gt;
+&lt;div class=&quot;parent clearfix&quot;&gt;
+&lt;div class=&quot;child&quot;&gt;left&lt;/div&gt;
+&lt;div class=&quot;child&quot;&gt;rigth&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></li>
+</ul>
+
+<p>注意：通常最后一个 <code>float</code> 元素不添加宽度，让其自动响应；<code>display: inline-block;</code>元素需加上 <code>vertical-align:top</code>;</p>
+
+<h5 id="float-布局示例">float 布局示例</h5>
+
+<ul>
+<li>两栏布局  <a href="https://jsbin.com/xuruceh/3/edit?html,css,output">demo</a></li>
+<li>三栏布局 <a href="https://jsbin.com/xuruceh/19/edit?html,css,output">demo</a></li>
+<li>平均布局 <a href="https://jsbin.com/xuruceh/24/edit?html,css,output">demo</a></li>
+</ul>
+
+<h4 id="flex-布局">flex 布局</h4>
+
+<p>移动互联网时代浮动布局是用的越来越少，紧接着出现的是 <code>flex</code> 布局与 <code>grid</code> 布局，由于 <code>grid</code> 布局本身的兼容性不是太好，所有目前用的最多的还是 <code>flex</code> 布局。一起来看 <code>flex</code> 布局是什么吧！</p>
+
+<p><code>flex</code>  作用在两个模块身上，分别是 <code>container</code>(容器)  与 <code>items</code>(子元素) 如下图：</p>
+
+<p><img src="https://i.loli.net/2019/08/30/Y6NQaD9Ij8Bsv7q.png" alt="1.png" /></p>
+
+<h5 id="flex-container-样式">flex container 样式</h5>
+
+<ul>
+<li><code>display:flex</code> 元素变为弹性盒；</li>
+<li><code>flex-direction: row | row-reverse | column | column-reverse</code> 改变子元素流动方向（控制的方向叫主轴）
+
+<ul>
+<li><code>row</code> 默认样式，子元素横向排列  <a href="https://jsbin.com/xisopis/1/edit?html,css,output">demo</a></li>
+<li><code>row-reverse</code> 子元素从右往左排 <a href="https://jsbin.com/xisopis/4/edit?html,css,output">demo</a></li>
+<li><code>column</code> 子元素竖着排列 <a href="https://jsbin.com/xisopis/5/edit?html,css,output">demo</a></li>
+<li><code>column-reverse</code> 子元素从下往上排列 <a href="https://jsbin.com/xisopis/19/edit?html,css,output">demo</a></li>
+</ul></li>
+<li><code>flex-wrap: nowrap | wrap | wrap-reverse</code> 控制子元素流动是否折行
+
+<ul>
+<li><code>nowrap</code> 默认样式，不折行，如果子元素过多则会一直去平分父元素宽度 <a href="https://jsbin.com/xisopis/18/edit?html,css,output">demo</a></li>
+<li><code>wrap</code> 换行 <a href="https://jsbin.com/xisopis/17/edit?html,css,output">demo</a></li>
+<li><code>wrap-reverse</code> 从下往上折行 <a href="https://jsbin.com/xisopis/15/edit?html,css,output">demo</a></li>
+</ul></li>
+<li><code>justify-content: flex-start | flex-end | center | sapce-between | space-around | space-evenly</code> 设置主轴对齐方式
+
+<ul>
+<li><code>flex-start</code> 默认样式，开始位置对齐</li>
+<li><code>flex-end</code> 结束位置对齐 <a href="https://jsbin.com/xisopis/21/edit?html,css,output">demo</a></li>
+<li><code>center</code> 居中对齐（非常有用）<a href="https://jsbin.com/xisopis/22/edit?html,css,output">demo</a></li>
+<li><code>space-between</code> 富裕空间放入两个元素之间 <a href="https://jsbin.com/xisopis/23/edit?html,css,output">demo</a></li>
+<li><code>space-arount</code> 富裕空间平均放入在每个元素之间 <a href="https://jsbin.com/xisopis/26/edit?html,css,output">demo</a></li>
+<li><code>space-evenly</code> 在一个元素与最后一个元素的留白是一样的，其余元素平分 <a href="https://jsbin.com/xisopis/28/edit?html,css,output">demo</a></li>
+</ul></li>
+<li><code>align-items: flex-start | flex-end | center | stretch</code> 规定侧轴的对齐方式
+
+<ul>
+<li><code>flex-start</code> 默认样式，开始位置对齐</li>
+<li><code>flex-end</code> 结束位置对齐 <a href="https://jsbin.com/xisopis/30/edit?html,css,output">demo</a></li>
+<li><code>center</code> 侧轴居中对齐 <a href="https://jsbin.com/xisopis/31/edit?html,css,output">demo</a></li>
+<li><code>stretch</code> 默认，侧轴两边对齐，如果子元素内容不一致时则会默认对齐最长的元素 <a href="https://jsbin.com/xisopis/34/edit?html,css,output">demo</a></li>
+</ul></li>
+<li><code>align-content: flex-start | flex-end | center | space-between | space-around | stretch</code>  多行内容对齐方式
+
+<ul>
+<li><code>flex-start</code> 整体靠上 <a href="https://jsbin.com/xisopis/36/edit?html,css,output">demo</a></li>
+<li><code>flex-end</code> 整体靠下  <a href="https://jsbin.com/xisopis/38/edit?html,css,output">demo</a></li>
+<li><code>center</code> 整体居中 <a href="https://jsbin.com/xisopis/40/edit?html,css,output">demo</a></li>
+<li><code>space-between</code>  富裕空间在每一行中间 <a href="https://jsbin.com/xisopis/42/edit?html,css,output">demo</a></li>
+<li><code>space-around</code> 富裕空间在每一行的两侧，平均分配 <a href="https://jsbin.com/xisopis/43/edit?html,css,output">demo</a></li>
+</ul></li>
+</ul>
+
+<h5 id="flex-item-样式">flex item 样式</h5>
+
+<ul>
+<li><code>order</code> 排序，子元素的 <code>order</code>默认是 0 设置值之后为从小到大排列，设置的越大就会排列到最后面，可以为负值，如果值相同的话按照 DOM 书写前后顺序排列 <a href="https://jsbin.com/xisopis/48/edit?html,css,output">demo</a></li>
+<li><code>flex-grow</code> 用来分配多余的空间给某个元素默认是 0  <a href="https://jsbin.com/xisopis/50/edit?html,css,output">demo</a></li>
+<li><code>flex-shrink</code> 用来处理空间不够时规定哪个元素缩小尺寸，默认是 1 ，注意：子元素必须是在同一行时才会起作用  <a href="https://jsbin.com/xisopis/52/edit?html,css,output">demo</a></li>
+<li><code>align-slef: flex-start | flex-end...</code> 规定单个元素的对齐位置，如果在父级元素身上设置了侧轴对齐方式，<code>align-self</code> 可以单独的规定某一个元素的侧轴对齐</li>
+</ul>
+
+<h4 id="grid-布局">grid 布局</h4>
+
+<p><code>grid</code> 布局是未来布局趋势，因为它本身的兼容问题，所以这里只是入门一下。</p>
+
+<p><code>grid</code> 布局也分 <code>container</code> 和 <code>items</code> 。</p>
+
+<h5 id="grid-container-样式">grid container 样式</h5>
+
+<ul>
+<li><code>grid-template-columns</code> 规定列数和列数的宽度；</li>
+<li><code>grid-template-rows</code> 规定行数和行数的宽度；</li>
+</ul>
+
+<p>如下图示例：</p>
+
+<p><img src="/images/item7.png" alt="item7" /></p>
+
+<p><strong>重点：如上图所示，可以通过 <code>grid</code> 布局把空间分为三行五列，横向的线条数是4条，纵向的线条数是6条，这两个线条数必须记住，对于下面的代码介绍有用。我们还可以给每一根线条数起名字，名称随意；</strong></p>
+
+<p>线条取名示例代码：</p>
+
+<pre><code class="language-css">.container {
+  grid-template-columns: [first] 40px [line2] 50px [line3] auto
+  [col4-start] 50px [five] 40px [end];
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line]
+  auto [last-line];
+}
+</code></pre>
+
+<p>示例图：</p>
+
+<p><img src="/images/item8.png" alt="item8" /></p>
+
+<ul>
+<li><p>还可以给子元素设置为份数，代码示例：</p>
+
+<pre><code class="language-css">.container {
+grid-template-columns: 1fr 2fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+/*代表两行三列, 其中第二个独占两份*/
+</code></pre>
+
+<ul>
+<li><p>示例1 <a href="https://jsbin.com/qewusoninu/10/edit?html,css,output">demo</a></p></li>
+
+<li><p>示例2 (平均布局) <a href="https://jsbin.com/bonowavuxu/1/edit?html,css,output">demo</a></p></li>
+</ul></li>
+
+<li><p>设置 <code>items</code> 模块之间的距离可以使用 <code>grid-gap:10px;</code>  代表列与列之间，行一行之间都是 <code>10px</code> ，也可以单独设置列：<code>grid-column-gap: 10px;</code> 或者单独行 <code>grid-row-gap: 10px;</code></p></li>
+</ul>
+
+<h5 id="grid-items-样式">grid items 样式</h5>
+
+<ul>
+<li><code>grid-column-start</code> 设置横向开始位置；</li>
+<li><code>grid-column-end</code> 设置横向结束位置；</li>
+<li><code>grid-row-start</code> 设置纵向开始位置；</li>
+<li><code>grid-row-end</code> 设置纵向结束位置；</li>
+</ul>
+
+<p>代码示例： <a href="https://jsbin.com/qewusoninu/6/edit?html,css,output">demo</a></p>
+
+<pre><code class="language-html">&lt;style&gt;
+	* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 50px 100px auto 40px 50px;
+    grid-template-rows: 100px 100px 100px;
+    border: 2px solid red;
+  }
+  .container &gt; div {
+    border: 1px solid blue;
+  }
+  .a {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /*表示a横向是从第一条线开始到第三条结束*/
+    grid-row-start: 1;
+    grid-row-end: 4;
+    /*表示a纵向是从第一条线开始到第四条结束*/
+  }
+&lt;/style&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;a&quot;&gt;a&lt;/div&gt;
+  &lt;div class=&quot;b&quot;&gt;b&lt;/div&gt;
+  &lt;div class=&quot;c&quot;&gt;c&lt;/div&gt;
+  &lt;div class=&quot;d&quot;&gt;d&lt;/div&gt;
+  &lt;div class=&quot;e&quot;&gt;e&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>经典布局示例1：<a href="https://jsbin.com/qewusoninu/8/edit?html,css,output">demo</a>； 经典布局示例2： <a href="https://jsbin.com/fafotutoga/1/edit?html,css,output">demo</a></p>
 
     </div>
 
