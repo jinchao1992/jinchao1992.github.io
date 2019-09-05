@@ -6,7 +6,7 @@
     <description>Recent content on 小鱼儿的小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 27 Aug 2019 23:40:47 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 05 Sep 2019 21:29:11 +0800</lastBuildDate>
     
         <atom:link href="https://jinchao1992.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,185 @@
       <guid>https://jinchao1992.github.io/about/</guid>
       
         <description>&lt;p&gt;靳超，前端开发工程师；技术栈：Vue React JS HTML CSS 微信小程序&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>URL 浅析</title>
+      <link>https://jinchao1992.github.io/post/url-%E6%B5%85%E6%9E%90/</link>
+      <pubDate>Thu, 05 Sep 2019 21:29:11 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/post/url-%E6%B5%85%E6%9E%90/</guid>
+      
+        <description>
+
+&lt;p&gt;URL（Uniform Resource Locator）统一资源定位符。由 &lt;a href=&#34;https://zh.wikipedia.org/wiki/蒂姆·伯纳斯-李&#34;&gt;蒂姆·伯纳斯-李&lt;/a&gt; 发明。它包含以下几个方面：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;传送协议；&lt;/li&gt;
+&lt;li&gt;域名或IP；&lt;/li&gt;
+&lt;li&gt;端口；&lt;/li&gt;
+&lt;li&gt;路径；&lt;/li&gt;
+&lt;li&gt;查询参数；&lt;/li&gt;
+&lt;li&gt;锚点；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;示例图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://jinchao1992.github.io/images/15.png&#34; alt=&#34;15&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上述的这几个词都代表什么呢？一起来看一下吧！&lt;/p&gt;
+
+&lt;h2 id=&#34;ip与域名&#34;&gt;IP与域名&lt;/h2&gt;
+
+&lt;p&gt;什么是 &lt;code&gt;IP&lt;/code&gt; ？ IP（&lt;strong&gt;I&lt;/strong&gt;nternet &lt;strong&gt;P&lt;/strong&gt;rotocol） 中文名，互联网协议，主要做两件事情：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;定位一台设备；&lt;/li&gt;
+&lt;li&gt;封装数据报文，与其他设备交流；&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;每一个在互联网中的用户都是有一个 &lt;code&gt;IP&lt;/code&gt; 而 &lt;code&gt;IP&lt;/code&gt; 又可分为 &lt;code&gt;内网IP&lt;/code&gt; 与 &lt;code&gt;外网IP&lt;/code&gt;， 如下图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://jinchao1992.github.io/images/route.png&#34; alt=&#34;路由器&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;内网&lt;/code&gt;与&lt;code&gt;外网&lt;/code&gt; 通过路由器相隔开，内网不能直接访问外网。&lt;/p&gt;
+
+&lt;p&gt;外网IP是由电信服务器负责分配，路由器链接电信服务器，如果我们重新启动路由器，外网IP也有可能被更改。当然也可以固定外网IP只是比较贵；&lt;/p&gt;
+
+&lt;p&gt;内网IP是路由器分配给设备的地址，如：&lt;code&gt;192.168.1.1&lt;/code&gt;；&lt;/p&gt;
+
+&lt;p&gt;可以通过 &lt;a href=&#34;http://ip38.com/&#34;&gt;http://ip38.com/&lt;/a&gt; 定位IP具体地址。&lt;/p&gt;
+
+&lt;h3 id=&#34;路由器功能&#34;&gt;路由器功能&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;路由器链接内网与外网；&lt;/li&gt;
+&lt;li&gt;内网设备可以互相访问，内网设备访问外网必须通过路由器；&lt;/li&gt;
+&lt;li&gt;外网设备可以互相访问，但是不能访问内网；&lt;/li&gt;
+&lt;li&gt;外网设备发送内网内容也需通过路由器；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;特殊的ip&#34;&gt;特殊的IP&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;127.0.0.1&lt;/code&gt; 表示本机，如：本地搭建的服务器；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;localhost&lt;/code&gt; 通过 &lt;code&gt;host&lt;/code&gt; 指定的自己；
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;host&lt;/code&gt; 可以指定本地域名，如：&lt;code&gt;127.0.0.1 jinchao1992&lt;/code&gt; 那么就可以直接访问 &lt;code&gt;jinchao1992&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;windows&lt;/code&gt; &lt;code&gt;host&lt;/code&gt; 文件位置：&lt;code&gt;C:\Windows\System32\drivers\etc\hosts&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;macOS / Linux&lt;/code&gt; &lt;code&gt;hosts 位于 /etc/hosts&lt;/code&gt;；&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;域名&#34;&gt;域名&lt;/h3&gt;
+
+&lt;p&gt;域名就是对IP的别称，可以通过 &lt;code&gt;ping&lt;/code&gt; 命令来查询当前域名的 &lt;code&gt;IP&lt;/code&gt;  如下图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://jinchao1992.github.io/images/14.png&#34; alt=&#34;14&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上述截图可以看出来，通过 &lt;code&gt;ping&lt;/code&gt; 命令得到了 &lt;code&gt;baidu.com&lt;/code&gt; 与 &lt;code&gt;qq.com&lt;/code&gt; 的 &lt;code&gt;IP&lt;/code&gt; 地址，当然它们的 &lt;code&gt;IP&lt;/code&gt; 肯定不会采用了一个，原因如下：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;一个域名可以对应不同的 &lt;code&gt;IP&lt;/code&gt;  用来做负载均衡，防止一台服务器扛不住多人次的访问；&lt;/li&gt;
+&lt;li&gt;一个 &lt;code&gt;IP&lt;/code&gt; 可以对应不同的域名这个叫做共享主机；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;那么域名和 &lt;code&gt;IP&lt;/code&gt; 是如何对应起来的呢？答案是通过 &lt;code&gt;DNS(Domain Name System)&lt;/code&gt; 域名系统；&lt;/p&gt;
+
+&lt;h4 id=&#34;域名等级&#34;&gt;域名等级&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;com、cn等&lt;/code&gt; 顶级域名&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;baidu.com&lt;/code&gt; 二级域名&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;www.baidu.com&lt;/code&gt; 三级域名&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;注意：&lt;code&gt;www.baidu.com&lt;/code&gt; 与 &lt;code&gt;baidu.com&lt;/code&gt; 是两个不同的域名，只不过都被指向了同一个地址。&lt;/p&gt;
+
+&lt;h4 id=&#34;nslookup&#34;&gt;nslookup&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;nslookup命令&lt;/strong&gt;是常用域名查询工具，就是查DNS信息用的命令。如：&lt;code&gt;nslookup baidu.com&lt;/code&gt; 解析结果如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://jinchao1992.github.io/images/16.png&#34; alt=&#34;16.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;绿色框住的就是百度的DNS解析地址；&lt;/p&gt;
+
+&lt;h4 id=&#34;输入网址后发生了什么&#34;&gt;输入网址后发生了什么？&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;当在浏览器输入网址后，浏览器会向电线/联通/移动提供的 DNS 服务器，询问网址对应的IP；&lt;/p&gt;
+
+&lt;p&gt;电信/联通/移动会相应一个IP，当然这其中的步骤是很麻烦的；&lt;/p&gt;
+
+&lt;p&gt;浏览器向对应的IP的&lt;strong&gt;80&lt;/strong&gt;或者&lt;strong&gt;443&lt;/strong&gt;端口发送请求；&lt;/p&gt;
+
+&lt;p&gt;请求的内容是查看网址的首页；&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;端口&#34;&gt;端口&lt;/h2&gt;
+
+&lt;p&gt;端口是什么？一台服务器可以提供很多服务，每一个服务都对应一个号码，这个号码就是端口；端口总共 &lt;code&gt;65535&lt;/code&gt; 个；&lt;/p&gt;
+
+&lt;h3 id=&#34;常用端口&#34;&gt;常用端口：&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HTTP 服务使用 &lt;code&gt;80&lt;/code&gt; 端口；&lt;/li&gt;
+&lt;li&gt;HTTPS 服务使用 &lt;code&gt;443&lt;/code&gt; 端口；&lt;/li&gt;
+&lt;li&gt;FTP 服务使用 &lt;code&gt;21&lt;/code&gt; 端口；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;端口使用规则&#34;&gt;端口使用规则&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;0&lt;/code&gt; 到 &lt;code&gt;1023&lt;/code&gt; 号端口留给系统使用，只有拥有管理员权限，才能使用这 &lt;code&gt;1024&lt;/code&gt; 个端口；&lt;/li&gt;
+&lt;li&gt;其余的端口可以分配给用户使用；&lt;/li&gt;
+&lt;li&gt;我们一般开发网页使用的是 &lt;code&gt;8888&lt;/code&gt; 与 &lt;code&gt;8080&lt;/code&gt; 端口；&lt;/li&gt;
+&lt;li&gt;如果端口号被占用，只能换其他端口，两个端口不能共存；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;记住一句话，上网必须拥有IP和端口两者缺一不可。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;路径&#34;&gt;路径&lt;/h2&gt;
+
+&lt;p&gt;路径的意思是，我们可以通过不同的网址路径访问不同的页面，如：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML&#34;&gt;https://developer.mozilla.org/zh-CN/docs/Web/HTML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/css&#34;&gt;https://developer.mozilla.org/zh-CN/docs/Web/css&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;上述的路径是: &lt;code&gt;/zh-CN/docs/Web/HTML 与 /zh-CN/docs/Web/css&lt;/code&gt;  可以看出来不同的路径看到的网页内容是有所不同的；&lt;/p&gt;
+
+&lt;p&gt;问题：那如果是同一个页面呢，想看到不同的内容怎么办？答案：通过查询参数！&lt;/p&gt;
+
+&lt;h2 id=&#34;查询参数&#34;&gt;查询参数&lt;/h2&gt;
+
+&lt;p&gt;如下网址：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.baidu.com/s?wd=hi&#34;&gt;https://www.baidu.com/s?wd=hi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.baidu.com/s?wd=hello&#34;&gt;https://www.baidu.com/s?wd=hello&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;访问百度同一个路径 &lt;code&gt;/s&lt;/code&gt; 代表搜索 &lt;code&gt;wd=hi&lt;/code&gt; 与 &lt;code&gt;wd=hello&lt;/code&gt; 代表不同的查询参数，得到的网页是不同的；所以同一个页面可以用不同的查询参数显示不同的内容；&lt;/p&gt;
+
+&lt;p&gt;问题：那同一个页面，同一个内容，不同的位置如何访问？答案：可以通过锚点&lt;/p&gt;
+
+&lt;h2 id=&#34;锚点&#34;&gt;锚点&lt;/h2&gt;
+
+&lt;p&gt;如下网址：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/css#参考书&#34;&gt;https://developer.mozilla.org/zh-CN/docs/Web/css#%E5%8F%82%E8%80%83%E4%B9%A6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/css#CSS_开发工具&#34;&gt;https://developer.mozilla.org/zh-CN/docs/Web/css#CSS_%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;上述网址同一个页面同一个内容，不同的位置可以通过不同的锚点进行设置。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;注意：锚点不支持中文，中文会被解析为一段码，锚点不会传给服务器。&lt;/strong&gt;&lt;/p&gt;
 </description>
       
     </item>
