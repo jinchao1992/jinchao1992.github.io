@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh_CN">
+<html lang="zh-Hans">
 <head>
 
     <meta charset="utf-8" />
@@ -245,6 +245,8 @@
     
         
     
+        
+    
 
     
         
@@ -270,20 +272,48 @@
     
         <article class="post post">
     <header class="post-header">
+        <h2 class="post-title"><a href="https://jinchao1992.github.io/post/css-%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/">CSS 层叠上下文</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>前言 思考一个小问题，布局与定位的区别？
+我们可能认为布局里面也是包含定位的，因为布局时一个个小模块组合在一块的，而定位也是把一个模块通过定位的方式放在一个模块里。其实不然，布局是相对于屏幕平面上的，而定位是垂直于屏幕上的。 那么这是什么意思呢？里面有涉及哪些概念呢？下面一起看看吧！
+div的分层 之前我们有提到过盒模型的概念，如下图：
+假如给内容区一个背景，那么背景的范围是从哪里开始的呢？通过一个 验证demo 可以得出背景色的区域是 border 外边沿围城的区域。那么通过这个例子可以知道一个模块的背景色是低于一个模块的 border 的，模块的具体分层是什么样子呢？如下图所示： <a class="read-more" href="https://jinchao1992.github.io/post/css-%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="https://jinchao1992.github.io/images/avatar.jpg" alt="Author image" nopin="nopin" />
+            
+            
+            
+            靳超
+                 
+        
+
+        
+        <time class="post-date" datetime="2019-09-07T17:43:43&#43;08:00">
+            7 Sep 2019
+        </time>
+    </footer>
+</article>
+
+    
+        <article class="post post">
+    <header class="post-header">
         <h2 class="post-title"><a href="https://jinchao1992.github.io/post/url-%E6%B5%85%E6%9E%90/">URL 浅析</a></h2>
     </header>
     <section class="post-excerpt">
         
             <p>URL（Uniform Resource Locator）统一资源定位符。由 蒂姆·伯纳斯-李 发明。它包含以下几个方面：
- 传送协议； 域名或IP； 端口； 路径； 查询参数； 锚点；  示例图：
-上述的这几个词都代表什么呢？一起来看一下吧！
-IP与域名 什么是 IP ？ IP（Internet Protocol） 中文名，互联网协议，主要做两件事情：
- 定位一台设备； 封装数据报文，与其他设备交流；  每一个在互联网中的用户都是有一个 IP 而 IP 又可分为 内网IP 与 外网IP， 如下图：
-内网与外网 通过路由器相隔开，内网不能直接访问外网。
-外网IP是由电信服务器负责分配，路由器链接电信服务器，如果我们重新启动路由器，外网IP也有可能被更改。当然也可以固定外网IP只是比较贵；
-内网IP是路由器分配给设备的地址，如：192.168.1.1；
-可以通过 http://ip38.com/ 定位IP具体地址。
-路由器功能  路由器链接内网与外网； 内网设备可以互相访问，内网设备访问外网必须通过路由器； 外网设备可以互相访问，但是不能访问内网； 外网设备发送内网内容也需通过路由器；  特殊的IP  127.0.0.1 表示本机，如：本地搭建的服务器； localhost 通过 host 指定的自己；  host 可以指定本地域名，如：127.0.0.1 jinchao1992 那么就可以直接访问 jinchao1992; windows host 文件位置：C:\Windows\System32\drivers\etc\hosts; macOS / Linux hosts 位于 /etc/hosts；   域名 域名就是对IP的别称，可以通过 ping 命令来查询当前域名的 IP 如下图： <a class="read-more" href="https://jinchao1992.github.io/post/url-%E6%B5%85%E6%9E%90/">&raquo;</a></p>
+ 传送协议； 域名或IP； 端口； 路径； 查询参数； 锚点；  示例图： <a class="read-more" href="https://jinchao1992.github.io/post/url-%E6%B5%85%E6%9E%90/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -316,14 +346,7 @@ IP与域名 什么是 IP ？ IP（Internet Protocol） 中文名，互联网协�
     </header>
     <section class="post-excerpt">
         
-            <p>CSS 全解 如果我们把 HTML 理解为一栋房子的主体结构（毛坯房），那么 CSS 就是我们用来装修房子的材料，我们可以用 CSS 装修出各种华丽、大体、美观的房子（网页）。所以 CSS 对于前端开发者来说也是必不可缺的一项软技能了，学好 CSS 就显得尤为重要了。废话不多说一起来看看 CSS 的一些重要知识点吧。
-CSS 盒模型 CSS 盒模型是 CSS 的基础，也是我们在工作中会经常遗忘的点，基本上面试时都会被提及，那么什么是 CSS 盒模型呢？一起来看。
-我们知道网页是由 html 标签组成的，我们可以认为每个 html 标签都是一个小方块，小方块里面又套着小方块，就像是盒子一层层包裹一样，这就是所谓的盒模型了。也可以理解一个小模块就具备一个小盒模型。
-盒模型的组成 盒模型是由外边距(margin)、边框（border）、内边距（padding）、内容（content）组成的，如下图：
-上图就是一个基本的 CSS 盒模型的构成。
-盒模型又可分为 内容盒模型(content-box) 和 边框盒模型(border-box) 。其中内容盒模型是浏览器默认的解析的盒模型。它们有什么区别呢？
- content-box 宽度组成 , 如下代码：
-.content-box { width: 100px; height: 100px; padding: 20px; border: 5px solid #f00; margin: 20px; box-sizing: content-box; } /*浏览器解析出来的宽度为 width + padding + border */   图解上述代码： <a class="read-more" href="https://jinchao1992.github.io/post/css%E5%85%A8%E8%A7%A3/">&raquo;</a></p>
+            <p>CSS 全解 如果我们把 HTML 理解为一栋房子的主体结构（毛坯房），那么 CSS 就是我们用来装修房子的材料，我们可以用 CSS 装修出各种华丽、大体、美观的房子（网页）。所以 CSS 对于前端开发者来说也是必不可缺的一项软技能了，学好 CSS 就显得尤为重要了。废话不多说一起来看看 CSS 的一些重要知识点吧。 <a class="read-more" href="https://jinchao1992.github.io/post/css%E5%85%A8%E8%A7%A3/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -356,17 +379,7 @@ CSS 盒模型 CSS 盒模型是 CSS 的基础，也是我们在工作中会经常
     </header>
     <section class="post-excerpt">
         
-            <p>前言 最新的 HTML5 里标签大概有 110 个，但是如果让我们学完 110 个的话，对于大多数人来说可能还是比较困难的。工作中常用的也就那么几个，接下来我们介绍下几个常用的 HTML 标签。
-常用标签 a 标签 超链接元素，也可称为锚元素，可以通过此标签链接整个互联网，包括电子邮件、拨打电话、联通其他网页、文件以及同一页面内其他的位置，几乎互联网上的资源，都可以通过超链接访问。
- 跳向其他 URL 点击之后浏览器会跳转到指定的网址，如下：
-&lt;a href=&quot;https://www.baidu.com&quot;&gt;百度&lt;/a&gt;   点击如上的 「百度」字样即可跳转到我们经常访问的百度网页上，href 填写的是我们需要跳转的网页地址。
-a 标签不是一个单标签，里面可以放置任何内容，包括图片，文字等，如下：
-&lt;a href=&quot;https://www.baidu.com&quot;&gt; &lt;img src=&quot;假如这是百度的logo.jpg&quot;&gt; &lt;/a&gt;   &lt;a&gt; 标签属性（常用）
- href 链接指向的网址，值可以是一个 URL 或者锚点，如下代码：
-&lt;div class=&quot;box&quot; style=&quot;border:1px solid #ddd; height: 8000px;&quot;&gt; &lt;a href=&quot;#demo&quot;&gt;点击锚点&lt;/a&gt; &lt;/div&gt; &lt;span id=&quot;demo&quot;&gt;我是demo锚点&lt;/span&gt;   # 加上锚点名称，点击时会自动滚动到锚点所在位置。
-注意：href 可以是本地的相对路径或者绝对路径
- href 链接指向邮件地址，使用 mailto 协议。用户点击后，浏览器会默认打开本机的邮件程序，可以向指定的地址发送邮件，如下：
-&lt;a href=&quot;mailto:jinchaophp@126.com&quot;&gt;给我发发发！！！&lt;/a&gt;  href 链接指向电话号码，使用 tel 协议，用户点击后，可以唤起电话，进行电话拨号，当然只是在移动端比较适合。如下： <a class="read-more" href="https://jinchao1992.github.io/post/html-%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/">&raquo;</a></p>
+            <p>前言 最新的 HTML5 里标签大概有 110 个，但是如果让我们学完 110 个的话，对于大多数人来说可能还是比较困难的。工作中常用的也就那么几个，接下来我们介绍下几个常用的 HTML 标签。 <a class="read-more" href="https://jinchao1992.github.io/post/html-%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -399,16 +412,7 @@ a 标签不是一个单标签，里面可以放置任何内容，包括图片，
     </header>
     <section class="post-excerpt">
         
-            <p>HTML（英语：HyperText Markup Language）超文本编辑语言。由万维网联盟（W3C）负责维护，于1990年诞生，作者是：Time Berners-Lee（蒂姆·伯纳斯-李）, 也可称为”李爵士“。是整个网页的基础，是学好前端必备的一大知识模块，学好 HTML 非常重要，并且我们要学会使用*语义化的标签来书写 HTML 标签。
-HTML 简介  HTML 的版本
- HTML 4.01
- XHTML
- HTML5
- HTML5.1
-  规范
- 由 W3C 负责文档编写  声明规范
- &lt;DOCTYPE html&gt; html5 声明规范，目前采用最广的声明规范 其他参照 https://www.w3.org/QA/2002/04/valid-dtd-list.html   HTML 起手代码
-&lt;!DOCTYPE html&gt; &lt;!--文档类型--&gt; &lt;html lang=&quot;zh-CN&quot;&gt; &lt;!--设置html解析语言--&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;!--设置字符编码--&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,inital-scale=1.0&quot;&gt; &lt;!--移动端适配代码--&gt; &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt; &lt;!--IE 浏览器使用最新版本--&gt; &lt;title&gt;我的第一个网页&lt;/title&gt; &lt;!--网页名称--&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt;  HTML 标签  &lt;header&gt;&lt;/header&gt;、&lt;nav&gt;&lt;/nav&gt; 双标签； &lt;img&gt; 单标签， 单标签可以不加/ 结束，也可以加，最新标准可以不加；  注意：标签不区分，但是，习惯上还是小写；标签属性名称可以是单引号也可是双引号，如：&lt;div title='我是div'&gt;&lt;/div&gt;，如没有特殊字符的话可以不用加引号。 <a class="read-more" href="https://jinchao1992.github.io/post/html-%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/">&raquo;</a></p>
+            <p>HTML（英语：HyperText Markup Language）超文本编辑语言。由万维网联盟（W3C）负责维护，于1990年诞生，作者是：Time Berners-Lee（蒂姆·伯纳斯-李）, 也可称为”李爵士“。是整个网页的基础，是学好前端必备的一大知识模块，学好 HTML 非常重要，并且我们要学会使用*语义化的标签来书写 HTML 标签。 <a class="read-more" href="https://jinchao1992.github.io/post/html-%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -430,48 +434,6 @@ HTML 简介  HTML 的版本
         
         <time class="post-date" datetime="2019-08-18T16:41:46&#43;08:00">
             18 Aug 2019
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="https://jinchao1992.github.io/post/css-margin-%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/">CSS Margin 布局技巧</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>前言 CSS 里有一个重要的东西，叫 CSS 盒模型，它几乎能贯穿我们学习 CSS 的整个阶段，如下图所示，就是我们所说的盒子模型：
-[!]()
-(注：图片来源 MDN )
-&ldquo;盒模型&rdquo;中最外层透明的区域就是 margin所在，它会将其他区域从盒子模型内容中推开。
-margin 一共有四个属性值， margin-top 、margin-right 、margin-bottom 和 margin-left 属性，也可以设置简写属性 margin。
-margin 看起来比较简单，但是，它其实有自己的奥妙所在，比如我们在布局中经常遇到 margin 重叠效果等，接下来我们来看看 margin 究竟有什么神奇所在吧。
-margin 重叠 margin 重叠指的是垂直重叠，重叠的意思是，当我们规定一个模块的 margin-bottom 与 紧邻着的下一个模块的 margin-top 它们会发生重叠，它们之间不会出现较大的空白。因为代码会取两个值之间较大的那个，比如 第一个模块设置margin-bottom: 50px ，第二个模块设置 margin-top: 100px 那么第一个模块的 margin-bottom 则不会起作用，起作用的则是 第二个模块的 margin-top 也就是说他们之间的空白间距是 100px ，可能会有疑问，那 50px 跑哪里去了，其实是被包含在 100px 里面了 这就是所谓的 margin 重叠。
-以下情况下，margin 会发生重叠：
- 相邻的兄弟元素 完全空盒子 父元素与它的第一个或最后一个子元素  相邻的兄弟元素重叠 上述我们所描绘的情况就是相邻兄弟之间的 margin 重叠。
-如下示例，有三个 div 元素。第一个 div 的顶部与底部的 margin 分别是 50px 第二个 div 的顶部与底部 margin 分别是 20px ，第三个 div 的顶部与底部 margin 是 3em。 那么出现的重叠情况是，第一个与第二个的间距是 50px, 因为第二个元素的顶部小于第一个底部的 margin，取两者之间较大的。第二个元素与第三个元素之间的间距则是 3em ，同理 3em 大于第二个元素的 底部 20px。 <a class="read-more" href="https://jinchao1992.github.io/post/css-margin-%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="https://jinchao1992.github.io/images/avatar.jpg" alt="Author image" nopin="nopin" />
-            
-            
-            
-            靳超
-                 
-        
-
-        
-        <time class="post-date" datetime="2019-08-11T14:28:00&#43;08:00">
-            11 Aug 2019
         </time>
     </footer>
 </article>

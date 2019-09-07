@@ -10,8 +10,21 @@
   </url>
   
   <url>
+    <loc>https://jinchao1992.github.io/post/css-%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/</loc>
+    <lastmod>2019-09-07T17:43:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://jinchao1992.github.io/post/</loc>
-    <lastmod>2019-09-05T21:29:11+08:00</lastmod>
+    <lastmod>2019-09-07T17:43:43+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jinchao1992.github.io/</loc>
+    <lastmod>2019-09-07T17:43:43+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -20,12 +33,6 @@
     <lastmod>2019-09-05T21:29:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://jinchao1992.github.io/</loc>
-    <lastmod>2019-09-05T21:29:11+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
