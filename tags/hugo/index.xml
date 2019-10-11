@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on 小鱼儿的小站</title>
+    <link>https://jinchao1992.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on 小鱼儿的小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 11 Oct 2019 21:31:29 +0800</lastBuildDate>
+    
+	<atom:link href="https://jinchao1992.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何使用Hugo和GitPage搭建个人博客</title>
+      <link>https://jinchao1992.github.io/2019/10/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E5%92%8Cgitpage%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Fri, 11 Oct 2019 21:31:29 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/10/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E5%92%8Cgitpage%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>&lt;p&gt;&lt;code&gt;hugo&lt;/code&gt; 是一种静态网站生成器。非常适合搭建个人静态博客。因为 &lt;code&gt;hugo&lt;/code&gt; 的生成速度很快，不管是运行还是打包，所以将个人的博客用 &lt;code&gt;hugo&lt;/code&gt; 搭建是非常不错的选择。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
