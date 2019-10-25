@@ -7,32 +7,32 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.56.3 with theme Tranquilpeak 0.4.7-BETA">
 <meta name="author" content="靳超同学">
-<meta name="keywords" content="JS原型">
-<meta name="description" content="JS 原型作为 JS 世界中的三座大山之一，如果要搞明白的话着实是要费一些劲的。因为它存在了很多概念，这些概念又来回颠倒，所以导致我们傻傻分不清楚。那么这篇文章就是从新整理原型的知识，方便之后反复学习。因为 JS 是复杂的，就是需要反反复复的学习，并且需要结合实践来学习。话不多说，开始走进原型的世界。">
+<meta name="keywords" content="算法">
+<meta name="description" content="">
 
 
-<meta property="og:description" content="JS 原型作为 JS 世界中的三座大山之一，如果要搞明白的话着实是要费一些劲的。因为它存在了很多概念，这些概念又来回颠倒，所以导致我们傻傻分不清楚。那么这篇文章就是从新整理原型的知识，方便之后反复学习。因为 JS 是复杂的，就是需要反反复复的学习，并且需要结合实践来学习。话不多说，开始走进原型的世界。">
+<meta property="og:description" content="">
 <meta property="og:type" content="article">
-<meta property="og:title" content="深入理解JS原型">
-<meta name="twitter:title" content="深入理解JS原型">
-<meta property="og:url" content="https://jinchao1992.github.io/2019/10/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3js%E5%8E%9F%E5%9E%8B/">
-<meta property="twitter:url" content="https://jinchao1992.github.io/2019/10/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3js%E5%8E%9F%E5%9E%8B/">
+<meta property="og:title" content="算法入门1">
+<meta name="twitter:title" content="算法入门1">
+<meta property="og:url" content="https://jinchao1992.github.io/2019/10/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A81/">
+<meta property="twitter:url" content="https://jinchao1992.github.io/2019/10/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A81/">
 <meta property="og:site_name" content="小鱼儿的小站">
-<meta property="og:description" content="JS 原型作为 JS 世界中的三座大山之一，如果要搞明白的话着实是要费一些劲的。因为它存在了很多概念，这些概念又来回颠倒，所以导致我们傻傻分不清楚。那么这篇文章就是从新整理原型的知识，方便之后反复学习。因为 JS 是复杂的，就是需要反反复复的学习，并且需要结合实践来学习。话不多说，开始走进原型的世界。">
-<meta name="twitter:description" content="JS 原型作为 JS 世界中的三座大山之一，如果要搞明白的话着实是要费一些劲的。因为它存在了很多概念，这些概念又来回颠倒，所以导致我们傻傻分不清楚。那么这篇文章就是从新整理原型的知识，方便之后反复学习。因为 JS 是复杂的，就是需要反反复复的学习，并且需要结合实践来学习。话不多说，开始走进原型的世界。">
+<meta property="og:description" content="">
+<meta name="twitter:description" content="">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2019-10-14T23:02:36">
+    <meta property="article:published_time" content="2019-10-26T00:04:35">
   
   
-    <meta property="article:modified_time" content="2019-10-14T23:02:36">
+    <meta property="article:modified_time" content="2019-10-26T00:04:35">
   
   
   
   
     
-      <meta property="article:tag" content="JS">
+      <meta property="article:tag" content="算法">
     
   
 
@@ -53,14 +53,14 @@
   <meta property="twitter:image" content="https://jinchao1992.github.io/images/avatar.jpg">
 
 
-    <title>深入理解JS原型</title>
+    <title>算法入门1</title>
 
     <link rel="icon" href="https://jinchao1992.github.io/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://jinchao1992.github.io/2019/10/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3js%E5%8E%9F%E5%9E%8B/">
+    <link rel="canonical" href="https://jinchao1992.github.io/2019/10/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A81/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -200,19 +200,19 @@
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      深入理解JS原型
+      算法入门1
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-10-14T23:02:36&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-10-26T00:04:35&#43;08:00">
         
   
   
   
   
-    2019年10月14日
+    2019年10月26日
   
 
       </time>
@@ -224,139 +224,142 @@
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p><code>JS</code> 原型作为 <code>JS</code> 世界中的三座大山之一，如果要搞明白的话着实是要费一些劲的。因为它存在了很多概念，这些概念又来回颠倒，所以导致我们傻傻分不清楚。那么这篇文章就是从新整理原型的知识，方便之后反复学习。因为 <code>JS</code> 是复杂的，就是需要反反复复的学习，并且需要结合实践来学习。话不多说，开始走进原型的世界。</p>
+              <p>由以下例子引入算法。</p>
 
-<h2 id="三大知识点">三大知识点</h2>
+<h2 id="最小值算法">最小值算法</h2>
 
-<h3 id="js-中的唯一公式"><code>JS</code>  中的唯一公式</h3>
-
-<pre><code class="language-js">对象.__proto__ === 其构造函数.prototype
-</code></pre>
-
-<h3 id="根公理">根公理</h3>
-
-<pre><code class="language-js">Object.prototype 是所有对象的（直接或间接）原型
-</code></pre>
-
-<p>这是 <code>JS</code> 中的公理，就是在 <code>JS</code> 创建的时候就采用了这个说法。必须牢记于心。</p>
-
-<h3 id="函数公理">函数公理</h3>
+<blockquote>
+<p>例子1：如何找出两个数字中较小的那一个？</p>
+</blockquote>
 
 <ul>
-<li><strong>所有函数都是由 <code>Function</code> 构造的</strong>；</li>
-<li>如果结合第一个公式则会推出： <code>任何函数.__proto__ === Function.prototype</code>;</li>
-<li>任何函数包括：<code>Object</code> /  <code>Array</code> / <code>Function</code>;</li>
-</ul>
+<li><p>如何表示两个数？使用数组表示 <code>[a, b]</code> 表示两个数字。代码演示：</p>
 
-<p><strong>结论：基于以上的三大知识点和基础知识就构成了整个的 <code>JS</code> 世界</strong>。</p>
+<pre><code class="language-js">let minof2 = numbers =&gt; numbers[0] &gt; numbers[1] ? numbers[0] : numbers[1];
+  
+minof2.call(null,[1,2]);
+</code></pre></li>
 
-<h2 id="带着问题来消化">带着问题来消化</h2>
+<li><p><code>ES6</code> 优化版：</p>
 
-<ul>
-<li><p>以下代码中对象的原型是什么意思？</p>
+<pre><code class="language-js">let minof2 = ([a, b]) =&gt; a &gt; b ? b : a;
+minof2.call(null, [1, 2])
+</code></pre></li>
 
-<pre><code class="language-js">1. {name: 'jacky'} 的原型
-2. [1, 2, 3] 的原型
-3. Object 的原型
+<li><p><code>JS</code> 内置方法</p>
+
+<pre><code class="language-js">Math.min(1, 2); // 1
+Math.min.call(null, 1, 2); //1
+Math.min.apply(null, [2, -1]); // -1
 </code></pre></li>
 </ul>
 
-<p>解读：</p>
+<blockquote>
+<p>例子2：如何找出三个数中最小的数字？</p>
+</blockquote>
 
-<p><strong><code>Object</code> 的原型是 <code>Object.__proto__</code></strong> 而并不是 <code>Object.prototype</code>，为什么？</p>
+<p>如果我们需要找三个数字中最小的，通过例子1我们知道可以找出两个数字中最小的，那么是不是可以先找出两个数字中最小的再拿另外一个比较，因为我们已经学会了如何比较两个数字中最小的。代码演示：</p>
 
-<p>当在问到某一个对象 「的原型」时，约定指的就是 <code>对象.__proto__</code>。</p>
-
-<ul>
-<li><p>如果 <code>[1, 2, 3].__proto__ === Array.prototype</code> 那么数组是一个对象，根据<strong>根公理</strong> <code>Object.prototype</code> 是所有对象的原型？那上述的代码就不应该成立吧？其实原因如下：</p>
-
-<ul>
-<li>原型分为直接原型和间接原型；</li>
-<li><code>Object.prototype</code> 是数组对象和函数对象的间接原型；是普通对象的直接原型</li>
-<li><code>Array.prototype</code> 的数组对象的直接原型；</li>
-</ul></li>
-
-<li><p><code>Object.prototype</code> 是所有对象的原型；<code>Object</code> 是 <code>Function</code> 构造出来的；所以 <code>Function</code> 构造了 <code>Object.prototype</code> 得出推论， <code>Function</code> 才是万物之源啊？上述我们也说了根公理不容置疑，既然置疑了，就来 ”打破“ 置疑，原因如下：</p>
-
-<ul>
-<li><code>Object.prototype</code> 和 <code>Object.prototype</code> 对象的区别。<code>Object.prototype</code> 指向了一个地址，而这个地址里的属性组成了对象也就是 <code>Object.prototype</code> 对象。</li>
-</ul></li>
-</ul>
-
-<h2 id="从新认识js世界">从新认识JS世界</h2>
-
-<p>一个草草的内存图了解一下：</p>
-
-<p><img src="https://jinchao1992.github.io/images/41.png" alt="" /></p>
-
-<p>解析上图，来了解<code>JS</code> 世界的构造顺序：（#后跟的数字，解析为内存地址）</p>
-
-<ul>
-<li>创建根对象 <code>#101</code> ,此时根对象没有名字；</li>
-<li>创建 <code>函数的原型 #204</code>， 函数原型 <code>__proto__</code> 为 <code>#101</code>;</li>
-<li>创建 <code>数组的原型 #404</code> ，数组原型 <code>__proto__</code> 为 <code>#101</code>;</li>
-<li>创建 <code>Function #2004</code> 原型 <code>__proto__</code> 为 <code>#204</code>;</li>
-<li>让 <code>Function.prototype</code> 等于 <code>#204</code>;</li>
-<li>用 <code>Function</code> 创建 <code>Object</code>;</li>
-<li>让 <code>Object.prototype</code> 等于 <code>#101</code> ;</li>
-<li>用 <code>Function</code> 创建 <code>Array</code>;</li>
-<li>让 <code>Array.prototype</code> 等于 <code>#404</code>;</li>
-<li>创建 <code>window</code> 对象；</li>
-<li>用 <code>window</code> 的 <code>Object</code> 和  <code>Array</code> 属性分别为 <code>Function</code> 创造出来的 <code>Object</code> 和 <code>Array</code> 命名。</li>
-</ul>
-
-<h3 id="用代码来理解">用代码来理解</h3>
-
-<pre><code class="language-js">let obj1 = new Object();
-// 用 new 创建了对象 obj1
-// new 会将 obj1 的原型 __proto__ 设置为 Object.prototype 也就是内存图上说到的 #101
+<pre><code class="language-js">let minof3 = ([a, b, c]) =&gt; {
+  return minof2([a, minof2([b, c])]);
+};
+// 或者
+let minof3 = ([a, b, c]) =&gt; {
+  return minof2([minof2([a, b]), c])
+};
 </code></pre>
 
-<p><code>obj1</code> 代码演示截图：</p>
+<p>由此得出推理，如果是4个数字呢？得出以下代码：</p>
 
-<p><img src="https://jinchao1992.github.io/images/42.png" alt="" /></p>
-
-<pre><code class="language-js">let arr1 = new Array();
-// 用 new 创建了数组 arr1
-// new 会将 arr1 的原型 __proto__ 设置为 Array.prototype, 也就是内存图上说到的 #404
+<pre><code class="language-js">let minof4 = ([a, b, c, d]) =&gt; {
+  return minof2([a, minof3([b, c, d])])
+};
 </code></pre>
 
-<p><code>arr1</code> 代码演示截图：</p>
+<p>所以，<strong>任意长度数组求最小值，都可以通过 <code>minof2</code> 方法实现</strong>。</p>
 
-<p><img src="https://jinchao1992.github.io/images/43.png" style="zoom:75%;" /></p>
+<p>终极方法：</p>
 
-<p>可以看出数组对象的间接的原型为 <code>Object.prototype</code></p>
-
-<pre><code class="language-js">let f1 = new Function()
-// 用new创建了函数 f1
-// new 会将 f1 的原型 __proto__ 设置为 Function.prototype, 也就是内存图中的 #204
+<pre><code class="language-js">let min = (numbers) =&gt; {
+  if (numbers.length &gt; 2) {
+    return min([numbers[0], min(numbers.slice(1))])
+  } else {
+    return Math.min.apply(null, numbers)
+  }
+}
+// 采用递归的方式进行输出
 </code></pre>
 
-<p><code>f1</code> 代码演示截图：</p>
+<h2 id="排序算法">排序算法</h2>
 
-<p><img src="https://jinchao1992.github.io/images/44.png" alt="" /></p>
+<h3 id="递归实现方法">递归实现方法</h3>
 
-<p>通过上述的三段代码，可以看出函数、对象以及数组都是 new 出来的。<code>new</code> 的时候会将对象的 <code>__proto__</code> 自动的指向原型。</p>
+<blockquote>
+<p>例子1 长度为2的数组实现从小到大排序</p>
+</blockquote>
 
-<p>那么我们可以得到如下结论：</p>
+<pre><code class="language-js">let sort2 = ([a, b]) =&gt; a &lt; b ? [a, b] : [b, a]
+</code></pre>
+
+<blockquote>
+<p>例子2 长度为3的数组实现从小到大排序</p>
+</blockquote>
+
+<p>如果知道长度为2的数组的排序，那如果在数组的三个值中把最小值找出来，然后再排序其他两个的值？这样的方法是否可行呢？</p>
+
+<pre><code class="language-js">let sort3 = ([a, b, c]) =&gt; {
+  return [min([a, b, c]), sort2([???])]
+}
+// 这里是无法确定sort2中的值，因为可能值为 [a,b] [b,c] [a,c]
+</code></pre>
+
+<p>改进版</p>
+
+<pre><code class="language-js">let minIndex = numbers =&gt; {
+  return numbers.indexOf(min(numbers))
+}
+let sort3 = (numbers) =&gt; {
+  let index = minIndex(numbers); // 找出数组中最小值的下标
+  let min = numbers[index]; // 得出最小值
+  numbers.splice(index, 1); // 从数组中删除最小值
+  return [min].concat(sort2(numbers)); // 数组中删除最小值后单独组成一个数组，然后再通过两个值的排列，再组合为一个新数组
+}
+</code></pre>
+
+<blockquote>
+<p>例子3 如果数组长度为4实现从小到大排序</p>
+</blockquote>
+
+<pre><code class="language-js">let sort4 = numbers =&gt; {
+  let index = minIndex(numbers);
+  let min = numbers[index];
+  numbers.splice(index, 1);
+  return [min].concat(sort3(numbers));
+}
+</code></pre>
+
+<p>由此可以得出是不是任意长度的数组都可以按照上述的方法进行排序</p>
+
+<pre><code class="language-js">let sort = (numbers) =&gt; {
+  if (numbers.length &gt; 2) {
+    let index = minIndex(numbers);
+    let min = numbers[index];
+    numbers.splice(index, 1);
+    return [min].concat(sort(numbers))
+  } else {
+    return numbers[0] &lt; numbers[1] ? numbers : numbers.reverse()
+  }
+}
+</code></pre>
+
+<h2 id="总结">总结</h2>
+
+<p>通过以上的代码我们得出了两个算法，算是比较基础的算法：</p>
 
 <ul>
-<li>如果定义一个构造函数 <code>Person</code> ,函数里给 this 添加属性</li>
-<li><code>Person</code> 自动创建 <code>prototype</code> 属性和对应的对象形成一个内存地址 （假如命名为：#502）；</li>
-<li>给 <code>Person.prototype</code> #502上面加属性；</li>
-<li>用 <code>new Persopn()</code> 创建对象 <code>p1</code>;</li>
-<li><code>new</code> 会将 <code>p1</code> 的原型 <code>__proto__</code> 设为 <code>#502</code>;</li>
+<li>找出最小值的算法 <code>min</code>；</li>
+<li>选择排序算法 <code>sort</code> , 这个算法并不是最优的，接下来的文章会进行算法入门2的 <code>sort</code></li>
 </ul>
-
-<p>如下图：</p>
-
-<p><img src="https://jinchao1992.github.io/images/45.png" alt="" /></p>
-
-<p>一张图了解 <code>JS</code> 原型的世界：</p>
-
-<p><img src="https://jinchao1992.github.io/images/46.png" alt="" /></p>
-
-<p>上图就是整个 <code>JS</code> 原型的构成。（此图非常之重要需要反复复习）</p>
               
             </div>
           </div>
@@ -368,7 +371,7 @@
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://jinchao1992.github.io/tags/js/">JS</a>
+  <a class="tag tag--primary tag--small" href="https://jinchao1992.github.io/tags/%E7%AE%97%E6%B3%95/">算法</a>
 
                   </div>
                 
@@ -381,7 +384,7 @@
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/10/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A81/" data-tooltip="算法入门1">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/10/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A82/" data-tooltip="算法入门2">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -389,7 +392,7 @@
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/10/css3%E5%8A%A8%E7%94%BB%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B%E4%BB%A5%E5%8F%8A%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86/" data-tooltip="CSS3动画使用简介以及浏览器渲染原理">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/10/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3js%E5%8E%9F%E5%9E%8B/" data-tooltip="深入理解JS原型">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -449,7 +452,7 @@
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/10/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A81/" data-tooltip="算法入门1">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/10/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A82/" data-tooltip="算法入门2">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -457,7 +460,7 @@
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/10/css3%E5%8A%A8%E7%94%BB%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B%E4%BB%A5%E5%8F%8A%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E5%8E%9F%E7%90%86/" data-tooltip="CSS3动画使用简介以及浏览器渲染原理">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jinchao1992.github.io/2019/10/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3js%E5%8E%9F%E5%9E%8B/" data-tooltip="深入理解JS原型">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -585,9 +588,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/jinchao1992.github.io\/2019\/10\/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3js%E5%8E%9F%E5%9E%8B\/';
+          this.page.url = 'https:\/\/jinchao1992.github.io\/2019\/10\/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A81\/';
           
-            this.page.identifier = '\/2019\/10\/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3js%E5%8E%9F%E5%9E%8B\/'
+            this.page.identifier = '\/2019\/10\/%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A81\/'
           
         };
         (function() {
