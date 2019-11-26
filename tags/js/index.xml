@@ -44,7 +44,8 @@
       <pubDate>Thu, 26 Sep 2019 22:17:15 +0800</pubDate>
       
       <guid>https://jinchao1992.github.io/2019/09/js-%E6%95%B0%E7%BB%84%E5%AF%B9%E8%B1%A1/</guid>
-      <description>&lt;p&gt;数组其实是一种特殊的对象。&lt;code&gt;JS&lt;/code&gt; 中并没有正真的数组，都是用对象去模拟的。&lt;/p&gt;</description>
+      <description>&lt;p&gt;数组其实是一种特殊的对象。&lt;code&gt;JS&lt;/code&gt; 中并没有正真的数组，都是用对象去模拟的。数组其实是一种特殊的对象。&lt;code&gt;JS&lt;/code&gt; 中并没有正真的数组，都是用对象去模拟的。如果是前后端分离开发，那么对于数组的处理，
+将会影响到对数据处理的方方面面，所以对于数组的处理以及把控就显得至关重要啦！&lt;/p&gt;</description>
     </item>
     
     <item>

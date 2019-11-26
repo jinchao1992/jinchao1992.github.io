@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小鱼儿的小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 16 Nov 2019 22:30:59 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 26 Nov 2019 22:21:04 +0800</lastBuildDate>
     
 	<atom:link href="https://jinchao1992.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>解决 Mac OS 配置环境变量不生效问题</title>
+      <link>https://jinchao1992.github.io/2019/11/%E8%A7%A3%E5%86%B3-mac-os-%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8D%E7%94%9F%E6%95%88%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Tue, 26 Nov 2019 22:21:04 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/11/%E8%A7%A3%E5%86%B3-mac-os-%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8D%E7%94%9F%E6%95%88%E9%97%AE%E9%A2%98/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>掌握 DOM操作</title>
@@ -91,7 +100,8 @@
       <pubDate>Thu, 26 Sep 2019 22:17:15 +0800</pubDate>
       
       <guid>https://jinchao1992.github.io/2019/09/js-%E6%95%B0%E7%BB%84%E5%AF%B9%E8%B1%A1/</guid>
-      <description>&lt;p&gt;数组其实是一种特殊的对象。&lt;code&gt;JS&lt;/code&gt; 中并没有正真的数组，都是用对象去模拟的。&lt;/p&gt;</description>
+      <description>&lt;p&gt;数组其实是一种特殊的对象。&lt;code&gt;JS&lt;/code&gt; 中并没有正真的数组，都是用对象去模拟的。数组其实是一种特殊的对象。&lt;code&gt;JS&lt;/code&gt; 中并没有正真的数组，都是用对象去模拟的。如果是前后端分离开发，那么对于数组的处理，
+将会影响到对数据处理的方方面面，所以对于数组的处理以及把控就显得至关重要啦！&lt;/p&gt;</description>
     </item>
     
     <item>
