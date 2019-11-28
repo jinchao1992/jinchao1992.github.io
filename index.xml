@@ -6,10 +6,20 @@
     <description>Recent content on 小鱼儿的小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 26 Nov 2019 22:21:04 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 28 Nov 2019 23:21:44 +0800</lastBuildDate>
     
 	<atom:link href="https://jinchao1992.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JQuery 的设计思想</title>
+      <link>https://jinchao1992.github.io/2019/11/jquery-%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3/</link>
+      <pubDate>Thu, 28 Nov 2019 23:21:44 +0800</pubDate>
+      
+      <guid>https://jinchao1992.github.io/2019/11/jquery-%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3/</guid>
+      <description>&lt;p&gt;jQuery 是全世界使用最广泛的 JavaScript 库。虽然前端现在是「三大框架」的天下，但是不可否认，jQuery 曾经支撑了前端很多年，它使用之久，运用之广是其他框架无法企及的。所以，时至今日我们还是有必要学习一下 JQuery的一些用法，
+以及在这些用法中包含的一些思想。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>解决 Mac OS 配置环境变量不生效问题</title>
